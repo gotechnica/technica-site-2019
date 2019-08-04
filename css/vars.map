@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../scss/vars.css",
+	"sources": [
+		"../scss/vars.scss"
+	],
+	"sourcesContent": [
+		"// Official Technica Colors\r\n$cyan: darken(#00ffff, 2%); // Slight darken hack for readability\r\n$pink: #ff7bac;\r\n$lavender: #b6a1c4;\r\n$grey: #464343;\r\n$darker-grey: #2d2d2d;\r\n$black: #000000;\r\n$white: #ffffff;\r\n\r\n// Custom\r\n$bg-black: #222222;\r\n$bg-black-2: #1a1a1a;\r\n"
+	],
+	"mappings": "",
+	"names": []
+}

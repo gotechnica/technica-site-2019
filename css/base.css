@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+/* Defines custom DINPro and DINPro bold fonts */
+@font-face {
+  font-family: 'DINPro';
+  src: url("../fonts/DINPro-Regular.otf");
+}
+
+@font-face {
+  font-family: 'DINPro';
+  font-weight: 600;
+  src: url("../fonts/DINPro-Bold.otf");
+}
+
+@font-face {
+  font-family: 'Damion';
+  src: url("../fonts/Damion-Regular.ttf");
+}
+
+/* line 23, D:/Elli/Documents/Technica/gotechnica.github.io/scss/base.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 25, D:/Elli/Documents/Technica/gotechnica.github.io/scss/base.scss */
+html {
+  overflow-x: hidden;
+}
+
+@media (max-width: 575.98px) {
+  /* line 25, D:/Elli/Documents/Technica/gotechnica.github.io/scss/base.scss */
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* line 25, D:/Elli/Documents/Technica/gotechnica.github.io/scss/base.scss */
+  html {
+    font-size: 58%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* line 25, D:/Elli/Documents/Technica/gotechnica.github.io/scss/base.scss */
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* line 25, D:/Elli/Documents/Technica/gotechnica.github.io/scss/base.scss */
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 25, D:/Elli/Documents/Technica/gotechnica.github.io/scss/base.scss */
+  html {
+    font-size: 62.5%;
+  }
+}
+
+/* line 50, D:/Elli/Documents/Technica/gotechnica.github.io/scss/base.scss */
+body {
+  padding: 0;
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+/* line 58, D:/Elli/Documents/Technica/gotechnica.github.io/scss/base.scss */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+/* line 62, D:/Elli/Documents/Technica/gotechnica.github.io/scss/base.scss */
+h1 {
+  font-family: 'DINPro';
+  font-weight: bold;
+  font-size: 3.6rem;
+}
+
+/* line 68, D:/Elli/Documents/Technica/gotechnica.github.io/scss/base.scss */
+h2 {
+  font-family: 'DINPro';
+  font-size: 2.8rem;
+}
+
+/* line 75, D:/Elli/Documents/Technica/gotechnica.github.io/scss/base.scss */
+h3 {
+  font-size: 2.6rem;
+  font-weight: bold;
+}
+
+/* line 81, D:/Elli/Documents/Technica/gotechnica.github.io/scss/base.scss */
+h4 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* line 86, D:/Elli/Documents/Technica/gotechnica.github.io/scss/base.scss */
+a {
+  color: #00f5f5;
+}
+
+/* line 88, D:/Elli/Documents/Technica/gotechnica.github.io/scss/base.scss */
+a:hover {
+  color: #00f5f5;
+}
+
+/* line 177, D:/Elli/Documents/Technica/gotechnica.github.io/scss/base.scss */
+::selection {
+  background: #b6a1c4;
+  /* WebKit/Blink Browsers */
+}
+
+/* line 180, D:/Elli/Documents/Technica/gotechnica.github.io/scss/base.scss */
+::-moz-selection {
+  background: #b6a1c4;
+  /* Gecko Browsers */
+}
+
+/*# sourceMappingURL=../css/base.map */

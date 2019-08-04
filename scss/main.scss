@@ -1,0 +1,545 @@
+@import 'base';
+@import 'vars';
+
+html {
+  background-color: black;
+}
+
+#mlh-trust-badge {
+  @media (max-width: 767.98px) {
+    position: absolute !important;
+    top: 0;
+    right: 1.5rem !important;
+  }
+}
+
+.button {
+  background-color: $bg-black;
+  // border: 3px solid $cyan;
+  padding: 1.4rem 7.2rem;
+  font-size: 2.2rem;
+  color: $white;
+  font-family: "DINPro";
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  top: 0;
+  position: relative;
+  transition: all ease .15s;
+  &:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: white;
+    opacity: 0;
+    transition: ease all .15s;
+  }
+  &:hover {
+    text-decoration: none;
+    color: white;
+    top: -.2rem;
+    &:after {
+      opacity: .4;
+    }
+  }
+  &:active {
+    &:after {
+      opacity: .8;
+    }
+  }
+}
+
+.register-button {
+  @extend .animate;
+  @extend .button;
+  border: none;
+}
+
+.hero-btn-row {
+  @media (max-width: 780px) {
+    .hero-button {
+      display: block;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.hero-button {
+  @extend .button;
+  font-size: 2rem;
+  color: white;
+  background-color: transparent;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-bottom: 2px solid $cyan;
+  margin: 0 1.5rem;
+  &:hover {
+    // @extend .animate;
+  }
+}
+
+.section {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  @media (max-width: 767.98px) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .heading {
+    text-align: left;
+    position: relative;
+    z-index: 0;
+    margin-bottom: 6rem;
+  }
+  p {
+    margin-bottom: 2rem;
+    opacity: .8;
+  }
+}
+
+#bg-video {
+  // position: fixed;
+  // right: 0;
+  // z-index: 0;
+  // bottom: 0;
+  position: absolute;
+  top: -0px;
+  left: 0;
+  z-index: 2;
+  min-width: 100%;
+  min-height: 120%;
+  opacity: 1;
+}
+
+.bg-video-overlay {
+  display: block;
+
+  background: rgb(34,34,34);
+  background: linear-gradient(0deg, rgba(34,34,34,1) 5%, rgba(34,34,34,.5) 100%);
+
+  z-index: 3;
+  top: 0;
+  left: 0;
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+article {
+  // background-color: $bg-black;
+}
+
+article.hero {
+  text-align: center;
+  background-color: $bg-black;
+  @media (max-width: 767.98px) {
+    background-image: url("../img/bg-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  padding-top: 20rem;
+  padding-bottom: 22rem;
+  overflow: hidden;
+  position: relative;
+  .container {
+    position: relative;
+    z-index: 5;
+  }
+  img.brand {
+    width: 60rem;
+    max-width: 90%;
+    margin-bottom: 4rem;
+  }
+  h2 {
+    color: $white;
+    margin-bottom: 6rem;
+    .faded {
+      opacity: .4;
+    }
+  }
+  h4 {
+    font-family: 'Damion';
+    color: $white;
+    margin-bottom: 4rem;
+    font-size: 5rem;
+    font-weight: normal;
+  }
+}
+
+article.body {
+  color: white;
+  background-color: $bg-black;
+  padding-bottom: 8rem;
+  position: relative;
+  z-index: 5;
+  font-size: 1.8rem;
+  section.intro {
+    @extend .section;
+    iframe {
+      width: 100%;
+      height: 32rem;
+      background-color: black;
+      // height: 30rem;
+      // background-color: white;
+      // opacity: .1;
+      // Small devices (landscape phones, 576px and up)
+      @media (max-width: 767.98px) {
+        margin-top: 4rem;
+      }
+    }
+  }
+  section.registration {
+    @extend .section;
+    background-image: url("../img/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $bg-black-2;
+    div.register-card {
+      border: 3px solid white;
+      // min-height: 505px;
+      padding: 4rem;
+      background-color: $bg-black;
+      //margin-top: 4rem + 2rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      -webkit-flex: 1; /* Safari 6.1+ */
+      -ms-flex: 1; /* IE 10 */
+      flex: 1;
+
+      @media (max-width: 992px) {
+        margin-bottom: 12rem;
+        &.last {
+          margin-bottom: 4rem;
+        }
+      }
+
+      p {
+        text-align: left;
+      }
+      .disabled {
+        background-color: $grey !important;
+        pointer-events: none !important;
+      }
+      img {
+        align-self: center;
+        width: 14rem;
+        height: 14rem;
+        // padding: 1rem;
+        border: 2px solid white;
+        background-color: $bg-black;
+        border-radius: 7rem;
+        position: relative;
+        top: -7rem - 4rem;
+      }
+      .button {
+        padding: .8rem 0rem;
+        width: 100%;
+        display: block;
+        margin-bottom: 0;
+        margin-top: auto;
+      }
+      &.cyan {
+        display: flex;
+        border-color: $cyan;
+        img {
+          border-color: $cyan;
+        }
+        a {
+          background-color: $cyan;
+        }
+      }
+      &.lavender {
+        display: flex;
+        border-color: $lavender;
+        img {
+          border-color: $lavender;
+        }
+        a {
+          background-color: $lavender;
+        }
+      }
+      &.pink {
+        display: flex;
+        border-color: $pink;
+        img {
+          border-color: $pink;
+        }
+        a {
+          background-color: $pink;
+        }
+      }
+      p {
+        margin-top: -8rem;
+        margin-bottom: 4rem;
+      }
+    }
+  }
+  section.sched {
+    @extend .section;
+    h1{
+      margin-bottom: 4rem;
+    }
+    h3 {
+      text-align: left;
+      margin-bottom: 2rem;
+    }
+    .app{
+      max-width: 16rem;
+      margin: 0px 4px;
+      opacity: .7;
+      transition: ease all .1s;
+      &:hover {
+        opacity: 1;
+        transform: scale(1.05);
+      }
+    }
+    .schedule-table {
+      margin-top: 4rem;
+      text-align: left;
+      width: 100%;
+      tr {
+        border-bottom: 2px solid $grey;
+        &.heading {
+          border: none;
+          h3 {
+            color: $lavender;
+          }
+        }
+        &.subheading {
+          h3 {
+            padding-top: 6rem;
+          }
+        }
+      }
+      th, td {
+        min-width: 12rem;
+        padding: 1rem;
+        // padding-right: 1rem;
+        // padding-bottom: .8rem;
+      }
+    }
+  }
+  section.faq {
+    @extend .section;
+    .heading {
+      margin-bottom: 6rem - 4rem;
+    }
+    .accordion {
+      cursor: pointer;
+      // padding: 18px;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      border: none;
+      padding-bottom: 1rem;
+      padding-top: 4rem;
+      margin-bottom: 2rem;
+      border-bottom: 3px solid $grey;
+      background-color: transparent;
+      text-align: left;
+      outline: none;
+      transition: ease all 0.3s;
+    }
+
+    .active, .accordion:hover {
+      // background-color: #ccc;
+      border-color: $cyan;
+      @media (max-width: 767.98px) {
+        border-color: $grey;
+      }
+    }
+
+    .accordion:active {
+      @media (max-width: 767.98px) {
+        border-color: $cyan;
+      }
+    }
+
+    .panel {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.1s ease-out;
+    }
+  }
+
+  section.sponsors {
+    @extend .section;
+    h1 {
+      margin-bottom: 4rem;
+    }
+    .caption {
+      margin-bottom: 4rem;
+    }
+    .base-sponsor {
+      padding: 4rem 0rem;
+      img {
+        max-width: 24rem;
+        max-height: 6rem;
+        opacity: .7;
+        transition: ease all .1s;
+        &:hover {
+          opacity: 1;
+          transform: scale(1.05);
+        }
+      }
+    }
+    .gold-sponsor {
+      @extend .base-sponsor;
+      img {
+        max-width: 28rem;
+        max-height: 8rem;
+      }
+    }
+    .silver-sponsor {
+      @extend .base-sponsor;
+    }
+    .sponsor {
+      @extend .base-sponsor;
+    }
+    .small-sponsor {
+      @extend .base-sponsor;
+    }
+  }
+}
+
+article.contact {
+  @extend .section;
+  background-image: url("../img/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $bg-black-2;
+  text-align: center;
+  position: relative;
+  z-index: 5;
+  .heading {
+    text-align: center;
+  }
+  h1 {
+    margin-bottom: 4rem;
+  }
+  h1, h2 {
+    color: $white;
+  }
+  a {
+    color: $cyan;
+  }
+  .list-inline li {
+    list-style: inline;
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+    a {
+      @extend .button;
+      width: 6rem;
+      padding: 0;
+      height: 6rem;
+      display: inline-block;
+      background-color: $cyan;
+      .social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        width: 100%;
+        height: 100%;
+      }
+      i {
+        font-size: 3rem;
+        color: black;
+      }
+      @media (max-width: 767.98px) {
+        margin-bottom: 2rem;
+        width: 4rem;
+        height: 4rem;
+        i {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
+article.footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  position: relative;
+  z-index: 5;
+  // background-color: $pink;
+  text-align: center;
+  p {
+    color: white;
+    font-size: 1.8rem;
+  }
+}
+
+/* Animates main section of the website */
+.animate{
+  background: linear-gradient(270deg, #00ffff, #ff7bac);
+  background-size: 400% 400%;
+
+  -webkit-animation: GradientAnimation 10s ease infinite;
+  -moz-animation: GradientAnimation 10s ease infinite;
+  animation: GradientAnimation 10s ease infinite;
+}
+
+.static-gradient{
+   background: #ff7bac; /* For browsers that do not support gradients */
+   background: -webkit-linear-gradient(right, #00ffff , #ff7bac); /* For Safari 5.1 to 6.0 */
+   background: -o-linear-gradient(right, #00ffff , #ff7bac); /* For Opera 11.1 to 12.0 */
+   background: -moz-linear-gradient(right, #00ffff , #ff7bac); /* For Firefox 3.6 to 15 */
+   background: linear-gradient(to right, #00ffff , #ff7bac); /* Standard syntax */
+}
+#color-burst-img {
+  position: absolute;
+  display: none;
+  top: -220%;
+  pointer-events: none;
+  left: -12%;
+  width: 120%;
+  z-index: 1;
+}
+
+
+
+/*
+ * Row with equal height columns
+ * --------------------------------------------------
+ */
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  flex-wrap: wrap;
+}
+
+.row-eq-height > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+  //-webkit-flex: 1; /* Safari 6.1+ */
+  //-ms-flex: 1; /* IE 10 */
+  //flex: 1;
+
+}
+
+
+@-webkit-keyframes GradientAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes GradientAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes GradientAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}

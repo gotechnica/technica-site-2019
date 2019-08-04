@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
+@import 'vars';
+
+/* Defines custom DINPro and DINPro bold fonts */
+@font-face {
+  font-family: 'DINPro';
+  src: url('../fonts/DINPro-Regular.otf');
+}
+
+@font-face {
+  font-family: 'DINPro';
+  font-weight: 600;
+  src: url('../fonts/DINPro-Bold.otf');
+}
+
+@font-face {
+  font-family: 'Damion';
+  src: url('../fonts/Damion-Regular.ttf');
+}
+
+html { font-size: 62.5%; }
+
+html {
+  overflow-x: hidden;
+  // Extra small devices (portrait phones, less than 576px)
+  @media (max-width: 575.98px) {
+    font-size: 55%;
+  }
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: 58%;
+  }
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 60%;
+  }
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    font-size: 62.5%;
+  }
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    font-size: 62.5%;
+
+  }
+}
+
+body {
+  padding: 0;
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+h1 {
+  font-family: 'DINPro';
+  font-weight: bold;
+  font-size: 3.6rem;
+}
+
+h2 {
+  font-family: 'DINPro';
+  font-size: 2.8rem;
+  // font-weight: bold;
+  // color: white;
+}
+
+h3 {
+  font-size: 2.6rem;
+  // text-transform: uppercase;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+a {
+  color: $cyan;
+  &:hover {
+    color: $cyan;
+  }
+}
+
+//
+// article.main {
+//   position: relative;
+//   background-color: #2d2d2d;
+//   height: 100vh;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   min-height: 600px;
+// }
+//
+// img.brand {
+//   width: 600px;
+//   max-width: 90%;
+//   margin-bottom: 50px;
+// }
+//
+// div.content {
+//   max-width: 90%;
+//   text-align: center;
+//   color: white;
+// }
+//
+// h1 {
+//   font-weight: 600;
+//   font-size: 24px;
+//   margin-bottom: 50px;
+// }
+//
+// h2 {
+//   font-size: 20px;
+//   font-family: 'Inconsolata', monospace;
+//   opacity: .5;
+//   /* color: #b6a1c4; */
+// }
+//
+// .separator {
+//   margin-left: auto;
+//   margin-right: auto;
+//   display: block;
+//   margin-top: 40px;
+//   margin-bottom: 40px;
+//   width: 10px;
+//   height: 2px;
+//   background-color: white;
+// }
+//
+// .footer {
+//   text-align: center;
+//   max-width: 90%;
+//   position: absolute;
+//   z-index: 100;
+//   bottom: 20px;
+//   color: white;
+// }
+//
+// a {
+//   text-decoration: none;
+//   /* color: #ff7bac; */
+//   color: #b6a1c4;
+//
+// }
+//
+//
+// a:hover {
+//   /* color: #ff7bac; */
+//   color: #b6a1c4;
+//
+//   text-decoration: none;
+//   filter: brightness(130%);
+// }
+//
+// ul {
+//   list-style: inline;
+//   padding: 0;
+// }
+//
+// .list-inline li {
+//   list-style: inline;
+//   display: inline;
+//   margin-left: 10px;
+//   margin-right: 10px;
+// }
+
+::selection {
+  background: $lavender; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: $lavender; /* Gecko Browsers */
+}
