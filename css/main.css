@@ -497,6 +497,10 @@ A1B4CD
   background: rgba(0,0,0,.5);
 }
 
+.technica-vid {
+  min-height: 100px;
+}
+
 .clouds {
   padding-top: 50px;
   padding-bottom: 50px;
