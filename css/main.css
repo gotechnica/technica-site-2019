@@ -211,16 +211,6 @@ article.hero {
       article.hero img.rocket {
         margin-top: 0rem; } }
 
-div.before-reg {
-  height: 8rem;
-  background-color: #243D49; }
-  div.before-reg .inner {
-    border-bottom-left-radius: 100%;
-    width: 100%;
-    height: 100%;
-    border-bottom-right-radius: 100%;
-    background-color: white; }
-
 article.body {
   color: #464343;
   background-color: #ffffff;
@@ -461,88 +451,7 @@ article.footer {
   background-size: 400% 400%;
   -webkit-animation: GradientAnimation 10s ease infinite;
   -moz-animation: GradientAnimation 10s ease infinite;
-<<<<<<< HEAD
   animation: GradientAnimation 10s ease infinite; }
-=======
-  animation: GradientAnimation 10s ease infinite;*/
-  border-color: #FFFFFF;
-   }
-
-  .social-round {
-    border-radius: 25px;
-  }
-
-/*
-* 80C8D6
-A1B4CD
-*/
-
-.title-gradient {
-  position: relative
-  z-index: 5; 
-  background: #ff7bac; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #ff7bac, #80C8D6); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #ff7bac, #80C8D6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.intro-gradient {
-  position: relative
-  z-index: 5; 
-  background: #80C8D6; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #80C8D6, #598796); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #80C8D6, #598796); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.schedule-gradient {
-  background: #476871; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #476871, #182631); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #476871, #182631);
-}
-
-.faq-gradient {
-  background: #182631; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #182631, #1D2A33); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #182631, #1D2A33);
-}
-
-.sponsors-gradient {
-  background: #1D2A33; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #1D2A33, #2B312F); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #1D2A33, #2B312F);
-}
-
-.contact-gradient {
-  background: #2B312F; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #2B312F, #333334); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #2B312F, #333334);
-}
-
-.reg-gradient {
-  position: relative
-  z-index: 5; 
-  background: #598796; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #598796, #476871); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #598796, #476871); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.side-container {
-  margin: auto;
-  padding: 40px;
-/*  margin-left: 50px;*/
-  border-radius: 25px;
-  background: rgba(0,0,0,.5);
-}
-
-.technica-vid {
-  min-height: 100px;
-}
-
-.clouds {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background: #FFFFFF;
-}
->>>>>>> c7213fb40bdcdd5a8dc21fa92c967c49e77160eb
 
 .static-gradient {
   background: #ff7bac;
