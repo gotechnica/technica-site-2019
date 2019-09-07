@@ -319,8 +319,8 @@ article.body {
   }
   section.sched {
       @extend .section;
-      $section-bg-color: #243D49;
-      background-color: $section-bg-color;
+      $schedule-section-bg-color: #243D49;
+      background-color: $schedule-section-bg-color;
       color: $white;
 
       .app {
@@ -334,13 +334,49 @@ article.body {
               transform: scale(1.05);
           }
       }
-
+      .daybtn{
+          display:inline-block;
+          align-items:center;
+          justify-content:center;
+          width:75%;
+          font-size:3rem;
+          color:$white;
+          border-color:$pink
+      }
+      .daybtn:hover{
+          background-color:$pink
+      }
+       div.img-holder {
+        border: 3px solid $lavender;
+        background-color: $schedule-section-bg-color;
+        border-radius: 7rem;
+        position: relative;
+        left: 50%;
+        margin-left: -7rem;
+        top: -7rem - 1rem;
+        align-self: center;
+        width: 14rem;
+        height: 14rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 19rem;
+          // padding: 1rem;
+        }
+      }
+      .sched-box {
+          border: 3px solid;
+          border-color: $lavender;
+          border-radius: .8rem;
+      }
+      
       .divTable {
           display: table;
-          width: 100%;
-          table-layout: fixed
       }
-
+      .divTable h1{
+          margin-left:1rem;
+      }
       .divTableRow {
           display: table-row;
       }
@@ -348,35 +384,42 @@ article.body {
       .divTableRow .divTableCell {
           display: table-cell;
           padding: 2rem 2rem .3rem;
-          border-bottom: 1px solid $lavender;
+          border-bottom: 1px solid $cyan;
           font-weight: bold;
+          text-align:left;
 
       }
-
-      .divTableBody .divTableRow:last-child .divTableCell {
-          border-width: .5rem;
+      #sunday{
+          display:table-row-group;
+          display: none;
       }
-
+  
       .divTableHeader .divTableCell {
-          padding: .8rem 3rem .8rem 3rem;
           font-size: 2.2rem;
           font-weight: bold;
-          line-height: 1.5;
           color: $white;
-          border: 5px solid $lavender;
+          border-bottom: 2px solid $cyan;
       }
 
-      .divTableHeader .divTableCell span {}
-
-      .divTableHeader .divTableCell:first-child {
-          border-top-left-radius: 50rem;
-          border-bottom-left-radius: 50rem;
+      
+      .divTableRow .divTableCell:first-child {
+          margin:0;
+          text-align:left;
+          padding:0;
+          padding-left:1rem;
+          width:1%;
+      }
+      .divTableRow .divTableCell.time {
+          border-right:2px solid $lavender ;
+      }
+      .divTableRow .divTableCell:nth-child(2) {
+          tex-align:left;
+          
+      }
+      .divTableRow .divTableCell:nth-child(3) {
+          text-align:center;
       }
 
-      .divTableHeader .divTableCell:nth-child(3) {
-          border-top-right-radius: 50rem;
-          border-bottom-right-radius: 50rem;
-      }
 
       .divTableBody {
           display: table-row-group;
