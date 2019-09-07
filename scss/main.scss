@@ -2,7 +2,7 @@
 @import 'vars';
 
 html {
-  background-color: black;
+  background-color: $black;
 }
 
 #mlh-trust-badge {
@@ -220,7 +220,7 @@ article.body {
       border: 3px solid white;
       // min-height: 505px;
       padding: 4rem;
-      border-radius: .8rem;
+      border-radius: 2rem;
       //margin-top: 4rem + 2rem;
       text-align: center;
       display: flex;
@@ -382,7 +382,7 @@ article.body {
       padding-bottom: 1rem;
       padding-top: 4rem;
       margin-bottom: 2rem;
-      border-bottom: 3px solid $grey;
+      border-bottom: 3px solid rgba(255, 255, 255, .1);
       background-color: transparent;
       text-align: left;
       outline: none;
@@ -407,6 +407,21 @@ article.body {
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.1s ease-out;
+    }
+  }
+
+  section.donate {
+    @extend .section;
+    $section-bg-color: #101f2b;
+    background-color: $section-bg-color;
+    color: white;
+    .caption {
+      margin-bottom: 4rem;
+    }
+    .button:hover {
+      background-color: $white;
+      color: $pink;
+      border-color: $white;
     }
   }
 
@@ -523,10 +538,11 @@ article.footer {
     color: white;
     font-size: 1.8rem;
   }
-    #footer-links{
-        font-size: 2.3rem;
-        margin-bottom:1rem;
-    }
+  #footer-links{
+      // font-size: 2.3rem;
+      color: $white;
+      margin-bottom:1rem;
+  }
 }
 
 /* Animates main section of the website */
@@ -577,7 +593,7 @@ article.footer {
   //-ms-flex: 1; /* IE 10 */
   //flex: 1;
 
-} 
+}
 
 
 @-webkit-keyframes GradientAnimation {
