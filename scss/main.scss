@@ -13,6 +13,14 @@ html {
   }
 }
 
+.donation-main {
+  max-width: 50px
+}
+
+.dono-nav {
+  background: $darker-grey;
+}
+
 .button {
   background-color: transparent;
   border: 3px solid;
@@ -56,6 +64,16 @@ html {
 
 .register-button {
   @extend .button;
+  border-color: $white;
+  &:hover {
+    background-color: $white;
+    color: $pink;
+  }
+}
+
+.dono-button {
+  @extend .button;
+  font-size: 2.5em;
   border-color: $white;
   &:hover {
     background-color: $white;
@@ -133,6 +151,36 @@ html {
   min-height: 100%;
 }
 
+.dono-heading {
+  padding-bottom: 1em;
+  font-size: 4em;
+}
+
+.dono-val {
+  font-size: 3em;
+}
+
+.dono-label {
+  padding-bottom: 2.5em;
+}
+
+.dono-thank-you {
+  magin: auto;
+}
+
+.dono-img {
+  border-radius: 5%;
+  max-width: 100%;
+  height: 300px;
+}
+
+.dono-img-2 {
+  border-radius: 5%;
+  max-width: 100%;
+  height: 300px;
+  margin-top: 5em;
+}
+
 article {
   // background-color: $bg-black;
 }
@@ -183,6 +231,12 @@ article.hero {
       margin-top: 0rem;
     }
   }
+  img.dono-1 {
+    border-radius: 50%;
+    @media (max-width: 50px) {
+      margin-top: 0rem;
+    }
+  }
 }
 
 article.body {
@@ -192,6 +246,11 @@ article.body {
   position: relative;
   z-index: 5;
   font-size: 1.8rem;
+  section.dono {
+    @extend .section;
+    background-color: $darker-grey;
+    color: $white;
+  }
   section.intro {
     @extend .section;
     .video {
@@ -318,112 +377,52 @@ article.body {
     }
   }
   section.sched {
-      @extend .section;
-      $schedule-section-bg-color: #243D49;
-      background-color: $schedule-section-bg-color;
-      color: $white;
-
-      .app {
-          max-width: 16rem;
-          margin: 0px 4px;
-          opacity: .7;
-          transition: ease all .1s;
-
-          &:hover {
-              opacity: 1;
-              transform: scale(1.05);
+    @extend .section;
+    $section-bg-color: #243D49;
+    background-color: $section-bg-color;
+    color: $white;
+    h1{
+      margin-bottom: 4rem;
+    }
+    h3 {
+      text-align: left;
+      margin-bottom: 2rem;
+    }
+    .app{
+      max-width: 16rem;
+      margin: 0px 4px;
+      opacity: .7;
+      transition: ease all .1s;
+      &:hover {
+        opacity: 1;
+        transform: scale(1.05);
+      }
+    }
+    .schedule-table {
+      margin-top: 4rem;
+      text-align: left;
+      width: 100%;
+      tr {
+        border-bottom: 2px solid $grey;
+        &.heading {
+          border: none;
+          h3 {
+            color: $lavender;
           }
-      }
-      .daybtn{
-          display:inline-block;
-          align-items:center;
-          justify-content:center;
-          width:75%;
-          font-size:3rem;
-          color:$white;
-          border-color:$pink
-      }
-      .daybtn:hover{
-          background-color:$pink
-      }
-       div.img-holder {
-        border: 3px solid $lavender;
-        background-color: $schedule-section-bg-color;
-        border-radius: 7rem;
-        position: relative;
-        left: 50%;
-        margin-left: -7rem;
-        top: -7rem - 1rem;
-        align-self: center;
-        width: 14rem;
-        height: 14rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        img {
-          width: 19rem;
-          // padding: 1rem;
+        }
+        &.subheading {
+          h3 {
+            padding-top: 6rem;
+          }
         }
       }
-      .sched-box {
-          border: 3px solid;
-          border-color: $lavender;
-          border-radius: .8rem;
+      th, td {
+        min-width: 12rem;
+        padding: 1rem;
+        // padding-right: 1rem;
+        // padding-bottom: .8rem;
       }
-      
-      .divTable {
-          display: table;
-      }
-      .divTable h1{
-          margin-left:1rem;
-      }
-      .divTableRow {
-          display: table-row;
-      }
-
-      .divTableRow .divTableCell {
-          display: table-cell;
-          padding: 2rem 2rem .3rem;
-          border-bottom: 1px solid $cyan;
-          font-weight: bold;
-          text-align:left;
-
-      }
-      #sunday{
-          display:table-row-group;
-          display: none;
-      }
-  
-      .divTableHeader .divTableCell {
-          font-size: 2.2rem;
-          font-weight: bold;
-          color: $white;
-          border-bottom: 2px solid $cyan;
-      }
-
-      
-      .divTableRow .divTableCell:first-child {
-          margin:0;
-          text-align:left;
-          padding:0;
-          padding-left:1rem;
-          width:1%;
-      }
-      .divTableRow .divTableCell.time {
-          border-right:2px solid $lavender ;
-      }
-      .divTableRow .divTableCell:nth-child(2) {
-          tex-align:left;
-          
-      }
-      .divTableRow .divTableCell:nth-child(3) {
-          text-align:center;
-      }
-
-
-      .divTableBody {
-          display: table-row-group;
-      }
+    }
   }
   section.faq {
     @extend .section;
@@ -525,10 +524,6 @@ article.body {
     .small-sponsor {
       @extend .base-sponsor;
     }
-    .gray {
-         filter: brightness(200%) grayscale(1);
-        
-        }
   }
 }
 
