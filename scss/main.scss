@@ -510,6 +510,10 @@ article.body {
     .small-sponsor {
       @extend .base-sponsor;
     }
+    .gray {
+         filter: brightness(200%) grayscale(1);
+        
+        }
   }
 }
 
