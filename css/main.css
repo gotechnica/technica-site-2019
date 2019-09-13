@@ -103,9 +103,9 @@ html {
   position: relative;
   top: 0;
   position: relative;
-  transition: all ease .15s; }
+  transition: all ease 0.15s; }
   .button:after, .register-button:after, .dono-button:after, .hero-button:after, article.contact .list-inline li a:after {
-    content: '';
+    content: "";
     width: 100%;
     height: 100%;
     position: absolute;
@@ -113,14 +113,14 @@ html {
     left: 0;
     z-index: 10;
     opacity: 0;
-    transition: ease all .15s; }
+    transition: ease all 0.15s; }
   .button:hover, .register-button:hover, .dono-button:hover, .hero-button:hover, article.contact .list-inline li a:hover {
     text-decoration: none;
     color: white; }
     .button:hover:after, .register-button:hover:after, .dono-button:hover:after, .hero-button:hover:after, article.contact .list-inline li a:hover:after {
-      opacity: .4; }
+      opacity: 0.4; }
   .button:active:after, .register-button:active:after, .dono-button:active:after, .hero-button:active:after, article.contact .list-inline li a:active:after {
-    opacity: .8; }
+    opacity: 0.8; }
 
 .register-button {
   border-color: #ffffff; }
@@ -163,7 +163,7 @@ html {
     margin-bottom: 6rem; }
   .section p, article.body section.dono p, article.body section.intro p, article.body section.registration p, article.body section.sched p, article.body section.faq p, article.body section.donate p, article.body section.sponsors p, article.contact p {
     margin-bottom: 2rem;
-    opacity: .8; }
+    opacity: 0.8; }
 
 #bg-video {
   position: absolute;
@@ -195,6 +195,9 @@ html {
 .dono-label {
   padding-bottom: 2.5em; }
 
+.dono-thank-you {
+  magin: auto; }
+
 .dono-img {
   border-radius: 5%;
   max-width: 100%;
@@ -210,9 +213,9 @@ article.hero {
   text-align: left;
   background: #ff7bac;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #ff7bac, #A5AECC, #7984A9);
+  background: -webkit-linear-gradient(to bottom, #ff7bac, #a5aecc, #7984a9);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #ff7bac, #A5AECC, #7984A9);
+  background: linear-gradient(to bottom, #ff7bac, #a5aecc, #7984a9);
   padding-top: 20rem;
   overflow: hidden;
   position: relative; }
@@ -231,9 +234,9 @@ article.hero {
     color: #ffffff;
     margin-bottom: 8rem; }
     article.hero h2 .faded {
-      opacity: .4; }
+      opacity: 0.4; }
   article.hero h4 {
-    font-family: 'Damion';
+    font-family: "Damion";
     color: #ffffff;
     margin-bottom: 4rem;
     font-size: 5rem;
@@ -261,7 +264,7 @@ article.body {
     background-color: #2d2d2d;
     color: #ffffff; }
   article.body section.intro .video {
-    border-radius: .8rem;
+    border-radius: 0.8rem;
     overflow: hidden; }
   article.body section.intro iframe {
     width: 100%;
@@ -271,7 +274,7 @@ article.body {
       article.body section.intro iframe {
         margin-top: 4rem; } }
   article.body section.registration {
-    background-color: #243D49;
+    background-color: #243d49;
     color: #ffffff; }
     article.body section.registration div.register-card {
       border: 3px solid white;
@@ -293,11 +296,11 @@ article.body {
       article.body section.registration div.register-card p {
         text-align: left; }
       article.body section.registration div.register-card .disabled {
-        opacity: .5 !important;
+        opacity: 0.5 !important;
         pointer-events: none !important; }
       article.body section.registration div.register-card div.img-holder {
         border: 3px solid white;
-        background-color: #243D49;
+        background-color: #243d49;
         border-radius: 7rem;
         position: relative;
         top: -11rem;
@@ -312,7 +315,7 @@ article.body {
           article.body section.registration div.register-card div.img-holder img.ufo {
             width: 10rem; }
       article.body section.registration div.register-card .button, article.body section.registration div.register-card .register-button, article.body section.registration div.register-card .dono-button, article.body section.registration div.register-card .hero-button, article.body section.registration div.register-card article.contact .list-inline li a, article.contact .list-inline li article.body section.registration div.register-card a {
-        padding: .8rem 0rem;
+        padding: 0.8rem 0rem;
         width: 100%;
         display: block;
         margin-bottom: 0;
@@ -349,7 +352,7 @@ article.body {
         margin-top: -8rem;
         margin-bottom: 4rem; }
   article.body section.sched {
-    background-color: #243D49;
+    background-color: #243d49;
     color: #ffffff; }
     article.body section.sched h1 {
       margin-bottom: 4rem; }
@@ -359,8 +362,8 @@ article.body {
     article.body section.sched .app {
       max-width: 16rem;
       margin: 0px 4px;
-      opacity: .7;
-      transition: ease all .1s; }
+      opacity: 0.7;
+      transition: ease all 0.1s; }
       article.body section.sched .app:hover {
         opacity: 1;
         transform: scale(1.05); }
@@ -376,10 +379,14 @@ article.body {
             color: #b6a1c4; }
         article.body section.sched .schedule-table tr.subheading h3 {
           padding-top: 6rem; }
-      article.body section.sched .schedule-table th, article.body section.sched .schedule-table td {
+      article.body section.sched .schedule-table th,
+      article.body section.sched .schedule-table td {
         min-width: 12rem;
         padding: 1rem; }
   article.body section.faq {
+    background-image: radial-gradient(white, rgba(255, 255, 255, 0.2) 2px, transparent 2px), radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 2px), radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 2px), radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent 2px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
     background-color: #122230;
     color: #ffffff; }
     article.body section.faq .heading {
@@ -398,10 +405,12 @@ article.body {
       text-align: left;
       outline: none;
       transition: ease all 0.3s; }
-    article.body section.faq .active, article.body section.faq .accordion:hover {
+    article.body section.faq .active,
+    article.body section.faq .accordion:hover {
       border-color: #00f5f5; }
       @media (max-width: 767.98px) {
-        article.body section.faq .active, article.body section.faq .accordion:hover {
+        article.body section.faq .active,
+        article.body section.faq .accordion:hover {
           border-color: #464343; } }
     @media (max-width: 767.98px) {
       article.body section.faq .accordion:active {
@@ -420,7 +429,7 @@ article.body {
       color: #ff7bac;
       border-color: #ffffff; }
   article.body section.sponsors {
-    background-color: #0D1924;
+    background-color: #0d1924;
     color: white; }
     article.body section.sponsors h1 {
       margin-bottom: 4rem; }
@@ -431,8 +440,8 @@ article.body {
       article.body section.sponsors .base-sponsor img, article.body section.sponsors .gold-sponsor img, article.body section.sponsors .silver-sponsor img, article.body section.sponsors .sponsor img, article.body section.sponsors .small-sponsor img {
         max-width: 24rem;
         max-height: 6rem;
-        opacity: .7;
-        transition: ease all .1s; }
+        opacity: 0.7;
+        transition: ease all 0.1s; }
         article.body section.sponsors .base-sponsor img:hover, article.body section.sponsors .gold-sponsor img:hover, article.body section.sponsors .silver-sponsor img:hover, article.body section.sponsors .sponsor img:hover, article.body section.sponsors .small-sponsor img:hover {
           opacity: 1;
           transform: scale(1.05); }
@@ -441,7 +450,7 @@ article.body {
       max-height: 8rem; }
 
 article.contact {
-  background-color: #070D13;
+  background-color: #070d13;
   text-align: center;
   position: relative;
   z-index: 5; }
@@ -449,7 +458,8 @@ article.contact {
     text-align: center; }
   article.contact h1 {
     margin-bottom: 4rem; }
-  article.contact h1, article.contact h2 {
+  article.contact h1,
+  article.contact h2 {
     color: #ffffff; }
   article.contact a {
     color: #00f5f5; }
@@ -473,7 +483,7 @@ article.contact {
         width: 100%;
         height: 100%; }
       article.contact .list-inline li a:hover {
-        opacity: .7; }
+        opacity: 0.7; }
       article.contact .list-inline li a i {
         font-size: 3rem;
         color: black; }
@@ -539,7 +549,7 @@ article.footer {
   display: flex;
   flex-wrap: wrap; }
 
-.row-eq-height > [class*='col-'] {
+.row-eq-height > [class*="col-"] {
   display: flex;
   flex-direction: column; }
 
