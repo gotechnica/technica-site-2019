@@ -256,8 +256,6 @@ article.hero {
   right: 0;
   top: 0;
 }
-// Uncomment for moving stars!
-/*
 @keyframes space {
   40% {
     opacity: 0.75;
@@ -272,7 +270,6 @@ article.hero {
     transform: rotate(360deg);
   }
 }
-*/
 .stars1 {
   animation: space 180s ease-in-out infinite;
   background-image: radial-gradient(
