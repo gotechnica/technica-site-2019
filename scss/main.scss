@@ -248,6 +248,71 @@ article.hero {
   }
 }
 
+.space {
+  background: transparent center / 200px 200px round;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+// Uncomment for moving stars!
+/*
+@keyframes space {
+  40% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  60% {
+    opacity: 0.75;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+*/
+.stars1 {
+  animation: space 180s ease-in-out infinite;
+  background-image: radial-gradient(
+        1px 1px at 25px 5px,
+        white,
+        rgba(255, 255, 255, 0)
+      )
+      radial-gradient(1px 1px at 50px 25px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(1px 1px at 125px 20px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(1.5px 1.5px at 50px 75px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(2px 2px at 15px 125px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(2.5px 2.5px at 110px 80px, white, rgba(255, 255, 255, 0));
+}
+.stars2 {
+  animation: space 240s ease-in-out infinite;
+  background-image: radial-gradient(
+      1px 1px at 75px 125px,
+      white,
+      rgba(255, 255, 255, 0)
+    ),
+    radial-gradient(1px 1px at 100px 75px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(1.5px 1.5px at 199px 100px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(2px 2px at 20px 50px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(2.5px 2.5px at 100px 5px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(2.5px 2.5px at 5px 5px, white, rgba(255, 255, 255, 0));
+}
+.stars3 {
+  animation: space 300s ease-in-out infinite;
+  background-image: radial-gradient(
+      1px 1px at 10px 10px,
+      white,
+      rgba(255, 255, 255, 0)
+    ),
+    radial-gradient(1px 1px at 150px 150px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(1.5px 1.5px at 60px 170px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(1.5px 1.5px at 175px 180px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(2px 2px at 195px 95px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(2.5px 2.5px at 95px 145px, white, rgba(255, 255, 255, 0));
+}
+
 article.body {
   color: $grey;
   background-color: $white;
@@ -443,20 +508,6 @@ article.body {
       @return unquote($value);
     }
     @extend .section;
-    background-image: radial-gradient(
-        white,
-        rgba(255, 255, 255, 0.2) 2px,
-        transparent 2px
-      ),
-      radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 2px),
-      radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 2px),
-      radial-gradient(
-        rgba(255, 255, 255, 0.4),
-        rgba(255, 255, 255, 0.1) 2px,
-        transparent 2px
-      );
-    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
-    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
     background-color: #122230;
     color: $white;
     .heading {
