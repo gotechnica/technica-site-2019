@@ -90,6 +90,9 @@ html {
 .dono-nav {
   background: #2d2d2d; }
 
+.sponsor-img {
+  filter: brightness(200%) grayscale(1); }
+
 .button, .register-button, .dono-button, .hero-button, article.contact .list-inline li a {
   background-color: transparent;
   border: 3px solid;
@@ -194,6 +197,9 @@ html {
 
 .dono-label {
   padding-bottom: 2.5em; }
+
+.dono-thank-you {
+  magin: auto; }
 
 .dono-img {
   border-radius: 5%;

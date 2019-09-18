@@ -21,6 +21,10 @@ html {
   background: $darker-grey;
 }
 
+.sponsor-img {
+  filter: brightness(200%) grayscale(1);
+}
+
 .button {
   background-color: transparent;
   border: 3px solid;
