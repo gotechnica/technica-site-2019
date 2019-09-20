@@ -138,6 +138,25 @@ html {
     background-color: #ffffff;
     color: #ff7bac; }
 
+.star-layer {
+  position: relative;
+  z-index: 0; }
+
+.hero-stars {
+  position: absolute;
+  z-index: -5;
+  width: 180%;
+  height: 280%;
+  margin-top: -80em;
+  margin-left: -8em; }
+  @media (max-width: 992px) {
+    .hero-stars {
+      z-index: -5;
+      width: 240%;
+      margin-top: -85rem;
+      margin-left: -25em;
+      padding-bottom: 18em; } }
+
 @media (max-width: 780px) {
   .hero-btn-row .hero-button {
     display: block;
