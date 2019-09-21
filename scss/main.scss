@@ -16,7 +16,6 @@ html {
 .donation-main {
   max-width: 50px
 }
-
 .dono-nav {
   background: $darker-grey;
 }
@@ -175,10 +174,23 @@ html {
   min-width: 100%;
   min-height: 100%;
 }
-
+.lavender{
+    color:$lavender;
+}
+.cyan{
+    color:$cyan;
+    color:$cyan;
+}
 .dono-heading {
   padding-bottom: 1em;
   font-size: 4em;
+    color:$pink;
+    margin-botton:3rem;
+}
+.main-dono-head{
+    color:$white;
+    font-size:2.5em;
+    font-weight: 650 !important;
 }
 
 .dono-val {
@@ -204,6 +216,9 @@ html {
   max-width: 100%;
   height: 300px;
   margin-top: 5em;
+}
+.white{
+    color:$white;
 }
 
 article {
@@ -508,6 +523,8 @@ article.body {
       border-color: $white;
     }
   }
+    
+    
 
   section.sponsors {
     @extend .section;
@@ -550,7 +567,186 @@ article.body {
       @extend .base-sponsor;
     }
   }
+    
+    
 }
+
+section.dono{
+    @extend .section;
+    div.register-card {
+      border: 3px solid white;
+      // min-height: 505px;
+      padding: 1rem;
+      border-radius: 2rem;
+      //margin-top: 4rem + 2rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      -webkit-flex: 1; /* Safari 6.1+ */
+      -ms-flex: 1; /* IE 10 */
+      flex: 1;
+
+      @media (max-width: 992px) {
+        margin-bottom: 12rem;
+        &.last {
+          margin-bottom: 4rem;
+        }
+      }
+        heading{
+            color:$pink;
+        }
+      p {
+        text-align: left;
+      }
+      
+      .disabled {
+        opacity: .5 !important;
+        pointer-events: none !important;
+      }
+      div.img-holder {
+        background-color: $darker-grey;
+        border: 3px solid white;
+        border-radius: 7rem;
+        position: relative;
+        top: -7rem - 4rem;
+        align-self: center;
+        width: 14rem;
+        height: 14rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 8rem;
+          // padding: 1rem;
+          &.ufo {
+            width: 10rem;
+          }
+        }
+      }
+        .dono-prices{
+            padding-left:3rem;
+            padding-right:3rem;
+        }
+        
+        .cyan-text{
+            color:$cyan;
+        }
+         .pink-text{
+            color:$pink;
+        }
+
+         .lavender-text{
+            color:$lavender;
+        }
+
+
+      .button {
+        padding: .8rem 0rem;
+        width: 100%;
+        display: block;
+        margin-bottom: 0;
+        margin-top: auto;
+        background-color: transparent;
+      }
+      &.cyan {
+        display: flex;
+        border-color: $cyan;
+        .img-holder {
+          border-color: $cyan;
+        }
+        a {
+          border-color: $cyan;
+          &:hover {
+            background-color: $cyan;
+          }
+        }
+      }
+      &.lavender {
+        margin-left:1.5rem;
+        margin-right:1.5rem;
+        display: flex;
+        border-color: $lavender;
+        .img-holder {
+          border-color: $lavender;
+        }
+        a {
+          border-color: $lavender;
+          &:hover {
+            background-color: $lavender;
+          }
+        }
+      }
+      &.pink {
+        display: flex;
+        border-color: $pink;
+        .img-holder {
+          border-color: $pink;
+        }
+        a {
+          border-color: $pink;
+          &:hover {
+            background-color: $pink;
+          }
+        }
+      }
+      p {
+        margin-top: -8rem;
+        margin-bottom: 4rem;
+      }
+    }
+  }
+
+  section.sched {
+    @extend .section;
+    $section-bg-color: #243D49;
+    background-color: $section-bg-color;
+    color: $white;
+    h1{
+      margin-bottom: 4rem;
+    }
+    h3 {
+      text-align: left;
+      margin-bottom: 2rem;
+    }
+    .app{
+      max-width: 16rem;
+      margin: 0px 4px;
+      opacity: .7;
+      transition: ease all .1s;
+      &:hover {
+        opacity: 1;
+        transform: scale(1.05);
+      }
+    }
+    .schedule-table {
+      margin-top: 4rem;
+      text-align: left;
+      width: 100%;
+      tr {
+        border-bottom: 2px solid $grey;
+        &.heading {
+          border: none;
+          h3 {
+            color: $lavender;
+          }
+        }
+        &.subheading {
+          h3 {
+            padding-top: 6rem;
+          }
+        }
+      }
+      th, td {
+        min-width: 12rem;
+        padding: 1rem;
+        // padding-right: 1rem;
+        // padding-bottom: .8rem;
+      }
+    }
+    
+    
+}
+
 
 article.contact {
   @extend .section;
