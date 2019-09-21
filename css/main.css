@@ -171,19 +171,19 @@ html {
   border-bottom: 2px solid #00f5f5;
   margin: 0 1.5rem; }
 
-.section, article.body section.dono, article.body section.intro, article.body section.registration, article.body section.sched, article.body section.faq, article.body section.donate, article.body section.sponsors, article.contact {
+.section, article.body section.dono, article.body section.intro, article.body section.registration, article.body section.sched, article.body section.faq, article.body section.donate, article.body section.sponsors, section.dono, section.sched, article.contact {
   padding-top: 8rem;
   padding-bottom: 8rem; }
   @media (max-width: 767.98px) {
-    .section, article.body section.dono, article.body section.intro, article.body section.registration, article.body section.sched, article.body section.faq, article.body section.donate, article.body section.sponsors, article.contact {
+    .section, article.body section.dono, article.body section.intro, article.body section.registration, article.body section.sched, article.body section.faq, article.body section.donate, article.body section.sponsors, section.dono, section.sched, article.contact {
       padding-top: 4rem;
       padding-bottom: 4rem; } }
-  .section .heading, article.body section.dono .heading, article.body section.intro .heading, article.body section.registration .heading, article.body section.sched .heading, article.body section.faq .heading, article.body section.donate .heading, article.body section.sponsors .heading, article.contact .heading {
+  .section .heading, article.body section.dono .heading, article.body section.intro .heading, article.body section.registration .heading, article.body section.sched .heading, article.body section.faq .heading, article.body section.donate .heading, article.body section.sponsors .heading, section.dono .heading, section.sched .heading, article.contact .heading {
     text-align: left;
     position: relative;
     z-index: 0;
     margin-bottom: 6rem; }
-  .section p, article.body section.dono p, article.body section.intro p, article.body section.registration p, article.body section.sched p, article.body section.faq p, article.body section.donate p, article.body section.sponsors p, article.contact p {
+  .section p, article.body section.dono p, article.body section.intro p, article.body section.registration p, article.body section.sched p, article.body section.faq p, article.body section.donate p, article.body section.sponsors p, section.dono p, section.sched p, article.contact p {
     margin-bottom: 2rem;
     opacity: .8; }
 
@@ -207,9 +207,23 @@ html {
   min-width: 100%;
   min-height: 100%; }
 
+.lavender {
+  color: #b6a1c4; }
+
+.cyan {
+  color: #00f5f5;
+  color: #00f5f5; }
+
 .dono-heading {
   padding-bottom: 1em;
-  font-size: 4em; }
+  font-size: 4em;
+  color: #ff7bac;
+  margin-botton: 3rem; }
+
+.main-dono-head {
+  color: #ffffff;
+  font-size: 2.5em;
+  font-weight: 650 !important; }
 
 .dono-val {
   font-size: 3em; }
@@ -230,6 +244,9 @@ html {
   max-width: 100%;
   height: 300px;
   margin-top: 5em; }
+
+.white {
+  color: #ffffff; }
 
 article.hero {
   text-align: left;
@@ -464,6 +481,127 @@ article.body {
     article.body section.sponsors .gold-sponsor img {
       max-width: 28rem;
       max-height: 8rem; }
+
+section.dono div.register-card {
+  border: 3px solid white;
+  padding: 1rem;
+  border-radius: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  -webkit-flex: 1;
+  /* Safari 6.1+ */
+  -ms-flex: 1;
+  /* IE 10 */
+  flex: 1; }
+  @media (max-width: 992px) {
+    section.dono div.register-card {
+      margin-bottom: 12rem; }
+      section.dono div.register-card.last {
+        margin-bottom: 4rem; } }
+  section.dono div.register-card heading {
+    color: #ff7bac; }
+  section.dono div.register-card p {
+    text-align: left; }
+  section.dono div.register-card .disabled {
+    opacity: .5 !important;
+    pointer-events: none !important; }
+  section.dono div.register-card div.img-holder {
+    background-color: #2d2d2d;
+    border: 3px solid white;
+    border-radius: 7rem;
+    position: relative;
+    top: -11rem;
+    align-self: center;
+    width: 14rem;
+    height: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    section.dono div.register-card div.img-holder img {
+      width: 8rem; }
+      section.dono div.register-card div.img-holder img.ufo {
+        width: 10rem; }
+  section.dono div.register-card .dono-prices {
+    padding-left: 3rem;
+    padding-right: 3rem; }
+  section.dono div.register-card .cyan-text {
+    color: #00f5f5; }
+  section.dono div.register-card .pink-text {
+    color: #ff7bac; }
+  section.dono div.register-card .lavender-text {
+    color: #b6a1c4; }
+  section.dono div.register-card .button, section.dono div.register-card .register-button, section.dono div.register-card .dono-button, section.dono div.register-card .hero-button, section.dono div.register-card article.contact .list-inline li a, article.contact .list-inline li section.dono div.register-card a {
+    padding: .8rem 0rem;
+    width: 100%;
+    display: block;
+    margin-bottom: 0;
+    margin-top: auto;
+    background-color: transparent; }
+  section.dono div.register-card.cyan {
+    display: flex;
+    border-color: #00f5f5; }
+    section.dono div.register-card.cyan .img-holder {
+      border-color: #00f5f5; }
+    section.dono div.register-card.cyan a {
+      border-color: #00f5f5; }
+      section.dono div.register-card.cyan a:hover {
+        background-color: #00f5f5; }
+  section.dono div.register-card.lavender {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    display: flex;
+    border-color: #b6a1c4; }
+    section.dono div.register-card.lavender .img-holder {
+      border-color: #b6a1c4; }
+    section.dono div.register-card.lavender a {
+      border-color: #b6a1c4; }
+      section.dono div.register-card.lavender a:hover {
+        background-color: #b6a1c4; }
+  section.dono div.register-card.pink {
+    display: flex;
+    border-color: #ff7bac; }
+    section.dono div.register-card.pink .img-holder {
+      border-color: #ff7bac; }
+    section.dono div.register-card.pink a {
+      border-color: #ff7bac; }
+      section.dono div.register-card.pink a:hover {
+        background-color: #ff7bac; }
+  section.dono div.register-card p {
+    margin-top: -8rem;
+    margin-bottom: 4rem; }
+
+section.sched {
+  background-color: #243D49;
+  color: #ffffff; }
+  section.sched h1 {
+    margin-bottom: 4rem; }
+  section.sched h3 {
+    text-align: left;
+    margin-bottom: 2rem; }
+  section.sched .app {
+    max-width: 16rem;
+    margin: 0px 4px;
+    opacity: .7;
+    transition: ease all .1s; }
+    section.sched .app:hover {
+      opacity: 1;
+      transform: scale(1.05); }
+  section.sched .schedule-table {
+    margin-top: 4rem;
+    text-align: left;
+    width: 100%; }
+    section.sched .schedule-table tr {
+      border-bottom: 2px solid #464343; }
+      section.sched .schedule-table tr.heading {
+        border: none; }
+        section.sched .schedule-table tr.heading h3 {
+          color: #b6a1c4; }
+      section.sched .schedule-table tr.subheading h3 {
+        padding-top: 6rem; }
+    section.sched .schedule-table th, section.sched .schedule-table td {
+      min-width: 12rem;
+      padding: 1rem; }
 
 article.contact {
   background-color: #070D13;
