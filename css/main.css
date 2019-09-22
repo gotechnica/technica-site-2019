@@ -464,6 +464,26 @@ article.body {
     article.body section.sponsors .gold-sponsor img {
       max-width: 28rem;
       max-height: 8rem; }
+    article.body section.sponsors .accordion {
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      border: none;
+      padding-bottom: 1rem;
+      padding-top: 4rem;
+      margin-bottom: 2rem;
+      border-bottom: 3px solid rgba(255, 255, 255, 0.1);
+      background-color: transparent;
+      text-align: left;
+      outline: none;
+      transition: ease all 0.3s; }
+    article.body section.sponsors .active, article.body section.sponsors .accordion:hover {
+      border-color: #00f5f5; }
+    article.body section.sponsors .panel {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.1s ease-out; }
 
 article.contact {
   background-color: #070D13;
