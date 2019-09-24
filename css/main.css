@@ -466,8 +466,34 @@ article.body {
     color: white; }
     article.body section.sponsors h1 {
       margin-bottom: 4rem; }
+    article.body section.sponsors img.site-stars {
+      position: absolute;
+      overflow: hidden;
+      justify-content: left;
+      margin-left: -5%; }
+    article.body section.sponsors img.blueplanet {
+      position: relative;
+      width: 25%;
+      left: -50%;
+      margin-top: -15%;
+      top: 10%; }
+      @media (max-width: 500px) {
+        article.body section.sponsors img.blueplanet {
+          margin-left: -60%;
+          margin-top: -30%; } }
+    article.body section.sponsors img.purpleplanet {
+      position: relative;
+      width: 20%;
+      left: 50%;
+      margin-top: -50%;
+      margin-left: -25%; }
+      @media (max-width: 500px) {
+        article.body section.sponsors img.purpleplanet {
+          margin-top: 0rem; } }
     article.body section.sponsors .caption {
-      margin-bottom: 4rem; }
+      position: relative;
+      margin-bottom: 4rem;
+      z-index: 100; }
     article.body section.sponsors .base-sponsor, article.body section.sponsors .gold-sponsor, article.body section.sponsors .silver-sponsor, article.body section.sponsors .sponsor, article.body section.sponsors .small-sponsor {
       padding: 4rem 0rem; }
       article.body section.sponsors .base-sponsor img, article.body section.sponsors .gold-sponsor img, article.body section.sponsors .silver-sponsor img, article.body section.sponsors .sponsor img, article.body section.sponsors .small-sponsor img {
