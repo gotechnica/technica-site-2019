@@ -209,6 +209,10 @@ html {
   border-radius: 5%;
   max-width: 100%;
   height: 300px;
+  background-image: url(../img/donation_page/donation-1.jpg);
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
 }
 
 .dono-img-2 {
@@ -216,6 +220,10 @@ html {
   max-width: 100%;
   height: 300px;
   margin-top: 5em;
+  background-image: url(../img/donation_page/donation-2.jpg);
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
 }
 .white{
     color:$white;
@@ -314,6 +322,8 @@ article.body {
     @extend .section;
     $registration-section-bg-color: #243D49;
     background-color: $registration-section-bg-color;
+    background: -webkit-linear-gradient(to bottom, #66A4B3, #192E3A); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #66A4B3, #192E3A);
     color: $white;
     div.register-card {
       border: 3px solid white;
@@ -467,6 +477,8 @@ article.body {
   section.faq {
     @extend .section;
     background-color: #122230;
+    background: -webkit-linear-gradient(to bottom, #192E3A, #12202B); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #192E3A, #12202B);
     color: $white;
     .heading {
       margin-bottom: 6rem - 4rem;
@@ -525,11 +537,15 @@ article.body {
   }
     
     
+    
 
   section.sponsors {
     @extend .section;
     $section-bg-color: #0D1924;
     background-color: $section-bg-color;
+    background: -webkit-linear-gradient(to bottom, #12202B, #1C1F22); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #12202B, #1C1F22);
+    
     color: white;
     h1 {
       margin-bottom: 4rem;
@@ -627,7 +643,7 @@ section.dono{
             padding-left:3rem;
             padding-right:3rem;
         }
-        
+       
         .cyan-text{
             color:$cyan;
         }
