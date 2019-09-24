@@ -373,6 +373,7 @@ article.body {
         background-color: transparent; }
       article.body section.registration div.register-card.cyan {
         display: flex;
+        text: white;
         border-color: #00f5f5; }
         article.body section.registration div.register-card.cyan .img-holder {
           border-color: #00f5f5; }
@@ -399,6 +400,7 @@ article.body {
           article.body section.registration div.register-card.pink a:hover {
             background-color: #ff7bac; }
       article.body section.registration div.register-card p {
+        color: white;
         margin-top: -8rem;
         margin-bottom: 4rem; }
   article.body section.sched {

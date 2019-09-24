@@ -383,6 +383,7 @@ article.body {
       }
       &.cyan {
         display: flex;
+          text:white;
         border-color: $cyan;
         .img-holder {
           border-color: $cyan;
@@ -421,6 +422,7 @@ article.body {
         }
       }
       p {
+          color:white;
         margin-top: -8rem;
         margin-bottom: 4rem;
       }
