@@ -237,13 +237,21 @@ html {
 .dono-img {
   border-radius: 5%;
   max-width: 100%;
-  height: 300px; }
+  height: 300px;
+  background-image: url(../img/donation_page/donation-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
 
 .dono-img-2 {
   border-radius: 5%;
   max-width: 100%;
   height: 300px;
-  margin-top: 5em; }
+  margin-top: 5em;
+  background-image: url(../img/donation_page/donation-2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
 
 .white {
   color: #ffffff; }
@@ -314,6 +322,9 @@ article.body {
         margin-top: 4rem; } }
   article.body section.registration {
     background-color: #243D49;
+    background: -webkit-linear-gradient(to bottom, #66A4B3, #192E3A);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #66A4B3, #192E3A);
     color: #ffffff; }
     article.body section.registration div.register-card {
       border: 3px solid white;
@@ -362,6 +373,7 @@ article.body {
         background-color: transparent; }
       article.body section.registration div.register-card.cyan {
         display: flex;
+        text: white;
         border-color: #00f5f5; }
         article.body section.registration div.register-card.cyan .img-holder {
           border-color: #00f5f5; }
@@ -388,6 +400,7 @@ article.body {
           article.body section.registration div.register-card.pink a:hover {
             background-color: #ff7bac; }
       article.body section.registration div.register-card p {
+        color: white;
         margin-top: -8rem;
         margin-bottom: 4rem; }
   article.body section.sched {
@@ -423,6 +436,9 @@ article.body {
         padding: 1rem; }
   article.body section.faq {
     background-color: #122230;
+    background: -webkit-linear-gradient(to bottom, #192E3A, #12202B);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #192E3A, #12202B);
     color: #ffffff; }
     article.body section.faq .heading {
       margin-bottom: 2rem; }
@@ -463,6 +479,9 @@ article.body {
       border-color: #ffffff; }
   article.body section.sponsors {
     background-color: #0D1924;
+    background: -webkit-linear-gradient(to bottom, #12202B, #1C1F22);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #12202B, #1C1F22);
     color: white; }
     article.body section.sponsors h1 {
       margin-bottom: 4rem; }
