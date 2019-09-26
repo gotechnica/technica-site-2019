@@ -560,31 +560,13 @@ article.body {
       padding-bottom: 1rem;
       padding-top: 4rem;
       margin-bottom: 2rem;
-      border-bottom: 3px solid rgba(255, 255, 255, .1);
+      //border-bottom: 3px solid rgba(255, 255, 255, .1);
       background-color: transparent;
+      border-bottom: 3px solid $cyan; // rgba(0, 255, 255, .8); //
       text-align: left;
       outline: none;
       transition: ease all 0.3s;
-    }
 
-    .active, .accordion:hover {
-      // background-color: #ccc;
-      border-color: $cyan;
-      //@media (max-width: 767.98px) {
-      //  border-color: $grey;
-      //}
-    }
-
-    .accordion:active {
-      //@media (max-width: 767.98px) {
-      //  border-color: $cyan;
-      //}
-    }
-
-    .panel {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.1s ease-out;
     }
   }
 }
