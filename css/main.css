@@ -471,7 +471,7 @@ article.body {
     background-color: #101f2b;
     color: white; }
     article.body section.donate .caption {
-      margin-top: 4rem;
+      margin-top: 2.5rem;
       margin-bottom: 4rem; }
     article.body section.donate .button:hover, article.body section.donate .register-button:hover, article.body section.donate .dono-button:hover, article.body section.donate .hero-button:hover, article.body section.donate article.contact .list-inline li a:hover, article.contact .list-inline li article.body section.donate a:hover {
       background-color: #ffffff;
