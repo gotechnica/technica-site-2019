@@ -81,6 +81,17 @@ html {
   }
 }
 
+img.hero-stars {
+  position: absolute;
+  top: -60px;
+}
+
+.header {
+  position: relative;
+  z-index: 1;
+  padding-top: 20rem;
+}
+
 .hero-btn-row {
   @media (max-width: 780px) {
     .hero-button {
@@ -201,7 +212,7 @@ article.hero {
     $deep-sky
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom, $pink, $med-sky, $deep-sky);
-  padding-top: 20rem;
+  //padding-top: 20rem;
   // padding-bottom: 22rem;
   overflow: hidden;
   position: relative;
@@ -234,6 +245,8 @@ article.hero {
     font-weight: normal;
   }
   img.rocket {
+    position: relative;
+    z-index: 100;
     width: 100%;
     margin-top: -16rem;
     @media (max-width: 992px) {
@@ -271,6 +284,7 @@ article.hero {
   }
 }
 .stars1 {
+  z-index: 5;
   animation: space 180s ease-in-out infinite;
   background-image: radial-gradient(
         1px 1px at 25px 5px,
@@ -284,6 +298,7 @@ article.hero {
     radial-gradient(2.5px 2.5px at 110px 80px, white, rgba(255, 255, 255, 0));
 }
 .stars2 {
+  z-index: 5;
   animation: space 240s ease-in-out infinite;
   background-image: radial-gradient(
       1px 1px at 75px 125px,
@@ -297,6 +312,7 @@ article.hero {
     radial-gradient(2.5px 2.5px at 5px 5px, white, rgba(255, 255, 255, 0));
 }
 .stars3 {
+  z-index: 5;
   animation: space 300s ease-in-out infinite;
   background-image: radial-gradient(
       1px 1px at 10px 10px,
