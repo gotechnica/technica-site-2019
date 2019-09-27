@@ -503,6 +503,20 @@ article.body {
     article.body section.sponsors .gold-sponsor img {
       max-width: 28rem;
       max-height: 8rem; }
+    article.body section.sponsors .accordion {
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      border: none;
+      padding-bottom: 1rem;
+      padding-top: 4rem;
+      margin-bottom: 2rem;
+      background-color: transparent;
+      border-bottom: 3px solid #00f5f5;
+      text-align: left;
+      outline: none;
+      transition: ease all 0.3s; }
 
 section.dono div.register-card {
   border: 3px solid white;

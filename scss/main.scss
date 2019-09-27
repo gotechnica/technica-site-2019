@@ -589,6 +589,25 @@ article.body {
     .small-sponsor {
       @extend .base-sponsor;
     }
+
+    .accordion {
+      cursor: pointer;
+      // padding: 18px;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      border: none;
+      padding-bottom: 1rem;
+      padding-top: 4rem;
+      margin-bottom: 2rem;
+      //border-bottom: 3px solid rgba(255, 255, 255, .1);
+      background-color: transparent;
+      border-bottom: 3px solid $cyan; // rgba(0, 255, 255, .8); //
+      text-align: left;
+      outline: none;
+      transition: ease all 0.3s;
+
+    }
   }
     
     
