@@ -504,7 +504,6 @@ article.body {
       max-width: 28rem;
       max-height: 8rem; }
     article.body section.sponsors .accordion {
-      cursor: pointer;
       display: flex;
       justify-content: space-between;
       width: 100%;
