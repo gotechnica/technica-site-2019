@@ -325,11 +325,17 @@ article.body {
     background: -webkit-linear-gradient(to bottom, #66A4B3, #192E3A); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #66A4B3, #192E3A);
     color: $white;
+      
+      .col-lg-3{
+         padding:.5rem; 
+      }
     div.register-card {
+      font-size:1.5rem !important;
       border: 3px solid white;
       // min-height: 505px;
-      padding: 4rem;
+      padding: 2.5rem;
       border-radius: 2rem;
+        
       //margin-top: 4rem + 2rem;
       text-align: center;
       display: flex;
@@ -340,9 +346,6 @@ article.body {
 
       @media (max-width: 992px) {
         margin-bottom: 12rem;
-        &.last {
-          margin-bottom: 4rem;
-        }
       }
 
       p {
@@ -380,6 +383,8 @@ article.body {
         margin-bottom: 0;
         margin-top: auto;
         background-color: transparent;
+        border-radius:5%;
+        font-size:1.5rem;
       }
       &.cyan {
         display: flex;

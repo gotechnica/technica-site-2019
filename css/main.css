@@ -326,9 +326,12 @@ article.body {
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #66A4B3, #192E3A);
     color: #ffffff; }
+    article.body section.registration .col-lg-3 {
+      padding: .5rem; }
     article.body section.registration div.register-card {
+      font-size: 1.5rem !important;
       border: 3px solid white;
-      padding: 4rem;
+      padding: 2.5rem;
       border-radius: 2rem;
       text-align: center;
       display: flex;
@@ -340,9 +343,7 @@ article.body {
       flex: 1; }
       @media (max-width: 992px) {
         article.body section.registration div.register-card {
-          margin-bottom: 12rem; }
-          article.body section.registration div.register-card.last {
-            margin-bottom: 4rem; } }
+          margin-bottom: 12rem; } }
       article.body section.registration div.register-card p {
         text-align: left; }
       article.body section.registration div.register-card .disabled {
@@ -370,7 +371,9 @@ article.body {
         display: block;
         margin-bottom: 0;
         margin-top: auto;
-        background-color: transparent; }
+        background-color: transparent;
+        border-radius: 5%;
+        font-size: 1.5rem; }
       article.body section.registration div.register-card.cyan {
         display: flex;
         text: white;
