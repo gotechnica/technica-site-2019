@@ -16,7 +16,6 @@ html {
 .donation-main {
   max-width: 50px
 }
-
 .dono-nav {
   background: $darker-grey;
 }
@@ -105,7 +104,6 @@ html {
     padding-bottom: 18em;
   }
 }
-
 
 .hero-btn-row {
   @media (max-width: 780px) {
@@ -197,9 +195,24 @@ html {
 
 }
 
+.lavender{
+    color:$lavender;
+}
+.cyan{
+    color:$cyan;
+    color:$cyan;
+}
+
 .dono-heading {
   padding-bottom: 1em;
   font-size: 4em;
+    color:$pink;
+    margin-botton:3rem;
+}
+.main-dono-head{
+    color:$white;
+    font-size:2.5em;
+    font-weight: 650 !important;
 }
 
 .dono-val {
@@ -218,6 +231,10 @@ html {
   border-radius: 5%;
   max-width: 100%;
   height: 300px;
+  background-image: url(../img/donation_page/donation-1.jpg);
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
 }
 
 .dono-img-2 {
@@ -225,6 +242,13 @@ html {
   max-width: 100%;
   height: 300px;
   margin-top: 5em;
+  background-image: url(../img/donation_page/donation-2.jpg);
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+.white{
+    color:$white;
 }
 
 article {
@@ -320,12 +344,20 @@ article.body {
     @extend .section;
     $registration-section-bg-color: #243D49;
     background-color: $registration-section-bg-color;
+    background: -webkit-linear-gradient(to bottom, #66A4B3, #192E3A); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #66A4B3, #192E3A);
     color: $white;
+      
+      .col-lg-3{
+         padding:.5rem; 
+      }
     div.register-card {
+      font-size:1.5rem !important;
       border: 3px solid white;
       // min-height: 505px;
-      padding: 4rem;
+      padding: 2.5rem;
       border-radius: 2rem;
+        
       //margin-top: 4rem + 2rem;
       text-align: center;
       display: flex;
@@ -336,9 +368,6 @@ article.body {
 
       @media (max-width: 992px) {
         margin-bottom: 12rem;
-        &.last {
-          margin-bottom: 4rem;
-        }
       }
 
       p {
@@ -376,9 +405,12 @@ article.body {
         margin-bottom: 0;
         margin-top: auto;
         background-color: transparent;
+        border-radius:5%;
+        font-size:1.5rem;
       }
       &.cyan {
         display: flex;
+          text:white;
         border-color: $cyan;
         .img-holder {
           border-color: $cyan;
@@ -417,6 +449,7 @@ article.body {
         }
       }
       p {
+          color:white;
         margin-top: -8rem;
         margin-bottom: 4rem;
       }
@@ -473,6 +506,8 @@ article.body {
   section.faq {
     @extend .section;
     background-color: #122230;
+    background: -webkit-linear-gradient(to bottom, #192E3A, #12202B); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #192E3A, #12202B);
     color: $white;
     .heading {
       margin-bottom: 6rem - 4rem;
@@ -529,51 +564,23 @@ article.body {
       border-color: $white;
     }
   }
-
+    
+    
+    
 
   section.sponsors {
     @extend .section;
     $section-bg-color: #0D1924;
     background-color: $section-bg-color;
+    background: -webkit-linear-gradient(to bottom, #12202B, #1C1F22); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #12202B, #1C1F22);
+    
     color: white;
     h1 {
       margin-bottom: 4rem;
     }
-    img.site-stars {
-      position: absolute;
-      overflow: hidden;
-      justify-content: left;
-      margin-left: -5%;
-    }
-
-    img.blueplanet {
-      position: relative;
-      width: 25%;
-      left: -50%;
-      margin-top: -15%;
-      top: 10%;
-
-      @media (max-width: 500px) {
-        margin-left: -60%;
-        margin-top: -30%;
-      }
-    }
-
-    img.purpleplanet {
-      position: relative;
-      width: 20%;
-      left: 50%;
-      margin-top: -50%;
-      margin-left: -25%;
-      @media (max-width: 500px) {
-        margin-top: 0rem;
-      }
-    }
-
     .caption {
-      position: relative;
       margin-bottom: 4rem;
-      z-index: 100;
     }
     .base-sponsor {
       padding: 4rem 0rem;
@@ -604,8 +611,202 @@ article.body {
     .small-sponsor {
       @extend .base-sponsor;
     }
+
+    .accordion {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      border: none;
+      padding-bottom: 1rem;
+      padding-top: 4rem;
+      margin-bottom: 2rem;
+      background-color: transparent;
+      border-bottom: 3px solid $cyan;
+      text-align: left;
+      outline: none;
+      transition: ease all 0.3s;
+    }
   }
+    
+    
 }
+
+section.dono{
+    @extend .section;
+    div.register-card {
+      border: 3px solid white;
+      // min-height: 505px;
+      padding: 1rem;
+      border-radius: 2rem;
+      //margin-top: 4rem + 2rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      -webkit-flex: 1; /* Safari 6.1+ */
+      -ms-flex: 1; /* IE 10 */
+      flex: 1;
+
+      @media (max-width: 992px) {
+        margin-bottom: 12rem;
+        &.last {
+          margin-bottom: 4rem;
+        }
+      }
+        heading{
+            color:$pink;
+        }
+      p {
+        text-align: left;
+      }
+      
+      .disabled {
+        opacity: .5 !important;
+        pointer-events: none !important;
+      }
+      div.img-holder {
+        background-color: $darker-grey;
+        border: 3px solid white;
+        border-radius: 7rem;
+        position: relative;
+        top: -7rem - 4rem;
+        align-self: center;
+        width: 14rem;
+        height: 14rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 8rem;
+          // padding: 1rem;
+          &.ufo {
+            width: 10rem;
+          }
+        }
+      }
+        .dono-prices{
+            padding-left:3rem;
+            padding-right:3rem;
+        }
+       
+        .cyan-text{
+            color:$cyan;
+        }
+         .pink-text{
+            color:$pink;
+        }
+
+         .lavender-text{
+            color:$lavender;
+        }
+
+
+      .button {
+        padding: .8rem 0rem;
+        width: 100%;
+        display: block;
+        margin-bottom: 0;
+        margin-top: auto;
+        background-color: transparent;
+      }
+      &.cyan {
+        display: flex;
+        border-color: $cyan;
+        .img-holder {
+          border-color: $cyan;
+        }
+        a {
+          border-color: $cyan;
+          &:hover {
+            background-color: $cyan;
+          }
+        }
+      }
+      &.lavender {
+        margin-left:1.5rem;
+        margin-right:1.5rem;
+        display: flex;
+        border-color: $lavender;
+        .img-holder {
+          border-color: $lavender;
+        }
+        a {
+          border-color: $lavender;
+          &:hover {
+            background-color: $lavender;
+          }
+        }
+      }
+      &.pink {
+        display: flex;
+        border-color: $pink;
+        .img-holder {
+          border-color: $pink;
+        }
+        a {
+          border-color: $pink;
+          &:hover {
+            background-color: $pink;
+          }
+        }
+      }
+      p {
+        margin-top: -8rem;
+        margin-bottom: 4rem;
+      }
+    }
+  }
+
+  section.sched {
+    @extend .section;
+    $section-bg-color: #243D49;
+    background-color: $section-bg-color;
+    color: $white;
+    h1{
+      margin-bottom: 4rem;
+    }
+    h3 {
+      text-align: left;
+      margin-bottom: 2rem;
+    }
+    .app{
+      max-width: 16rem;
+      margin: 0px 4px;
+      opacity: .7;
+      transition: ease all .1s;
+      &:hover {
+        opacity: 1;
+        transform: scale(1.05);
+      }
+    }
+    .schedule-table {
+      margin-top: 4rem;
+      text-align: left;
+      width: 100%;
+      tr {
+        border-bottom: 2px solid $grey;
+        &.heading {
+          border: none;
+          h3 {
+            color: $lavender;
+          }
+        }
+        &.subheading {
+          h3 {
+            padding-top: 6rem;
+          }
+        }
+      }
+      th, td {
+        min-width: 12rem;
+        padding: 1rem;
+        // padding-right: 1rem;
+        // padding-bottom: .8rem;
+      }
+    }
+    
+    
+}
+
 
 article.contact {
   @extend .section;
