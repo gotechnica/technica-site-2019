@@ -192,7 +192,6 @@ html {
     height:100%;
     width:100%;
     position:absolute;
-
 }
 
 .lavender{
@@ -558,6 +557,38 @@ article.body {
     .caption {
       margin-bottom: 4rem;
     }
+
+    img.site-stars {
+      position: absolute;
+      overflow: hidden;
+      margin-left: -60%;
+      object-fit: cover;
+      margin-top: 0%;
+    }
+
+    img.blueplanet {
+      position: absolute;
+      width: 30%;
+      left: 5%;
+      margin-top: -10%;
+      @media (max-width: 500px) {
+        margin-left: -60%;
+        margin-top: 0%;
+      }
+    }
+
+    img.purpleplanet {
+      position: relative;
+      width: 25%;
+      left: 50%;
+      margin-top: 10%;
+      margin-left: -10%;
+      @media (max-width: 500px) {
+        margin-top: 0rem;
+      }
+    } 
+
+
     .button:hover {
       background-color: $white;
       color: $pink;
@@ -566,8 +597,6 @@ article.body {
   }
     
     
-    
-
   section.sponsors {
     @extend .section;
     $section-bg-color: #0D1924;
@@ -582,6 +611,7 @@ article.body {
     .caption {
       margin-bottom: 4rem;
     }
+
     .base-sponsor {
       padding: 4rem 0rem;
       img {
@@ -627,7 +657,6 @@ article.body {
       transition: ease all 0.3s;
     }
   }
-    
     
 }
 
