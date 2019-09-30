@@ -234,7 +234,8 @@ html {
   padding-bottom: 1em;
   font-size: 4em;
   color: #ff7bac;
-  margin-botton: 3rem; }
+  margin-botton: 3rem;
+  background-image: url(../img/donate-hero-background.png);}
 
 .main-dono-head {
   color: #ffffff;
