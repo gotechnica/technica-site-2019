@@ -234,7 +234,9 @@ html {
   background-image: url(../img/donate-hero-background.png);
   background-size: cover;
   width: 100%;
-  background-repeat: no-repeat;}
+  background-repeat: no-repeat;
+  padding-top: 20rem;
+  padding-bottom: 40rem;}
 
 .dono-heading {
   padding-bottom: 1em;
