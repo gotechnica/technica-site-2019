@@ -207,6 +207,22 @@ html {
   min-width: 100%;
   min-height: 100%; }
 
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0; }
+  .video-responsive .video {
+    border-radius: .8rem;
+    overflow: hidden; }
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute; }
+
 .lavender {
   color: #b6a1c4; }
 
@@ -476,6 +492,30 @@ article.body {
     color: white; }
     article.body section.donate .caption {
       margin-bottom: 4rem; }
+    article.body section.donate img.site-stars {
+      position: absolute;
+      overflow: hidden;
+      margin-left: -60%;
+      object-fit: cover;
+      margin-top: 0%; }
+    article.body section.donate img.blueplanet {
+      position: absolute;
+      width: 30%;
+      left: 5%;
+      margin-top: -10%; }
+      @media (max-width: 500px) {
+        article.body section.donate img.blueplanet {
+          margin-left: -60%;
+          margin-top: 0%; } }
+    article.body section.donate img.purpleplanet {
+      position: relative;
+      width: 25%;
+      left: 50%;
+      margin-top: 10%;
+      margin-left: -10%; }
+      @media (max-width: 500px) {
+        article.body section.donate img.purpleplanet {
+          margin-top: 0rem; } }
     article.body section.donate .button:hover, article.body section.donate .register-button:hover, article.body section.donate .dono-button:hover, article.body section.donate .hero-button:hover, article.body section.donate article.contact .list-inline li a:hover, article.contact .list-inline li article.body section.donate a:hover {
       background-color: #ffffff;
       color: #ff7bac;
