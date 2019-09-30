@@ -230,13 +230,17 @@ html {
   color: #00f5f5;
   color: #00f5f5; }
 
+.dono-jumbotron {
+  background-image: url(../img/donate-hero-background.png);
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;}
+
 .dono-heading {
   padding-bottom: 1em;
   font-size: 4em;
   color: #ff7bac;
-  margin-botton: 3rem;
-  background: url(../img/donate-hero-background.png);
-  background-size: cover;}
+  margin-botton: 3rem;}
 
 .main-dono-head {
   color: #ffffff;
