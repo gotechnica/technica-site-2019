@@ -158,19 +158,19 @@ img.hero-stars {
   border-bottom: 2px solid #00f5f5;
   margin: 0 1.5rem; }
 
-.section, article.body section.dono, article.body section.intro, article.body section.registration, article.body section.sched, article.body section.faq, article.body section.donate, article.body section.sponsors, article.contact {
+.section, article.body section.dono, article.body section.intro, article.body section.registration, article.body section.sched, article.body section.faq, article.body section.donate, article.body section.sponsors, section.dono, section.sched, article.contact {
   padding-top: 8rem;
   padding-bottom: 8rem; }
   @media (max-width: 767.98px) {
-    .section, article.body section.dono, article.body section.intro, article.body section.registration, article.body section.sched, article.body section.faq, article.body section.donate, article.body section.sponsors, article.contact {
+    .section, article.body section.dono, article.body section.intro, article.body section.registration, article.body section.sched, article.body section.faq, article.body section.donate, article.body section.sponsors, section.dono, section.sched, article.contact {
       padding-top: 4rem;
       padding-bottom: 4rem; } }
-  .section .heading, article.body section.dono .heading, article.body section.intro .heading, article.body section.registration .heading, article.body section.sched .heading, article.body section.faq .heading, article.body section.donate .heading, article.body section.sponsors .heading, article.contact .heading {
+  .section .heading, article.body section.dono .heading, article.body section.intro .heading, article.body section.registration .heading, article.body section.sched .heading, article.body section.faq .heading, article.body section.donate .heading, article.body section.sponsors .heading, section.dono .heading, section.sched .heading, article.contact .heading {
     text-align: left;
     position: relative;
     z-index: 0;
     margin-bottom: 6rem; }
-  .section p, article.body section.dono p, article.body section.intro p, article.body section.registration p, article.body section.sched p, article.body section.faq p, article.body section.donate p, article.body section.sponsors p, article.contact p {
+  .section p, article.body section.dono p, article.body section.intro p, article.body section.registration p, article.body section.sched p, article.body section.faq p, article.body section.donate p, article.body section.sponsors p, section.dono p, section.sched p, article.contact p {
     margin-bottom: 2rem;
     opacity: 0.8; }
 
@@ -194,6 +194,29 @@ img.hero-stars {
   min-width: 100%;
   min-height: 100%; }
 
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0; }
+  .video-responsive .video {
+    border-radius: 0.8rem;
+    overflow: hidden; }
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute; }
+
+.lavender {
+  color: #b6a1c4; }
+
+.cyan {
+  color: #00f5f5;
+  color: #00f5f5; }
+
 .dono-heading {
   padding-bottom: 1em;
   font-size: 4em; }
@@ -210,13 +233,21 @@ img.hero-stars {
 .dono-img {
   border-radius: 5%;
   max-width: 100%;
-  height: 300px; }
+  height: 300px;
+  background-image: url(../img/donation_page/donation-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
 
 .dono-img-2 {
   border-radius: 5%;
   max-width: 100%;
   height: 300px;
-  margin-top: 5em; }
+  margin-top: 5em;
+  background-image: url(../img/donation_page/donation-2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
 
 article.hero {
   text-align: left;
@@ -318,10 +349,16 @@ article.body {
         margin-top: 4rem; } }
   article.body section.registration {
     background-color: #243d49;
+    background: -webkit-linear-gradient(to bottom, #66a4b3, #192e3a);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #66a4b3, #192e3a);
     color: #ffffff; }
+    article.body section.registration .col-lg-3 {
+      padding: 0.5rem; }
     article.body section.registration div.register-card {
+      font-size: 1.5rem !important;
       border: 3px solid white;
-      padding: 4rem;
+      padding: 2.5rem;
       border-radius: 2rem;
       text-align: center;
       display: flex;
@@ -333,9 +370,7 @@ article.body {
       flex: 1; }
       @media (max-width: 992px) {
         article.body section.registration div.register-card {
-          margin-bottom: 12rem; }
-          article.body section.registration div.register-card.last {
-            margin-bottom: 4rem; } }
+          margin-bottom: 12rem; } }
       article.body section.registration div.register-card p {
         text-align: left; }
       article.body section.registration div.register-card .disabled {
@@ -363,9 +398,12 @@ article.body {
         display: block;
         margin-bottom: 0;
         margin-top: auto;
-        background-color: transparent; }
+        background-color: transparent;
+        border-radius: 5%;
+        font-size: 1.5rem; }
       article.body section.registration div.register-card.cyan {
         display: flex;
+        text: white;
         border-color: #00f5f5; }
         article.body section.registration div.register-card.cyan .img-holder {
           border-color: #00f5f5; }
@@ -392,6 +430,7 @@ article.body {
           article.body section.registration div.register-card.pink a:hover {
             background-color: #ff7bac; }
       article.body section.registration div.register-card p {
+        color: white;
         margin-top: -8rem;
         margin-bottom: 4rem; }
   article.body section.sched {
@@ -428,6 +467,9 @@ article.body {
         padding: 1rem; }
   article.body section.faq {
     background-color: #122230;
+    background: -webkit-linear-gradient(to bottom, #192e3a, #12202b);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #192e3a, #12202b);
     color: #ffffff; }
     article.body section.faq .heading {
       margin-bottom: 2rem; }
@@ -470,11 +512,40 @@ article.body {
       border-color: #ffffff; }
   article.body section.sponsors {
     background-color: #0d1924;
+    background: -webkit-linear-gradient(to bottom, #12202b, #1c1f22);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #12202b, #1c1f22);
     color: white; }
     article.body section.sponsors h1 {
       margin-bottom: 4rem; }
+    article.body section.sponsors img.site-stars {
+      position: absolute;
+      overflow: hidden;
+      justify-content: left;
+      margin-left: -5%; }
+    article.body section.sponsors img.blueplanet {
+      position: relative;
+      width: 25%;
+      left: -50%;
+      margin-top: -15%;
+      top: 10%; }
+      @media (max-width: 500px) {
+        article.body section.sponsors img.blueplanet {
+          margin-left: -60%;
+          margin-top: -30%; } }
+    article.body section.sponsors img.purpleplanet {
+      position: relative;
+      width: 20%;
+      left: 50%;
+      margin-top: -50%;
+      margin-left: -25%; }
+      @media (max-width: 500px) {
+        article.body section.sponsors img.purpleplanet {
+          margin-top: 0rem; } }
     article.body section.sponsors .caption {
-      margin-bottom: 4rem; }
+      position: relative;
+      margin-bottom: 4rem;
+      z-index: 100; }
     article.body section.sponsors .base-sponsor, article.body section.sponsors .gold-sponsor, article.body section.sponsors .silver-sponsor, article.body section.sponsors .sponsor, article.body section.sponsors .small-sponsor {
       padding: 4rem 0rem; }
       article.body section.sponsors .base-sponsor img, article.body section.sponsors .gold-sponsor img, article.body section.sponsors .silver-sponsor img, article.body section.sponsors .sponsor img, article.body section.sponsors .small-sponsor img {
@@ -488,6 +559,141 @@ article.body {
     article.body section.sponsors .gold-sponsor img {
       max-width: 28rem;
       max-height: 8rem; }
+    article.body section.sponsors .accordion {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      border: none;
+      padding-bottom: 1rem;
+      padding-top: 4rem;
+      margin-bottom: 2rem;
+      background-color: transparent;
+      border-bottom: 3px solid #00f5f5;
+      text-align: left;
+      outline: none;
+      transition: ease all 0.3s; }
+
+section.dono div.register-card {
+  border: 3px solid white;
+  padding: 1rem;
+  border-radius: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  -webkit-flex: 1;
+  /* Safari 6.1+ */
+  -ms-flex: 1;
+  /* IE 10 */
+  flex: 1; }
+  @media (max-width: 992px) {
+    section.dono div.register-card {
+      margin-bottom: 12rem; }
+      section.dono div.register-card.last {
+        margin-bottom: 4rem; } }
+  section.dono div.register-card heading {
+    color: #ff7bac; }
+  section.dono div.register-card p {
+    text-align: left; }
+  section.dono div.register-card .disabled {
+    opacity: 0.5 !important;
+    pointer-events: none !important; }
+  section.dono div.register-card div.img-holder {
+    background-color: #2d2d2d;
+    border: 3px solid white;
+    border-radius: 7rem;
+    position: relative;
+    top: -11rem;
+    align-self: center;
+    width: 14rem;
+    height: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    section.dono div.register-card div.img-holder img {
+      width: 8rem; }
+      section.dono div.register-card div.img-holder img.ufo {
+        width: 10rem; }
+  section.dono div.register-card .dono-prices {
+    padding-left: 3rem;
+    padding-right: 3rem; }
+  section.dono div.register-card .cyan-text {
+    color: #00f5f5; }
+  section.dono div.register-card .pink-text {
+    color: #ff7bac; }
+  section.dono div.register-card .lavender-text {
+    color: #b6a1c4; }
+  section.dono div.register-card .button, section.dono div.register-card .register-button, section.dono div.register-card .dono-button, section.dono div.register-card .hero-button, section.dono div.register-card article.contact .list-inline li a, article.contact .list-inline li section.dono div.register-card a {
+    padding: 0.8rem 0rem;
+    width: 100%;
+    display: block;
+    margin-bottom: 0;
+    margin-top: auto;
+    background-color: transparent; }
+  section.dono div.register-card.cyan {
+    display: flex;
+    border-color: #00f5f5; }
+    section.dono div.register-card.cyan .img-holder {
+      border-color: #00f5f5; }
+    section.dono div.register-card.cyan a {
+      border-color: #00f5f5; }
+      section.dono div.register-card.cyan a:hover {
+        background-color: #00f5f5; }
+  section.dono div.register-card.lavender {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    display: flex;
+    border-color: #b6a1c4; }
+    section.dono div.register-card.lavender .img-holder {
+      border-color: #b6a1c4; }
+    section.dono div.register-card.lavender a {
+      border-color: #b6a1c4; }
+      section.dono div.register-card.lavender a:hover {
+        background-color: #b6a1c4; }
+  section.dono div.register-card.pink {
+    display: flex;
+    border-color: #ff7bac; }
+    section.dono div.register-card.pink .img-holder {
+      border-color: #ff7bac; }
+    section.dono div.register-card.pink a {
+      border-color: #ff7bac; }
+      section.dono div.register-card.pink a:hover {
+        background-color: #ff7bac; }
+  section.dono div.register-card p {
+    margin-top: -8rem;
+    margin-bottom: 4rem; }
+
+section.sched {
+  background-color: #243d49;
+  color: #ffffff; }
+  section.sched h1 {
+    margin-bottom: 4rem; }
+  section.sched h3 {
+    text-align: left;
+    margin-bottom: 2rem; }
+  section.sched .app {
+    max-width: 16rem;
+    margin: 0px 4px;
+    opacity: 0.7;
+    transition: ease all 0.1s; }
+    section.sched .app:hover {
+      opacity: 1;
+      transform: scale(1.05); }
+  section.sched .schedule-table {
+    margin-top: 4rem;
+    text-align: left;
+    width: 100%; }
+    section.sched .schedule-table tr {
+      border-bottom: 2px solid #464343; }
+      section.sched .schedule-table tr.heading {
+        border: none; }
+        section.sched .schedule-table tr.heading h3 {
+          color: #b6a1c4; }
+      section.sched .schedule-table tr.subheading h3 {
+        padding-top: 6rem; }
+    section.sched .schedule-table th,
+    section.sched .schedule-table td {
+      min-width: 12rem;
+      padding: 1rem; }
 
 article.contact {
   background-color: #070d13;
@@ -609,65 +815,65 @@ article.footer {
   .shooting_star::after {
     transform: translateX(50%) rotateZ(-45deg); }
   .shooting_star:nth-child(1) {
-    top: calc(50% - 108px);
-    left: calc(50% - 172px);
-    animation-delay: 2600ms; }
+    top: calc(50% - -10px);
+    left: calc(50% - 243px);
+    animation-delay: 7801ms; }
     .shooting_star:nth-child(1)::before, .shooting_star:nth-child(1)::after, .shooting_star:nth-child(1)::after {
-      animation-delay: 2600ms; }
+      animation-delay: 7801ms; }
   .shooting_star:nth-child(2) {
-    top: calc(50% - -29px);
-    left: calc(50% - 218px);
-    animation-delay: 9910ms; }
+    top: calc(50% - -40px);
+    left: calc(50% - 157px);
+    animation-delay: 2859ms; }
     .shooting_star:nth-child(2)::before, .shooting_star:nth-child(2)::after, .shooting_star:nth-child(2)::after {
-      animation-delay: 9910ms; }
+      animation-delay: 2859ms; }
   .shooting_star:nth-child(3) {
-    top: calc(50% - -57px);
-    left: calc(50% - 177px);
-    animation-delay: 835ms; }
+    top: calc(50% - 141px);
+    left: calc(50% - 107px);
+    animation-delay: 7448ms; }
     .shooting_star:nth-child(3)::before, .shooting_star:nth-child(3)::after, .shooting_star:nth-child(3)::after {
-      animation-delay: 835ms; }
+      animation-delay: 7448ms; }
   .shooting_star:nth-child(4) {
-    top: calc(50% - -132px);
-    left: calc(50% - 179px);
-    animation-delay: 8323ms; }
+    top: calc(50% - -183px);
+    left: calc(50% - 264px);
+    animation-delay: 4973ms; }
     .shooting_star:nth-child(4)::before, .shooting_star:nth-child(4)::after, .shooting_star:nth-child(4)::after {
-      animation-delay: 8323ms; }
+      animation-delay: 4973ms; }
   .shooting_star:nth-child(5) {
-    top: calc(50% - 9px);
-    left: calc(50% - 84px);
-    animation-delay: 9005ms; }
+    top: calc(50% - 35px);
+    left: calc(50% - 227px);
+    animation-delay: 5487ms; }
     .shooting_star:nth-child(5)::before, .shooting_star:nth-child(5)::after, .shooting_star:nth-child(5)::after {
-      animation-delay: 9005ms; }
+      animation-delay: 5487ms; }
   .shooting_star:nth-child(6) {
-    top: calc(50% - 62px);
-    left: calc(50% - 256px);
-    animation-delay: 2855ms; }
+    top: calc(50% - -96px);
+    left: calc(50% - 60px);
+    animation-delay: 3873ms; }
     .shooting_star:nth-child(6)::before, .shooting_star:nth-child(6)::after, .shooting_star:nth-child(6)::after {
-      animation-delay: 2855ms; }
+      animation-delay: 3873ms; }
   .shooting_star:nth-child(7) {
-    top: calc(50% - -43px);
-    left: calc(50% - 167px);
-    animation-delay: 6333ms; }
+    top: calc(50% - -85px);
+    left: calc(50% - 137px);
+    animation-delay: 8283ms; }
     .shooting_star:nth-child(7)::before, .shooting_star:nth-child(7)::after, .shooting_star:nth-child(7)::after {
-      animation-delay: 6333ms; }
+      animation-delay: 8283ms; }
   .shooting_star:nth-child(8) {
-    top: calc(50% - -41px);
-    left: calc(50% - 145px);
-    animation-delay: 9410ms; }
+    top: calc(50% - -49px);
+    left: calc(50% - 277px);
+    animation-delay: 7326ms; }
     .shooting_star:nth-child(8)::before, .shooting_star:nth-child(8)::after, .shooting_star:nth-child(8)::after {
-      animation-delay: 9410ms; }
+      animation-delay: 7326ms; }
   .shooting_star:nth-child(9) {
-    top: calc(50% - 84px);
-    left: calc(50% - 176px);
-    animation-delay: 6072ms; }
+    top: calc(50% - -168px);
+    left: calc(50% - 32px);
+    animation-delay: 9306ms; }
     .shooting_star:nth-child(9)::before, .shooting_star:nth-child(9)::after, .shooting_star:nth-child(9)::after {
-      animation-delay: 6072ms; }
+      animation-delay: 9306ms; }
   .shooting_star:nth-child(10) {
-    top: calc(50% - -97px);
-    left: calc(50% - 228px);
-    animation-delay: 8063ms; }
+    top: calc(50% - -65px);
+    left: calc(50% - 83px);
+    animation-delay: 1008ms; }
     .shooting_star:nth-child(10)::before, .shooting_star:nth-child(10)::after, .shooting_star:nth-child(10)::after {
-      animation-delay: 8063ms; }
+      animation-delay: 1008ms; }
 
 @keyframes tail {
   0% {
