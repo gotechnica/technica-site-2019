@@ -90,7 +90,7 @@
             <img class="brand" src="./img/technica-logo-white.svg" alt="Technica">
             <h2><strong>Nov 9-10, 2019</strong> ⊹ College Park, Maryland</h2>
             <div class="hero-btn-row">
-              <a id="registration-btn" target="_blank" href="https://gotechnica.typeform.com/to/loxKPY" class="register-button">Register
+              <a id="registration-btn" target="_blank" href="#" class="register-button">Register
               </a>
             </div>
           </div>
@@ -328,7 +328,9 @@ Come help hackers with their ideas by being a resource for hackers who may have 
 
         <article class="donate-gradient">
           <section class="donate">
+            <img class="site-stars" src="./img/site_stars.svg">
             <div class="container text-center">
+             <img class="purpleplanet" src="./img/purpleplanet.svg">
              <h1>Donate to Technica</h1>
               <div class="caption">
                 <br>
@@ -339,6 +341,7 @@ Come help hackers with their ideas by being a resource for hackers who may have 
                 <a href="https://gotechnica.org/donate" class="button">Donate</a>
               </div>
             </div>
+            <img class="blueplanet" src="./img/blueplanet-01.svg">    
           </section>
         </article>
 
@@ -347,35 +350,7 @@ Come help hackers with their ideas by being a resource for hackers who may have 
             <img class="site-stars" src="./img/site_stars.svg">
           <div class="container text-center">
             <h1>Sponsors</h1>
-            <!-- Sponsor Contact -->
-            <div class="caption">
-              Interested in sponsoring Technica 2019? <br>
-              Reach us at <a href="mailto:sponsorship@gotechnica.org">sponsorship@gotechnica.org</a>
-            </div>
-            <div class="caption">
-              Interested in holding a Tech + X Workshop?
-              <a href="https://gotechnica.typeform.com/to/tJO6hD" data-mode="popup" style="color:#00F5F5;text-decoration:;font-size:18px;" data-submit-close-delay="5" target="_blank">Learn More</a>
-              <script>
-                  (function() {
-                      var qs, js, q, s, d = document,
-                          gi = d.getElementById,
-                          ce = d.createElement,
-                          gt = d.getElementsByTagName,
-                          id = "typef_orm_share",
-                          b = "https://embed.typeform.com/";
-                      if (!gi.call(d, id)) {
-                          js = ce.call(d, "script");
-                          js.id = id;
-                          js.src = b + "embed.js";
-                          q = gt.call(d, "script")[0];
-                          q.parentNode.insertBefore(js, q)
-                      }
-                  })()
-              </script>
-            </div>
             <br>
-            <img class="blueplanet" src="./img/blueplanet-01.svg">    
-            <img class="purpleplanet" src="./img/purpleplanet.svg">
             <div class="accordion">
               <h3>Partner</h3>
 <!--              <h3>+</h3>-->
@@ -567,7 +542,46 @@ Come help hackers with their ideas by being a resource for hackers who may have 
                     <a target="_blank" href="https://www.nasdaq.com"><img class="sponsors-img" src="img/sponsor_logos/NASDAQ_Logo_white.svg" title="Nasdaq"></a>
                   </div>
                 </div>
+                <div class="col-sm-4">
+                   <div class="sponsor sponsor-img">
+                       <a target="_blank" href="https://www.rhsmith.umd.edu/centers-excellence/social-value-creation/about-us"><img class="sponsors-img" src="img/sponsor_logos/center_for_value_Creation_logo.svg" title="Dingman Center"></a>
+                   </div>
+                </div>
+              
+                <div class="col-sm-4">
+                   <div class="sponsor sponsor-img">
+                       <a target="_blank" href="https://www-math.umd.edu/"><img class="sponsors-img" src="img/sponsor_logos/umd_Math_dep_white.svg" title="Dingman Center"></a>
+                   </div>
+                </div>
               </div>
+            </div>
+            <!-- Sponsor Contact -->
+            <div style="border-bottom: 3px solid #00ffff"></div>
+            <br>
+            <div class="caption">
+              Interested in sponsoring Technica 2019? <br>
+              Reach us at <a href="mailto:sponsorship@gotechnica.org">sponsorship@gotechnica.org</a>
+            </div>
+            <div class="caption">
+              Interested in holding a Tech + X Workshop?
+              <a href="https://gotechnica.typeform.com/to/tJO6hD" data-mode="popup" style="color:#00F5F5;text-decoration:;font-size:18px;" data-submit-close-delay="5" target="_blank">Learn More</a>
+              <script>
+                  (function() {
+                      var qs, js, q, s, d = document,
+                          gi = d.getElementById,
+                          ce = d.createElement,
+                          gt = d.getElementsByTagName,
+                          id = "typef_orm_share",
+                          b = "https://embed.typeform.com/";
+                      if (!gi.call(d, id)) {
+                          js = ce.call(d, "script");
+                          js.id = id;
+                          js.src = b + "embed.js";
+                          q = gt.call(d, "script")[0];
+                          q.parentNode.insertBefore(js, q)
+                      }
+                  })()
+              </script>
             </div>
           </div>
            </section>
@@ -642,6 +656,7 @@ Come help hackers with their ideas by being a resource for hackers who may have 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
+        
 
       // document.getElementById('bg-video').play();
 
@@ -666,6 +681,15 @@ Come help hackers with their ideas by being a resource for hackers who may have 
       //     scrollTop: $("#sched").offset().top
       //   }, 500);
       // });
+    </script>
+    <script>
+          $("#registration-btn").click(function() {
+          $([document.documentElement, document.body]).animate({
+          scrollTop: $("#registration").offset().top
+          }, 1300);
+          return false;
+          });
+      
     </script>
   </body>
 </html>

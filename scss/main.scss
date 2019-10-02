@@ -563,6 +563,34 @@ article.body {
       color: $pink;
       border-color: $white;
     }
+      
+    img.blueplanet {    
+      position: relative;   
+      width: 20%;   
+      left: 70%;   
+      margin-top: -15%;   
+      top: 10%;   
+      @media (max-width: 500px) {   
+        margin-left: -60%;    
+        margin-top: -30%;   
+      }   
+    }   
+    img.purpleplanet {    
+      position: relative;   
+      width: 15%;   
+      right: 50%;
+      @media (max-width: 500px) {   
+        margin-top: 0rem;   
+      }   
+    }
+      
+    img.site-stars {    
+      position: absolute;   
+      overflow: hidden;   
+      justify-content: left;    
+      margin-left: -5%;   
+    }   
+      
   }
     
     

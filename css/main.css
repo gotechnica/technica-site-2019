@@ -132,7 +132,7 @@ html {
     color: #ff7bac; }
 
 .dono-button {
-  font-size: 1.5em;
+  font-size: 2.5em;
   border-color: #ffffff; }
   .dono-button:hover {
     background-color: #ffffff;
@@ -230,22 +230,15 @@ html {
   color: #00f5f5;
   color: #00f5f5; }
 
-.dono-jumbotron {
-  background: url(../img/donate-hero-background.png) no-repeat center center;
-  background-size: cover;
-  width: 100%;
-  padding-top: 12rem;
-  padding-bottom: 12rem;}
-
 .dono-heading {
   padding-bottom: 1em;
   font-size: 4em;
   color: #ff7bac;
-  margin-botton: 3rem;}
+  margin-botton: 3rem; }
 
 .main-dono-head {
   color: #ffffff;
-  font-size: 4em;
+  font-size: 2.5em;
   font-weight: 650 !important; }
 
 .dono-val {
@@ -270,6 +263,7 @@ html {
   border-radius: 5%;
   max-width: 100%;
   height: 300px;
+  margin-top: 5em;
   background-image: url(../img/donation_page/donation-2.jpg);
   background-size: cover;
   background-position: center;
@@ -502,6 +496,28 @@ article.body {
       background-color: #ffffff;
       color: #ff7bac;
       border-color: #ffffff; }
+    article.body section.donate img.blueplanet {
+      position: relative;
+      width: 20%;
+      left: 70%;
+      margin-top: -15%;
+      top: 10%; }
+      @media (max-width: 500px) {
+        article.body section.donate img.blueplanet {
+          margin-left: -60%;
+          margin-top: -30%; } }
+    article.body section.donate img.purpleplanet {
+      position: relative;
+      width: 15%;
+      right: 50%; }
+      @media (max-width: 500px) {
+        article.body section.donate img.purpleplanet {
+          margin-top: 0rem; } }
+    article.body section.donate img.site-stars {
+      position: absolute;
+      overflow: hidden;
+      justify-content: left;
+      margin-left: -5%; }
   article.body section.sponsors {
     background-color: #0D1924;
     background: -webkit-linear-gradient(to bottom, #12202B, #1C1F22);
