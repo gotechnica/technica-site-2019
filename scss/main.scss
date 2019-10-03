@@ -90,11 +90,14 @@ img.hero-stars {
 .header {
   position: relative;
   z-index: 1;
-  padding-top: 20rem;
+  padding-top: 10rem;
 }
 
 .hero-btn-row {
+  position:absolute;
+  z-index: 101;
   @media (max-width: 780px) {
+    z-index: 101;
     .hero-button {
       display: block;
       margin-bottom: 1rem;
@@ -311,7 +314,7 @@ article.hero {
   }
   img.rocket {
     position: relative;
-    z-index: 6;
+    z-index: 1;
     width: 100%;
     margin-top: -16rem;
     @media (max-width: 992px) {
@@ -327,6 +330,7 @@ article.hero {
 }
 
 .space {
+  z-index: -1;
   background: transparent center / 200px 200px round;
   bottom: 0;
   left: 0;
@@ -349,7 +353,7 @@ article.hero {
   }
 }
 .stars1 {
-  z-index: 5;
+  z-index: 0;
   animation: space 180s ease-in-out infinite;
   background-image: radial-gradient(
         1px 1px at 25px 5px,
@@ -363,7 +367,7 @@ article.hero {
     radial-gradient(2.5px 2.5px at 110px 80px, white, rgba(255, 255, 255, 0));
 }
 .stars2 {
-  z-index: 5;
+  z-index: 0;
   animation: space 240s ease-in-out infinite;
   background-image: radial-gradient(
       1px 1px at 75px 125px,
@@ -377,7 +381,7 @@ article.hero {
     radial-gradient(2.5px 2.5px at 5px 5px, white, rgba(255, 255, 255, 0));
 }
 .stars3 {
-  z-index: 5;
+  z-index: 0;
   animation: space 300s ease-in-out infinite;
   background-image: radial-gradient(
       1px 1px at 10px 10px,
