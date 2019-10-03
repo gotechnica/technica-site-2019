@@ -129,7 +129,7 @@ html {
     color: #ff7bac; }
 
 .dono-button {
-  font-size: 1.5em;
+  font-size: 2.5em;
   border-color: #ffffff; }
   .dono-button:hover {
     background-color: #ffffff;
@@ -225,7 +225,7 @@ img.hero-stars {
 
 .main-dono-head {
   color: #ffffff;
-  font-size: 4em;
+  font-size: 2.5em;
   font-weight: 650 !important; }
 
 .dono-val {
@@ -527,6 +527,22 @@ article.body {
       background-color: #ffffff;
       color: #ff7bac;
       border-color: #ffffff; }
+    article.body section.donate .text-center {
+      position: relative;
+      z-index: 3; }
+    article.body section.donate img.blueplanet {
+      position: absolute;
+      width: 20%;
+      left: 1%; }
+    article.body section.donate img.purpleplanet {
+      position: absolute;
+      width: 15%;
+      right: 1%; }
+    article.body section.donate img.site-stars {
+      position: absolute;
+      overflow: hidden;
+      justify-content: left;
+      margin-left: -5%; }
   article.body section.sponsors {
     background-color: #0d1924;
     background: -webkit-linear-gradient(to bottom, #12202b, #1c1f22);

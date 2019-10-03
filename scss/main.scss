@@ -654,6 +654,29 @@ article.body {
       color: $pink;
       border-color: $white;
     }
+      
+      .text-center{
+          position:relative;
+          z-index:3;
+      }
+    img.blueplanet {  
+      position:absolute;
+      width: 20%;   
+      left: 1%;   
+    }   
+    img.purpleplanet { 
+      position:absolute;
+      width: 15%;   
+      right: 1%; 
+    }
+      
+    img.site-stars {    
+      position: absolute;   
+      overflow: hidden;   
+      justify-content: left;    
+      margin-left: -5%;   
+    }   
+      
   }
 
   section.sponsors {
