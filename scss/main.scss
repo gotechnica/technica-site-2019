@@ -64,6 +64,7 @@ html {
 
 .register-button {
   @extend .button;
+  z-index: 100;
   border-color: $white;
   &:hover {
     background-color: $white;
@@ -310,7 +311,7 @@ article.hero {
   }
   img.rocket {
     position: relative;
-    z-index: 100;
+    z-index: 0;
     width: 100%;
     margin-top: -16rem;
     @media (max-width: 992px) {
