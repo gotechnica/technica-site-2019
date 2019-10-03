@@ -73,7 +73,7 @@ html {
 
 .dono-button {
   @extend .button;
-  font-size: 2.5em;
+  font-size: 1.5em;
   border-color: $white;
   &:hover {
     background-color: $white;
@@ -196,6 +196,13 @@ img.hero-stars {
 .dono-heading {
   padding-bottom: 1em;
   font-size: 4em;
+  color:$pink;
+  margin-botton:3rem;
+}
+.main-dono-head{
+    color:$white;
+    font-size:4em;
+    font-weight: 650 !important;
 }
 
 .dono-val {
@@ -224,11 +231,22 @@ img.hero-stars {
   border-radius: 5%;
   max-width: 100%;
   height: 300px;
-  margin-top: 5em;
+  //margin-top: 5em;
   background-image: url(../img/donation_page/donation-2.jpg);
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+.dono-jumbotron {
+  background: url(../img/donate-hero-background.png) no-repeat center center;
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  width: 100%;
+  padding-top: 12rem;
+  padding-bottom: 12rem;}
+
+.white{
+    color:$white;
 }
 
 article {
