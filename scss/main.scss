@@ -700,27 +700,6 @@ article.body {
       justify-content: left;
       margin-left: -5%;
     }
-    img.blueplanet {
-      position: relative;
-      width: 25%;
-      left: -50%;
-      margin-top: -15%;
-      top: 10%;
-      @media (max-width: 500px) {
-        margin-left: -60%;
-        margin-top: -30%;
-      }
-    }
-    img.purpleplanet {
-      position: relative;
-      width: 20%;
-      left: 50%;
-      margin-top: -50%;
-      margin-left: -25%;
-      @media (max-width: 500px) {
-        margin-top: 0rem;
-      }
-    }
     .caption {
       position: relative;
       margin-bottom: 4rem;
