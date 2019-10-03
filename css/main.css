@@ -496,23 +496,17 @@ article.body {
       background-color: #ffffff;
       color: #ff7bac;
       border-color: #ffffff; }
+    article.body section.donate .text-center {
+      position: relative;
+      z-index: 3; }
     article.body section.donate img.blueplanet {
-      position: relative;
+      position: absolute;
       width: 20%;
-      left: 70%;
-      margin-top: -15%;
-      top: 10%; }
-      @media (max-width: 500px) {
-        article.body section.donate img.blueplanet {
-          margin-left: -60%;
-          margin-top: -30%; } }
+      left: 1%; }
     article.body section.donate img.purpleplanet {
-      position: relative;
+      position: absolute;
       width: 15%;
-      right: 50%; }
-      @media (max-width: 500px) {
-        article.body section.donate img.purpleplanet {
-          margin-top: 0rem; } }
+      right: 1%; }
     article.body section.donate img.site-stars {
       position: absolute;
       overflow: hidden;

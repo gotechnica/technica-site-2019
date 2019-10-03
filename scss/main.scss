@@ -564,24 +564,19 @@ article.body {
       border-color: $white;
     }
       
-    img.blueplanet {    
-      position: relative;   
+      .text-center{
+          position:relative;
+          z-index:3;
+      }
+    img.blueplanet {  
+      position:absolute;
       width: 20%;   
-      left: 70%;   
-      margin-top: -15%;   
-      top: 10%;   
-      @media (max-width: 500px) {   
-        margin-left: -60%;    
-        margin-top: -30%;   
-      }   
+      left: 1%;   
     }   
-    img.purpleplanet {    
-      position: relative;   
+    img.purpleplanet { 
+      position:absolute;
       width: 15%;   
-      right: 50%;
-      @media (max-width: 500px) {   
-        margin-top: 0rem;   
-      }   
+      right: 1%; 
     }
       
     img.site-stars {    
