@@ -402,6 +402,10 @@ article.hero {
   background-repeat: no-repeat;
   height: 1100px;
   margin-top: -50em;
+  @media (min-width: 1800px) {
+    height: 1500px;
+    margin-top: -54em;
+  }
 }
 
 .gradient-cloud-outer {
