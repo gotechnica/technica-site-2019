@@ -493,6 +493,7 @@ article.body {
     article.body section.donate .caption {
       margin-bottom: 4rem; }
     article.body section.donate img.site-stars {
+      opacity: 0.6;
       position: absolute;
       overflow: hidden;
       margin-left: -60%;
