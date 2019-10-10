@@ -212,7 +212,7 @@ img.hero-stars {
 
 .main-dono-head{
     color:$white;
-    font-size:4em;
+    font-size:2.5em;
     font-weight: 650 !important;
 }
 
@@ -257,8 +257,18 @@ img.hero-stars {
   background: #2d2d2d url(../img/donation_page/donate-background.png) no-repeat center center;
   background-size: cover;
   width: 100%;
-  padding-top: 12rem;
-  padding-bottom: 12rem;}
+  padding-top: 18rem;
+  padding-bottom: 20rem;
+  div.text-center{
+    margin-top: -10rem;
+  }
+  img.brand {
+    @media (min-width: 767.98px) {
+      height: 80px;
+      width: 400px;
+    }
+  }
+}
 
 .white{
     color:$white;
