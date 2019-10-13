@@ -90,7 +90,7 @@ html {
 .dono-nav {
   background: #2d2d2d; }
 
-.button, .register-button, .dono-button, .hero-button, article.contact .list-inline li a {
+.button, .register-button, .dono-button, .hero-button {
   background-color: transparent;
   border: 3px solid;
   border-radius: 50rem;
@@ -104,7 +104,7 @@ html {
   top: 0;
   position: relative;
   transition: all ease 0.15s; }
-  .button:after, .register-button:after, .dono-button:after, .hero-button:after, article.contact .list-inline li a:after {
+  .button:after, .register-button:after, .dono-button:after, .hero-button:after {
     content: "";
     width: 100%;
     height: 100%;
@@ -114,12 +114,12 @@ html {
     z-index: 10;
     opacity: 0;
     transition: ease all 0.15s; }
-  .button:hover, .register-button:hover, .dono-button:hover, .hero-button:hover, article.contact .list-inline li a:hover {
+  .button:hover, .register-button:hover, .dono-button:hover, .hero-button:hover {
     text-decoration: none;
     color: white; }
-    .button:hover:after, .register-button:hover:after, .dono-button:hover:after, .hero-button:hover:after, article.contact .list-inline li a:hover:after {
+    .button:hover:after, .register-button:hover:after, .dono-button:hover:after, .hero-button:hover:after {
       opacity: 0.4; }
-  .button:active:after, .register-button:active:after, .dono-button:active:after, .hero-button:active:after, article.contact .list-inline li a:active:after {
+  .button:active:after, .register-button:active:after, .dono-button:active:after, .hero-button:active:after {
     opacity: 0.8; }
 
 .register-button {
@@ -452,7 +452,7 @@ article.body {
           width: 8rem; }
           article.body section.registration div.register-card div.img-holder img.ufo {
             width: 10rem; }
-      article.body section.registration div.register-card .button, article.body section.registration div.register-card .register-button, article.body section.registration div.register-card .dono-button, article.body section.registration div.register-card .hero-button, article.body section.registration div.register-card article.contact .list-inline li a, article.contact .list-inline li article.body section.registration div.register-card a {
+      article.body section.registration div.register-card .button, article.body section.registration div.register-card .register-button, article.body section.registration div.register-card .dono-button, article.body section.registration div.register-card .hero-button {
         padding: 0.8rem 0rem;
         width: 100%;
         display: block;
@@ -566,7 +566,7 @@ article.body {
     color: white; }
     article.body section.donate .caption {
       margin-bottom: 4rem; }
-    article.body section.donate .button:hover, article.body section.donate .register-button:hover, article.body section.donate .dono-button:hover, article.body section.donate .hero-button:hover, article.body section.donate article.contact .list-inline li a:hover, article.contact .list-inline li article.body section.donate a:hover {
+    article.body section.donate .button:hover, article.body section.donate .register-button:hover, article.body section.donate .dono-button:hover, article.body section.donate .hero-button:hover {
       background-color: #ffffff;
       color: #ff7bac;
       border-color: #ffffff; }
@@ -679,7 +679,7 @@ section.dono div.register-card {
     color: #ff7bac; }
   section.dono div.register-card .lavender-text {
     color: #b6a1c4; }
-  section.dono div.register-card .button, section.dono div.register-card .register-button, section.dono div.register-card .dono-button, section.dono div.register-card .hero-button, section.dono div.register-card article.contact .list-inline li a, article.contact .list-inline li section.dono div.register-card a {
+  section.dono div.register-card .button, section.dono div.register-card .register-button, section.dono div.register-card .dono-button, section.dono div.register-card .hero-button {
     padding: 0.8rem 0rem;
     width: 100%;
     display: block;
@@ -764,8 +764,6 @@ article.contact {
   article.contact h1,
   article.contact h2 {
     color: #ffffff; }
-  article.contact a {
-    color: #00f5f5; }
   article.contact .list-inline li {
     list-style: inline;
     display: inline;
@@ -775,9 +773,7 @@ article.contact {
       width: 6rem;
       padding: 0;
       height: 6rem;
-      border: none;
-      display: inline-block;
-      background-color: #00f5f5; }
+      display: inline-block; }
       article.contact .list-inline li a .social {
         display: flex;
         justify-content: center;
@@ -787,16 +783,9 @@ article.contact {
         height: 100%; }
       article.contact .list-inline li a:hover {
         opacity: 0.7; }
-      article.contact .list-inline li a i {
-        font-size: 3rem;
-        color: black; }
-      @media (max-width: 767.98px) {
-        article.contact .list-inline li a {
-          margin-bottom: 2rem;
-          width: 4rem;
-          height: 4rem; }
-          article.contact .list-inline li a i {
-            font-size: 2rem; } }
+  article.contact img {
+    width: 8rem;
+    height: auto; }
 
 article.footer {
   padding-top: 4rem;
@@ -872,65 +861,65 @@ article.footer {
   .shooting_star::after {
     transform: translateX(50%) rotateZ(-45deg); }
   .shooting_star:nth-child(1) {
-    top: calc(50% - 3px);
-    left: calc(50% - 202px);
-    animation-delay: 3778ms; }
+    top: calc(50% - 108px);
+    left: calc(50% - 226px);
+    animation-delay: 1839ms; }
     .shooting_star:nth-child(1)::before, .shooting_star:nth-child(1)::after, .shooting_star:nth-child(1)::after {
-      animation-delay: 3778ms; }
+      animation-delay: 1839ms; }
   .shooting_star:nth-child(2) {
-    top: calc(50% - 68px);
-    left: calc(50% - 18px);
-    animation-delay: 9812ms; }
+    top: calc(50% - 9px);
+    left: calc(50% - 154px);
+    animation-delay: 6952ms; }
     .shooting_star:nth-child(2)::before, .shooting_star:nth-child(2)::after, .shooting_star:nth-child(2)::after {
-      animation-delay: 9812ms; }
+      animation-delay: 6952ms; }
   .shooting_star:nth-child(3) {
-    top: calc(50% - 45px);
-    left: calc(50% - 62px);
-    animation-delay: 1072ms; }
+    top: calc(50% - -113px);
+    left: calc(50% - 127px);
+    animation-delay: 9029ms; }
     .shooting_star:nth-child(3)::before, .shooting_star:nth-child(3)::after, .shooting_star:nth-child(3)::after {
-      animation-delay: 1072ms; }
+      animation-delay: 9029ms; }
   .shooting_star:nth-child(4) {
-    top: calc(50% - 60px);
-    left: calc(50% - 169px);
-    animation-delay: 146ms; }
+    top: calc(50% - -2px);
+    left: calc(50% - 120px);
+    animation-delay: 1369ms; }
     .shooting_star:nth-child(4)::before, .shooting_star:nth-child(4)::after, .shooting_star:nth-child(4)::after {
-      animation-delay: 146ms; }
+      animation-delay: 1369ms; }
   .shooting_star:nth-child(5) {
-    top: calc(50% - -43px);
-    left: calc(50% - 125px);
-    animation-delay: 8957ms; }
+    top: calc(50% - 62px);
+    left: calc(50% - 46px);
+    animation-delay: 6682ms; }
     .shooting_star:nth-child(5)::before, .shooting_star:nth-child(5)::after, .shooting_star:nth-child(5)::after {
-      animation-delay: 8957ms; }
+      animation-delay: 6682ms; }
   .shooting_star:nth-child(6) {
-    top: calc(50% - -5px);
-    left: calc(50% - 285px);
-    animation-delay: 589ms; }
+    top: calc(50% - -49px);
+    left: calc(50% - 171px);
+    animation-delay: 6040ms; }
     .shooting_star:nth-child(6)::before, .shooting_star:nth-child(6)::after, .shooting_star:nth-child(6)::after {
-      animation-delay: 589ms; }
+      animation-delay: 6040ms; }
   .shooting_star:nth-child(7) {
-    top: calc(50% - -29px);
-    left: calc(50% - 177px);
-    animation-delay: 5332ms; }
+    top: calc(50% - -51px);
+    left: calc(50% - 131px);
+    animation-delay: 616ms; }
     .shooting_star:nth-child(7)::before, .shooting_star:nth-child(7)::after, .shooting_star:nth-child(7)::after {
-      animation-delay: 5332ms; }
+      animation-delay: 616ms; }
   .shooting_star:nth-child(8) {
-    top: calc(50% - -154px);
-    left: calc(50% - 194px);
-    animation-delay: 3906ms; }
+    top: calc(50% - -144px);
+    left: calc(50% - 212px);
+    animation-delay: 215ms; }
     .shooting_star:nth-child(8)::before, .shooting_star:nth-child(8)::after, .shooting_star:nth-child(8)::after {
-      animation-delay: 3906ms; }
+      animation-delay: 215ms; }
   .shooting_star:nth-child(9) {
-    top: calc(50% - -187px);
-    left: calc(50% - 133px);
-    animation-delay: 7347ms; }
+    top: calc(50% - 20px);
+    left: calc(50% - 32px);
+    animation-delay: 8175ms; }
     .shooting_star:nth-child(9)::before, .shooting_star:nth-child(9)::after, .shooting_star:nth-child(9)::after {
-      animation-delay: 7347ms; }
+      animation-delay: 8175ms; }
   .shooting_star:nth-child(10) {
-    top: calc(50% - -96px);
-    left: calc(50% - 48px);
-    animation-delay: 3548ms; }
+    top: calc(50% - -148px);
+    left: calc(50% - 105px);
+    animation-delay: 6778ms; }
     .shooting_star:nth-child(10)::before, .shooting_star:nth-child(10)::after, .shooting_star:nth-child(10)::after {
-      animation-delay: 3548ms; }
+      animation-delay: 6778ms; }
 
 @keyframes tail {
   0% {
