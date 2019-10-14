@@ -993,22 +993,17 @@ article.contact {
   h2 {
     color: $white;
   }
-  a {
-    color: $cyan;
-  }
+  
   .list-inline li {
     list-style: inline;
     display: inline;
     margin-left: 10px;
     margin-right: 10px;
     a {
-      @extend .button;
       width: 6rem;
       padding: 0;
       height: 6rem;
-      border: none;
       display: inline-block;
-      background-color: $cyan;
       .social {
         display: flex;
         justify-content: center;
@@ -1020,20 +1015,13 @@ article.contact {
       &:hover {
         opacity: 0.7;
       }
-      i {
-        font-size: 3rem;
-        color: black;
-      }
-      @media (max-width: 767.98px) {
-        margin-bottom: 2rem;
-        width: 4rem;
-        height: 4rem;
-        i {
-          font-size: 2rem;
-        }
-      }
     }
   }
+    
+    img{
+        width:8rem;
+        height: auto;
+    }
 }
 
 article.footer {
