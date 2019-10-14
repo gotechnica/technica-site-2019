@@ -82,6 +82,16 @@ html {
   }
 }
 
+.dono-back-button {
+  @extend .button;
+  font-size: 1.5em;
+  border-color: $white;
+  &:hover {
+    background-color: $white;
+    color: $pink;
+  }
+}
+
 img.hero-stars {
   position: absolute;
   top: -60px;
@@ -197,13 +207,6 @@ img.hero-stars {
   color: $cyan;
 }
 
-.dono-heading {
-  padding-bottom: 1em;
-  font-size: 4em;
-  color:$pink;
-  margin-botton:3rem;
-}
-
 .dono-text-heading {
   font-size: 4em;
   padding-bottom:1rem;
@@ -228,33 +231,15 @@ img.hero-stars {
   magin: auto;
 }
 
-.dono-img {
-  border-radius: 5%;
-  max-width: 100%;
-  height: 300px;
-  background-image: url(../img/donation_page/donation-1.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 .sponsor-img {
   filter: brightness(200%) grayscale(1);
 }
 
-.dono-img-2 {
-  border-radius: 5%;
-  max-width: 100%;
-  height: 300px;
-  //margin-top: 5em;
-  background-image: url(../img/donation_page/donation-2.jpg);
-  background-size:cover;
-  background-position:center;
-  background-repeat:no-repeat;
-}
+
 
 .dono-jumbotron {
-  background: #2d2d2d url(../img/donation_page/donate-background.png) no-repeat center center;
+  background: #122230 url(../img/donation_page/donate-background.png) no-repeat center center;
+  //background-color: #2d2d2d;
   background-size: cover;
   width: 100%;
   padding-top: 18rem;
@@ -435,10 +420,79 @@ article.body {
   position: relative;
   z-index: 5;
   font-size: 1.8rem;
-  section.dono {
+
+  section.dono-story {
     @extend .section;
-    background-color: $darker-grey;
+    background-color: #122230;
     color: $white;
+    padding-bottom: 3rem;
+
+    div.dono-story-text {
+      @media (min-width: 767.98px) {
+        padding-right: 11rem;
+      }
+    }
+
+    div.dono-img {
+      border-radius: 5%;
+      max-width: 100%;
+      height: 300px;
+      background-image: url(../img/donation_page/donation-1.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+  section.dono-promise {
+    @extend .section;
+    background-color: #0d1924;
+    color: $white;
+    margin-bottom: 3rem;
+    //margin-top: 3rem;
+    padding-top: 5rem;
+
+    div.dono-promise-text {
+      @media (min-width: 767.98px) {
+        padding-left: 11rem;
+      }
+    }
+
+    div.dono-img-2 {
+      border-radius: 5%;
+      height: 275px;
+      //margin-top: 5em;
+      background-image: url(../img/donation_page/donation-2.jpg);
+      background-size:cover;
+      background-position:center;
+      background-repeat:no-repeat;
+    }
+  }
+  section.dono-impact {
+    @extend .section;
+    $section-bg-color: #070d13;
+    background-color: $section-bg-color;
+    color: $white;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    margin-top: -3rem;
+
+    p {
+      text-align: center;
+    }
+    div.dono-heading {
+      padding-bottom: 1em;
+      font-size: 4em;
+      color:$pink;
+      text-align: center;
+    }
+  }
+  section.dono-questions {
+    @extend .section;
+    $section-bg-color: $black;
+    background-color: $section-bg-color;
+    color: $white;
+    padding-top: 1rem;
+    margin-top: -3rem;
   }
   section.intro {
     @extend .section;
@@ -812,9 +866,9 @@ article.body {
   }
 }
 
-section.dono {
+section.dono-impact {
   @extend .section;
-  div.register-card {
+  div.impact-card {
     border: 3px solid white;
     // min-height: 505px;
     padding: 1rem;
@@ -833,20 +887,19 @@ section.dono {
         margin-bottom: 4rem;
       }
     }
-    heading {
-      color: $pink;
-    }
     p {
-      text-align: left;
+      text-align: center;
+      margin-top: -8rem;
+      margin-bottom: 4rem;
     }
-
     .disabled {
       opacity: 0.5 !important;
       pointer-events: none !important;
     }
     div.img-holder {
-      background-color: $darker-grey;
-      border: 3px solid white;
+      $section-bg-color: #070d13;
+      background-color: $section-bg-color;
+      border: 12px double white;
       border-radius: 7rem;
       position: relative;
       top: -7rem - 4rem;
@@ -928,10 +981,6 @@ section.dono {
           background-color: $pink;
         }
       }
-    }
-    p {
-      margin-top: -8rem;
-      margin-bottom: 4rem;
     }
   }
 }
