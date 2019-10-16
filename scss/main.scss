@@ -21,6 +21,7 @@ html {
   background: $darker-grey;
 }
 
+
 .button {
   background-color: transparent;
   border: 3px solid;
@@ -235,6 +236,12 @@ img.hero-stars {
   filter: brightness(200%) grayscale(1);
 }
 
+.last-bar{
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(to right, cyan, rgb(255, 153, 255));
+  border-image-slice: 1;
+  padding: 25px;
+}
 
 
 .dono-jumbotron {
@@ -784,7 +791,8 @@ article.body {
       right: 1%; 
     }
       
-    img.site-stars {    
+    img.site-stars {  
+      opacity: .5;  
       position: absolute;   
       overflow: hidden;   
       justify-content: left;    
@@ -809,6 +817,7 @@ article.body {
       margin-bottom: 4rem;
     }
     img.site-stars {
+      opacity: .5;  
       position: absolute;
       overflow: hidden;
       justify-content: left;
@@ -858,7 +867,10 @@ article.body {
       padding-top: 4rem;
       margin-bottom: 2rem;
       background-color: transparent;
-      border-bottom: 3px solid $cyan;
+      border-bottom: 3px solid transparent;
+      border-image: linear-gradient(to right, cyan, rgb(255, 153, 255));
+      border-image-slice: 1;
+      padding: 25px;
       text-align: left;
       outline: none;
       transition: ease all 0.3s;
