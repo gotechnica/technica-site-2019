@@ -1039,6 +1039,13 @@ article.contact {
   @extend .section;
   $section-bg-color: #070d13;
   background-color: $section-bg-color;
+  background: -webkit-linear-gradient(
+      to bottom,
+      #1c1f22,
+      #000000
+      
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #1c1f22,#000000 );
   text-align: center;
   position: relative;
   z-index: 5;
