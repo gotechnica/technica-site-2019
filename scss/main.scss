@@ -994,55 +994,121 @@ section.dono-impact {
   }
 }
 
+
+    
 section.sched {
-  @extend .section;
-  $section-bg-color: #243d49;
-  background-color: $section-bg-color;
-  color: $white;
-  h1 {
-    margin-bottom: 4rem;
-  }
-  h3 {
-    text-align: left;
-    margin-bottom: 2rem;
-  }
-  .app {
-    max-width: 16rem;
-    margin: 0px 4px;
-    opacity: 0.7;
-    transition: ease all 0.1s;
-    &:hover {
-      opacity: 1;
-      transform: scale(1.05);
-    }
-  }
-  .schedule-table {
-    margin-top: 4rem;
-    text-align: left;
-    width: 100%;
-    tr {
-      border-bottom: 2px solid $grey;
-      &.heading {
-        border: none;
-        h3 {
-          color: $lavender;
+      @extend .section;
+      $schedule-section-bg-color: #070d13;
+      background-color: $schedule-section-bg-color;
+      background: linear-gradient(to bottom, #1c1f22, #070d13);
+
+      color: $white;
+
+      .app {
+          max-width: 16rem;
+          margin: 0px 4px;
+          opacity: .7;
+          transition: ease all .1s;
+
+          &:hover {
+              opacity: 1;
+              transform: scale(1.05);
+          }
+      }
+      .daybtn{
+          display:inline-block;
+          align-items:center;
+          justify-content:center;
+          width:75%;
+          font-size:3rem;
+          color:$white;
+          background-color:#1c1f22;
+          border-color:$pink;
+          margin-top:-10%;
+      }
+      .daybtn:hover{
+          background-color:$pink
+      }
+       div.img-holder {
+        border: 3px solid $lavender;
+        background-color: #1c1f22;
+        border-radius: 7rem;
+        position: relative;
+        left: 50%;
+        margin-left: -7rem;
+        top: -7rem - 1rem;
+        align-self: center;
+        width: 14rem;
+        height: 14rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 19rem;
+          // padding: 1rem;
         }
       }
-      &.subheading {
-        h3 {
-          padding-top: 6rem;
-        }
+      .sched-box {
+          border: 3px solid;
+          border-color: $lavender;
+          border-radius: .8rem;
       }
-    }
-    th,
-    td {
-      min-width: 12rem;
-      padding: 1rem;
-      // padding-right: 1rem;
-      // padding-bottom: .8rem;
-    }
+      
+      .divTable {
+          display: table;
+      }
+      .divTable h1{
+          margin-left:1rem;
+      }
+      .divTableRow {
+          display: table-row;
+      }
+
+      .divTableRow .divTableCell {
+          display: table-cell;
+          padding: 2rem 2rem .3rem;
+          font-weight: bold;
+          text-align:left;
+
+      }
+      #sunday{
+          display:table-row-group;
+          display: none;
+      }
+  
+      .divTableHeader .divTableCell {
+          font-size: 2.2rem;
+          font-weight: bold;
+          color: $white;
+          border-bottom: 2px solid $cyan;
+      }
+
+      
+      .divTableRow .divTableCell:first-child {
+          margin:0;
+          text-align:left;
+          padding:0;
+          padding-left:1rem;
+          width:1%;
+      }
+      .divTableRow .divTableCell.time {
+          border-right:2px solid $lavender ;
+      }
+      .divTableRow .divTableCell:nth-child(2) {
+          tex-align:left;
+          
+      }
+      .divTableRow .divTableCell:nth-child(3) {
+          text-align:cfffenter;
+      }
+
+
+      .divTableBody {
+          display: table-row-group;
+      }
   }
-}
+    
+
 
 article.contact {
   @extend .section;
@@ -1054,7 +1120,7 @@ article.contact {
       #000000
       
     ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #1c1f22,#000000 );
+    background: linear-gradient(to bottom,#070d13,#000000 );
   text-align: center;
   position: relative;
   z-index: 5;
