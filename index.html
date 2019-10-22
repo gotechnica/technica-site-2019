@@ -69,8 +69,8 @@
 
     <!-- Open Graph data (Facebook) -->
     <meta property="og:title" content="Technica" />
-        <meta property="og:description" content="All-women hackathon at University of Maryland." />
-<meta property="og:type" content="website" />
+    <meta property="og:description" content="All-women hackathon at University of Maryland." />
+    <meta property="og:type" content="website" />
     <meta property="og:url" content="http://gotechnica.org" />
     <meta property="og:image" content="http://gotechnica.org/img/share-link-2018.png" />
     <meta property="og:image:url" content="http://gotechnica.org/img/share-link-2018.png" />
@@ -78,6 +78,24 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '2430237730636491');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=2430237730636491&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
   </head>
   <body>
     <!-- Hero -->
@@ -150,7 +168,7 @@
       <div class="gradient-cloud-outer">
         <div class="gradient-cloud"></div>
       </div>
-      
+
       <section id="registration" class="registration reg-gradient">
           <div class="container">
             <div class="heading">
@@ -168,7 +186,7 @@
                   <p>
                     Come build using hardware, software, or anything you want with other hackers! You don’t have to know how to code to be a hacker. Hackers can be students, designers, or just any tech-lover out there!
                   </p>
-                  <a target="_blank" href="https://gotechnica.typeform.com/to/loxKPY" class="button rounded">Hacker</a>
+                  <a target="_blank" href="https://gotechnica.typeform.com/to/loxKPY" class="button rounded" onClick="fbq('trackCustom', 'StartHackerRegistration')">Hacker</a>
                 </div>
               </div>
               <div class="col-lg-3">
@@ -182,7 +200,7 @@
                   </p>
 
                   <!-- TODO add link! -->
-                  <a target="_blank" href="https://gotechnica.typeform.com/to/dlm6F4" class="button rounded">Volunteer</a>
+                  <a target="_blank" href="https://gotechnica.typeform.com/to/dlm6F4" class="button rounded" onClick="fbq('trackCustom', 'StartVolunteerRegistration')">Volunteer</a>
 
                   <!-- <a href="#" class="button disabled">COMING SOON</a> -->
                   <!-- <h4>COMING SOON</h4> -->
@@ -198,7 +216,7 @@
                   </p>
                   <!-- TODO add link! -->
 
-                  <a target="_blank" href="https://gotechnica.typeform.com/to/qzNjnU" class="button rounded">Mentor</a>
+                  <a target="_blank" href="https://gotechnica.typeform.com/to/qzNjnU" class="button rounded" onClick="fbq('trackCustom', 'StartMentorRegistration')">Mentor</a>
                   <!-- <a href="#" class="button disabled">COMING SOON</a> -->
                   <!-- <h4>COMING SOON</h4> -->
                 </div>
@@ -212,7 +230,7 @@
                     Calling all undergraduates interested in research! Come explore the fields of research within computer science. You’ll get to work hands-on with experienced faculty researchers and other students to use technology to address social issues!
                   </p>
                   <!--                        <a target="_blank" href="https://gotechnica.typeform.com/to/loxKPY" class="button">Tech + Research</a>-->
-                  <a target="_blank" href="https://go.umd.edu/TechResearchApplication" class="button rounded">Tech + Research</a>
+                  <a target="_blank" href="https://go.umd.edu/TechResearchApplication" class="button rounded" onClick="fbq('trackCustom', 'StartTechXRegistration')">Tech + Research</a>
                 </div>
               </div>
             </div>
@@ -221,7 +239,7 @@
 
         <!-- <article class="faq-gradient"> -->
         <section class="faq">
-          
+
           <div class="container">
             <div class="heading text-center">
               <h1>Frequently Asked Questions</h1>
@@ -363,7 +381,7 @@
                 <a href="https://gotechnica.org/donate" class="button">Donate</a>
               </div>
             </div>
-            <img class="blueplanet" src="./img/blueplanet-01.svg">    
+            <img class="blueplanet" src="./img/blueplanet-01.svg">
           </section>
         </article>
 
@@ -445,8 +463,8 @@
                     <a target="_blank" href="https://www.troweprice.com/personal-investing/home.html?PlacementGUID=QPyfbkLm&ATLID=1&gclid=Cj0KCQjw3JXtBRC8ARIsAEBHg4lYMEjpP6pfYEn9R9ZkbV1TdltDCijX_eNM_YuYTszBnbL6EABE0asaAu9nEALw_wcB&mkwid=sQPyfbkLm_317497666280_trowe%20price_p_c&mtid=2550w6259815&slid=&product_id="><img class="sponsors-img" src="img/sponsor_logos/trowprice.svg" title="TRowePrice"></a>
                   </div>
                 </div>
-                  
-                  
+
+
               </div>
             </div>
 
@@ -497,7 +515,7 @@
                     <a target="_blank" href="https://www.goldmansachs.com"><img class="sponsors-img" src="img/sponsor_logos/goldman-sachs-text.svg" title="Goldman Sachs"></a>
                   </div>
                 </div>
-                  
+
                 <div class="col-md-4">
                   <div class="sponsor sponsor-img">
                     <a target="_blank" href="https://www.adobe.com/creativecloud.html?sdid=KKQWX&mv=search&ef_id=Cj0KCQjwivbsBRDsARIsADyISJ9bqPB83OIqlYO2_G7Cy1zbxceJOAPg6s9z63xDrlV0BwfQJ3r7hscaApQ1EALw_wcB:G:s&s_kwcid=AL!3085!3!301408567085!e!!g!!adobe&gclid=Cj0KCQjwivbsBRDsARIsADyISJ9bqPB83OIqlYO2_G7Cy1zbxceJOAPg6s9z63xDrlV0BwfQJ3r7hscaApQ1EALw_wcB"><img class="sponsors-img" src="img/sponsor_logos/adobe_white.svg" title="Adobe"></a>
@@ -507,7 +525,7 @@
                   <div class="sponsor sponsor-img">
                     <a target="_blank" href="https://www.nih.gov/"><img class="sponsors-img" src="img/sponsor_logos/nih_w.svg" title="NIH"></a>
                   </div>
-                </div>               
+                </div>
               </div>
 
             <div class="accordion">
@@ -603,14 +621,14 @@
                     <a target="_blank" href="https://bsos.umd.edu"><img class="sponsors-img gray" src="img/sponsor_logos/bsos-white.svg" title="BSOS"></a>
                   </div>
                 </div>
-              
+
                 <div class="col-md-4">
                   <div class="sponsor sponsor-img">
                     <a target="_blank" href="https://www.nasdaq.com"><img class="sponsors-img" src="img/sponsor_logos/NASDAQ_Logo_white.svg" title="Nasdaq"></a>
                   </div>
                 </div>
-              
-               
+
+
                   <div class="col-md-4">
                   <div class="sponsor sponsor-img">
                     <a target="_blank" href="http://www.mtech.umd.edu/index.html"><img class="sponsors-img" src="img/sponsor_logos/Mtech.svg" title="MTech"></a>
@@ -618,13 +636,13 @@
                 </div>
               </div>
             </div>
-              
+
             <div class="accordion">
               <h3>Contributor</h3>
             </div>
             <div class="panel">
               <div class="row align-items-center justify-content-center">
-                
+
                 <div class="col-md-4">
                    <div class="sponsor sponsor-img">
                        <a target="_blank" href="https://www.rhsmith.umd.edu/centers-excellence/social-value-creation/about-us"><img class="sponsors-img" src="img/sponsor_logos/center_for_value_Creation_logo.svg" title="Dingman Center"></a>
@@ -709,7 +727,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-        
+
 
       // document.getElementById('bg-video').play();
 
@@ -742,7 +760,7 @@
           }, 1300);
           return false;
           });
-      
+
     </script>
   </body>
 </html>
