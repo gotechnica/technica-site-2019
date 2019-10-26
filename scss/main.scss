@@ -651,55 +651,6 @@ article.body {
       }
     }
   }
-  section.sched {
-    @extend .section;
-    $section-bg-color: #243d49;
-    background-color: $section-bg-color;
-    color: $white;
-    h1 {
-      margin-bottom: 4rem;
-    }
-    h3 {
-      text-align: left;
-      margin-bottom: 2rem;
-    }
-    .app {
-      max-width: 16rem;
-      margin: 0px 4px;
-      opacity: 0.7;
-      transition: ease all 0.1s;
-      &:hover {
-        opacity: 1;
-        transform: scale(1.05);
-      }
-    }
-    .schedule-table {
-      margin-top: 4rem;
-      text-align: left;
-      width: 100%;
-      tr {
-        border-bottom: 2px solid $grey;
-        &.heading {
-          border: none;
-          h3 {
-            color: $lavender;
-          }
-        }
-        &.subheading {
-          h3 {
-            padding-top: 6rem;
-          }
-        }
-      }
-      th,
-      td {
-        min-width: 12rem;
-        padding: 1rem;
-        // padding-right: 1rem;
-        // padding-bottom: .8rem;
-      }
-    }
-  }
   section.faq {
     @function multiple-box-shadow($n) {
       $value: "#{random(2000)}px #{random(2000)}px #FFF";
@@ -815,14 +766,14 @@ article.body {
     }
     img.site-stars {
       opacity: .5;  
-      position: absolute;
+      position:absolute;
       overflow: hidden;
       justify-content: left;
       margin-left: -5%;
     }
     .caption {
+      margin-top:10rem;
       position: relative;
-      margin-bottom: 4rem;
       z-index: 100;
     }
     .base-sponsor {
@@ -995,53 +946,148 @@ section.dono-impact {
 }
 
 section.sched {
-  @extend .section;
-  $section-bg-color: #243d49;
-  background-color: $section-bg-color;
-  color: $white;
-  h1 {
-    margin-bottom: 4rem;
-  }
-  h3 {
-    text-align: left;
-    margin-bottom: 2rem;
-  }
-  .app {
-    max-width: 16rem;
-    margin: 0px 4px;
-    opacity: 0.7;
-    transition: ease all 0.1s;
-    &:hover {
-      opacity: 1;
-      transform: scale(1.05);
+    @extend .section;
+    $schedule-section-bg-color: #070d13;
+    background-color: $schedule-section-bg-color;
+    background: linear-gradient(to bottom, #1c1f22, #070d13);
+    color: $white;
+    overflow:auto;
+    .button-container{
+        margin-top:-5%;
+        margin-bottom:3%;
     }
-  }
-  .schedule-table {
-    margin-top: 4rem;
-    text-align: left;
-    width: 100%;
-    tr {
-      border-bottom: 2px solid $grey;
-      &.heading {
-        border: none;
-        h3 {
-          color: $lavender;
+    
+    
+    .separator{
+        font-size: 3rem;
+        color:$cyan;
+    }
+    
+    .daybtn {
+        margin-bottom:1rem;
+        width:30rem;
+        background-color: transparent;
+        border: 2px solid;
+        border-radius: 50rem;
+        padding: 1.4rem 7.2rem;
+        font-size: 2.2rem;
+        color: $white;
+        font-family: "DINPro";
+        font-weight: bold;
+        text-transform: uppercase;
+        position: relative;
+        transition: all ease 0.15s;
+
+    }
+    
+    .star_pos{
+        position:absolute;
+    }
+    
+    #satbtn{
+        background-color:$pink;
+        border-color:$pink;
+    }
+    
+    #sunday{
+        transition: all ease 0.15s;
+    }
+    #saturday{
+        transition: all ease 0.15s;
+
+    }
+
+
+    div.img-holder {
+        border: 3px solid $lavender;
+        background-color: #1c1f22;
+        border-radius: 7rem;
+        position: relative;
+        left: 50%;
+        margin-left: -7rem;
+        top: -7rem - 1rem;
+        align-self: center;
+        width: 14rem;
+        height: 14rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 19rem;
+            // padding: 1rem;
         }
-      }
-      &.subheading {
-        h3 {
-          padding-top: 6rem;
+    }
+
+    .sched-box {
+        border: 3px solid;
+        border-color: $lavender;
+        border-radius: .8rem;
+    }
+
+    .divTable {
+        display: table;
+    }
+
+    .divTable h1 {
+        margin-left: 1rem;
+    }
+
+    .divTableRow {
+        display: table-row;
+    }
+
+    .divTableRow .divTableCell {
+        display: table-cell;
+        padding: 2rem 2rem .3rem;
+        font-weight: bold;
+        text-align: left;
+
+    }
+
+    #sunday {
+        display: table-row-group;
+        display: none;
+    }
+
+    .divTableHeader .divTableCell {
+        font-size: 2.2rem;
+        font-weight: bold;
+        color: $white;
+        border-bottom: 2px solid $cyan;
+    }
+
+
+    .divTableRow .divTableCell:first-child {
+        margin: 0;
+        text-align: left;
+        padding: 0;
+        padding-left: 1rem;
+        width: 1%;
+    }
+
+  
+
+    .divTableRow .divTableCell:nth-child(2) {
+        tex-align: left;
+
+    }
+
+    .divTableRow .divTableCell:nth-child(3) {
+        text-align: left;
+    }
+
+
+    .divTableBody {
+        display: table-row-group;
+    }
+    
+    @media only screen and (max-width: 300px) {
+         .text-center{
+            font-size: 1.5rem;
         }
-      }
     }
-    th,
-    td {
-      min-width: 12rem;
-      padding: 1rem;
-      // padding-right: 1rem;
-      // padding-bottom: .8rem;
-    }
-  }
+
 }
 
 article.contact {
@@ -1054,10 +1100,12 @@ article.contact {
       #000000
       
     ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #1c1f22,#000000 );
+    background: linear-gradient(to bottom, #070d13,black );
   text-align: center;
   position: relative;
   z-index: 5;
+    
+    
   .heading {
     text-align: center;
   }
@@ -1097,6 +1145,8 @@ article.contact {
         width:8rem;
         height: auto;
     }
+    
+
 }
 
 article.footer {
