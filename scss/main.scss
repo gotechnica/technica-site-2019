@@ -952,7 +952,6 @@ section.sched {
     background: linear-gradient(to bottom, #1c1f22, #070d13);
     color: $white;
     overflow:auto;
-    z-index:5;
     .button-container{
         margin-top:-5%;
         margin-bottom:3%;
@@ -960,7 +959,7 @@ section.sched {
     
     
     .separator{
-        font-size: 2.1rem;
+        font-size: 2.2rem;
         color:$cyan;
     }
     
@@ -983,9 +982,6 @@ section.sched {
     
     .star_pos{
         position:absolute;
-        margin-top: -4%;
-        z-index:0;
-
     }
     
     #satbtn{
@@ -1031,7 +1027,6 @@ section.sched {
 
     .divTable {
         display: table;
-       
     }
 
     .divTable h1 {
@@ -1045,7 +1040,7 @@ section.sched {
     .divTableRow .divTableCell {
         display: table-cell;
         padding: 2rem 2rem .3rem;
-        font-weight: 525;
+        font-weight: bold;
         text-align: left;
 
     }
@@ -1085,6 +1080,12 @@ section.sched {
 
     .divTableBody {
         display: table-row-group;
+    }
+    
+    @media only screen and (max-width: 300px) {
+         .text-center{
+            font-size: 1.5rem;
+        }
     }
 
 }
