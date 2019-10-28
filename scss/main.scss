@@ -977,8 +977,10 @@ section.sched {
         text-transform: uppercase;
         position: relative;
         transition: all ease 0.15s;
+        
+        
+  }
 
-    }
     
     .star_pos{
         position:absolute;
@@ -987,7 +989,24 @@ section.sched {
     #satbtn{
         background-color:$pink;
         border-color:$pink;
+        color:white;
+        
+         
     }
+    
+    .daybtn:hover {
+             background-color:$pink;
+             border-color:$pink;
+             color: white;
+    }
+    
+    #sunbtn{
+        background-color:transparent;
+        border-color:white;
+        color:white;
+          
+    }
+ 
     
     #sunday{
         transition: all ease 0.15s;
@@ -1080,12 +1099,6 @@ section.sched {
 
     .divTableBody {
         display: table-row-group;
-    }
-    
-    @media only screen and (max-width: 300px) {
-         .text-center{
-            font-size: 1.5rem;
-        }
     }
 
 }
