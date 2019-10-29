@@ -708,6 +708,8 @@ article.body {
       overflow: hidden;
       transition: max-height 0.1s ease-out;
     }
+      
+
   }
 
   section.donate {
@@ -952,6 +954,7 @@ section.sched {
     background: linear-gradient(to bottom, #192e3a, #192e3a);
     color: $white;
     overflow:auto;
+    
     .button-container{
         margin-top:-5%;
         margin-bottom:3%;
@@ -1106,6 +1109,23 @@ section.sched {
         border:none;
         
     }
+    
+    .divTable .divTableRow div{
+        padding-left:10rem;
+        padding-right:5rem;
+    }
+    .separator div{
+        padding-left:10rem;
+        padding-right:5rem;
+    }
+    
+    .divTable .divTableRow div:first-child{
+        padding-left:2.5rem;
+    }
+    
+    
+
+
 
 }
 
