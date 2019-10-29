@@ -949,7 +949,7 @@ section.sched {
     @extend .section;
     $schedule-section-bg-color: #070d13;
     background-color: $schedule-section-bg-color;
-    background: linear-gradient(to bottom, #1c1f22, #070d13);
+    background: linear-gradient(to bottom, #192e3a, #192e3a);
     color: $white;
     overflow:auto;
     .button-container{
@@ -1019,7 +1019,7 @@ section.sched {
 
     div.img-holder {
         border: 3px solid $lavender;
-        background-color: #1c1f22;
+        background-color: #192e3a;
         border-radius: 7rem;
         position: relative;
         left: 50%;
@@ -1099,6 +1099,12 @@ section.sched {
 
     .divTableBody {
         display: table-row-group;
+    }
+    
+    .divTableBody .divTableRow:last-child div{
+        
+        border:none;
+        
     }
 
 }
