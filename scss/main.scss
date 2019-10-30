@@ -1121,8 +1121,44 @@ section.sched {
     
     .divTable .divTableRow div:first-child{
         padding-left:2.5rem;
+        margin-right:10rem;
     }
     
+    @media only screen and (max-width: 411px) {
+        
+        .divTable .divTableRow div:first-child {
+            padding-left: 2rem;
+            margin-right: 5rem;
+        }
+        
+        .divTableHeader .divTableCell {
+            font-size: 1.4rem;
+        }
+        
+         .divTable .divTableRow div {
+             padding-left: 3.7rem;
+             padding-right: 5rem;
+         }
+
+    }
+    
+     @media only screen and (max-width: 360px) {
+        
+        .divTable .divTableRow div:first-child {
+            padding-left: 2rem;
+            margin-right: 5rem;
+        }
+        
+        .divTableHeader .divTableCell {
+            font-size: 1.4rem;
+        }
+        
+         .divTable .divTableRow div {
+             padding-left: 2rem;
+             padding-right: 3rem;
+         }
+
+    }
     
 
 
