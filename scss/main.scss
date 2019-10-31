@@ -1160,6 +1160,24 @@ section.sched {
 
     }
     
+     @media only screen and (max-width: 320px) {
+        
+        .divTable .divTableRow div:first-child {
+            padding-left: 2rem;
+            margin-right: 5rem;
+        }
+        
+        .divTableHeader .divTableCell {
+            font-size: 1.4rem;
+        }
+        
+         .divTable .divTableRow div {
+             padding-left: 2rem;
+             padding-right: 1rem;
+         }
+
+    }
+    
 
 
 
