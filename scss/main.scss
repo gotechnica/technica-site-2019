@@ -1161,6 +1161,8 @@ section.sched {
     }
     
      @media only screen and (max-width: 320px) {
+         
+         
         
         .divTable .divTableRow div:first-child {
             padding-left: 2rem;
@@ -1178,6 +1180,10 @@ section.sched {
          
           .daybtn{
              width:100%;
+         }
+         
+         .heading{
+             margin-bottom:9rem;
          }
 
     }
