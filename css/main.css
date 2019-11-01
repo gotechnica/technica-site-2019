@@ -171,19 +171,19 @@ img.hero-stars {
   border-bottom: 2px solid #00f5f5;
   margin: 0 1.5rem; }
 
-.section, article.body section.dono-story, article.body section.dono-promise, article.body section.dono-impact, article.body section.dono-questions, article.body section.intro, article.body section.registration, article.body section.sched, article.body section.faq, article.body section.donate, article.body section.sponsors, section.dono-impact, section.sched, article.contact {
+.section, article.body section.dono-story, article.body section.dono-promise, article.body section.dono-impact, article.body section.dono-questions, article.body section.intro, article.body section.registration, article.body section.faq, article.body section.donate, article.body section.sponsors, section.dono-impact, section.sched, article.contact {
   padding-top: 8rem;
   padding-bottom: 8rem; }
   @media (max-width: 767.98px) {
-    .section, article.body section.dono-story, article.body section.dono-promise, article.body section.dono-impact, article.body section.dono-questions, article.body section.intro, article.body section.registration, article.body section.sched, article.body section.faq, article.body section.donate, article.body section.sponsors, section.dono-impact, section.sched, article.contact {
+    .section, article.body section.dono-story, article.body section.dono-promise, article.body section.dono-impact, article.body section.dono-questions, article.body section.intro, article.body section.registration, article.body section.faq, article.body section.donate, article.body section.sponsors, section.dono-impact, section.sched, article.contact {
       padding-top: 4rem;
       padding-bottom: 4rem; } }
-  .section .heading, article.body section.dono-story .heading, article.body section.dono-promise .heading, article.body section.dono-impact .heading, article.body section.dono-questions .heading, article.body section.intro .heading, article.body section.registration .heading, article.body section.sched .heading, article.body section.faq .heading, article.body section.donate .heading, article.body section.sponsors .heading, section.dono-impact .heading, section.sched .heading, article.contact .heading {
+  .section .heading, article.body section.dono-story .heading, article.body section.dono-promise .heading, article.body section.dono-impact .heading, article.body section.dono-questions .heading, article.body section.intro .heading, article.body section.registration .heading, article.body section.faq .heading, article.body section.donate .heading, article.body section.sponsors .heading, section.dono-impact .heading, section.sched .heading, article.contact .heading {
     text-align: left;
     position: relative;
     z-index: 0;
     margin-bottom: 6rem; }
-  .section p, article.body section.dono-story p, article.body section.dono-promise p, article.body section.dono-impact p, article.body section.dono-questions p, article.body section.intro p, article.body section.registration p, article.body section.sched p, article.body section.faq p, article.body section.donate p, article.body section.sponsors p, section.dono-impact p, section.sched p, article.contact p {
+  .section p, article.body section.dono-story p, article.body section.dono-promise p, article.body section.dono-impact p, article.body section.dono-questions p, article.body section.intro p, article.body section.registration p, article.body section.faq p, article.body section.donate p, article.body section.sponsors p, section.dono-impact p, section.sched p, article.contact p {
     margin-bottom: 2rem;
     opacity: 0.8; }
 
@@ -529,38 +529,6 @@ article.body {
         color: white;
         margin-top: -8rem;
         margin-bottom: 4rem; }
-  article.body section.sched {
-    background-color: #243d49;
-    color: #ffffff; }
-    article.body section.sched h1 {
-      margin-bottom: 4rem; }
-    article.body section.sched h3 {
-      text-align: left;
-      margin-bottom: 2rem; }
-    article.body section.sched .app {
-      max-width: 16rem;
-      margin: 0px 4px;
-      opacity: 0.7;
-      transition: ease all 0.1s; }
-      article.body section.sched .app:hover {
-        opacity: 1;
-        transform: scale(1.05); }
-    article.body section.sched .schedule-table {
-      margin-top: 4rem;
-      text-align: left;
-      width: 100%; }
-      article.body section.sched .schedule-table tr {
-        border-bottom: 2px solid #464343; }
-        article.body section.sched .schedule-table tr.heading {
-          border: none; }
-          article.body section.sched .schedule-table tr.heading h3 {
-            color: #b6a1c4; }
-        article.body section.sched .schedule-table tr.subheading h3 {
-          padding-top: 6rem; }
-      article.body section.sched .schedule-table th,
-      article.body section.sched .schedule-table td {
-        min-width: 12rem;
-        padding: 1rem; }
   article.body section.faq {
     background-color: #122230;
     background: -webkit-linear-gradient(to bottom, #192e3a, #12202b);
@@ -638,8 +606,8 @@ article.body {
       justify-content: left;
       margin-left: -5%; }
     article.body section.sponsors .caption {
+      margin-top: 10rem;
       position: relative;
-      margin-bottom: 4rem;
       z-index: 100; }
     article.body section.sponsors .base-sponsor, article.body section.sponsors .gold-sponsor, article.body section.sponsors .silver-sponsor, article.body section.sponsors .sponsor, article.body section.sponsors .small-sponsor {
       padding: 4rem 0rem; }
@@ -758,43 +726,143 @@ section.dono-impact div.impact-card {
         background-color: #ff7bac; }
 
 section.sched {
-  background-color: #243d49;
-  color: #ffffff; }
-  section.sched h1 {
-    margin-bottom: 4rem; }
-  section.sched h3 {
+  background-color: #070d13;
+  background: linear-gradient(to bottom, #192e3a, #192e3a);
+  color: #ffffff;
+  overflow: auto; }
+  section.sched .button-container {
+    margin-top: -5%;
+    margin-bottom: 3%; }
+  section.sched .separator {
+    font-size: 2.2rem;
+    color: #00f5f5; }
+  section.sched .daybtn {
+    margin-bottom: 1rem;
+    width: 30rem;
+    background-color: transparent;
+    border: 2px solid;
+    border-radius: 50rem;
+    padding: 1.4rem 7.2rem;
+    font-size: 2.2rem;
+    color: #ffffff;
+    font-family: "DINPro";
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    transition: all ease 0.15s; }
+  section.sched .star_pos {
+    position: absolute; }
+  section.sched #satbtn {
+    background-color: #ff7bac;
+    border-color: #ff7bac;
+    color: white; }
+  section.sched .daybtn:hover {
+    background-color: #ff7bac;
+    border-color: #ff7bac;
+    color: white; }
+  section.sched #sunbtn {
+    background-color: transparent;
+    border-color: white;
+    color: white; }
+  section.sched #sunday {
+    transition: all ease 0.15s; }
+  section.sched #saturday {
+    transition: all ease 0.15s; }
+  section.sched div.img-holder {
+    border: 3px solid #b6a1c4;
+    background-color: #192e3a;
+    border-radius: 7rem;
+    position: relative;
+    left: 50%;
+    margin-left: -7rem;
+    top: -8rem;
+    align-self: center;
+    width: 14rem;
+    height: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    section.sched div.img-holder img {
+      width: 19rem; }
+  section.sched .sched-box {
+    border: 3px solid;
+    border-color: #b6a1c4;
+    border-radius: .8rem; }
+  section.sched .divTable {
+    display: table; }
+  section.sched .divTable h1 {
+    margin-left: 1rem; }
+  section.sched .divTableRow {
+    display: table-row; }
+  section.sched .divTableRow .divTableCell {
+    display: table-cell;
+    padding: 2rem 2rem .3rem;
+    font-weight: bold;
+    text-align: left; }
+  section.sched #sunday {
+    display: table-row-group;
+    display: none; }
+  section.sched .divTableHeader .divTableCell {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+    border-bottom: 2px solid #00f5f5; }
+  section.sched .divTableRow .divTableCell:first-child {
+    margin: 0;
     text-align: left;
-    margin-bottom: 2rem; }
-  section.sched .app {
-    max-width: 16rem;
-    margin: 0px 4px;
-    opacity: 0.7;
-    transition: ease all 0.1s; }
-    section.sched .app:hover {
-      opacity: 1;
-      transform: scale(1.05); }
-  section.sched .schedule-table {
-    margin-top: 4rem;
-    text-align: left;
-    width: 100%; }
-    section.sched .schedule-table tr {
-      border-bottom: 2px solid #464343; }
-      section.sched .schedule-table tr.heading {
-        border: none; }
-        section.sched .schedule-table tr.heading h3 {
-          color: #b6a1c4; }
-      section.sched .schedule-table tr.subheading h3 {
-        padding-top: 6rem; }
-    section.sched .schedule-table th,
-    section.sched .schedule-table td {
-      min-width: 12rem;
-      padding: 1rem; }
+    padding: 0;
+    padding-left: 1rem;
+    width: 1%; }
+  section.sched .divTableRow .divTableCell:nth-child(2) {
+    tex-align: left; }
+  section.sched .divTableRow .divTableCell:nth-child(3) {
+    text-align: left; }
+  section.sched .divTableBody {
+    display: table-row-group; }
+  section.sched .divTableBody .divTableRow:last-child div {
+    border: none; }
+  section.sched .divTable .divTableRow div {
+    padding-left: 10rem;
+    padding-right: 5rem; }
+  section.sched .separator div {
+    padding-left: 10rem;
+    padding-right: 5rem; }
+  section.sched .divTable .divTableRow div:first-child {
+    padding-left: 2.5rem;
+    margin-right: 10rem; }
+  @media only screen and (max-width: 414px) {
+    section.sched .divTable .divTableRow div:first-child {
+      padding-left: 2rem;
+      margin-right: 5rem; }
+    section.sched .divTableHeader .divTableCell {
+      font-size: 1.4rem; }
+    section.sched .divTable .divTableRow div {
+      padding-left: 3.7rem;
+      padding-right: 5rem; } }
+  @media only screen and (max-width: 375px) {
+    section.sched .divTable .divTableRow div:first-child {
+      padding-left: 2rem;
+      margin-right: 5rem; }
+    section.sched .divTableHeader .divTableCell {
+      font-size: 1.4rem; }
+    section.sched .divTable .divTableRow div {
+      padding-left: 2rem;
+      padding-right: 3rem; } }
+  @media only screen and (max-width: 320px) {
+    section.sched .divTable .divTableRow div:first-child {
+      padding-left: 2rem;
+      margin-right: 5rem; }
+    section.sched .divTableHeader .divTableCell {
+      font-size: 1.4rem; }
+    section.sched .divTable .divTableRow div {
+      padding-left: 2rem;
+      padding-right: 1rem; } }
 
 article.contact {
   background-color: #070d13;
   background: -webkit-linear-gradient(to bottom, #1c1f22, #000000);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #1c1f22, #000000);
+  background: linear-gradient(to bottom, #1c1f22, black);
   text-align: center;
   position: relative;
   z-index: 5; }
@@ -902,65 +970,65 @@ article.footer {
   .shooting_star::after {
     transform: translateX(50%) rotateZ(-45deg); }
   .shooting_star:nth-child(1) {
-    top: calc(50% - 191px);
-    left: calc(50% - 36px);
-    animation-delay: 8121ms; }
+    top: calc(50% - 109px);
+    left: calc(50% - 245px);
+    animation-delay: 1896ms; }
     .shooting_star:nth-child(1)::before, .shooting_star:nth-child(1)::after, .shooting_star:nth-child(1)::after {
-      animation-delay: 8121ms; }
+      animation-delay: 1896ms; }
   .shooting_star:nth-child(2) {
-    top: calc(50% - 34px);
-    left: calc(50% - 204px);
-    animation-delay: 8597ms; }
+    top: calc(50% - 177px);
+    left: calc(50% - 258px);
+    animation-delay: 9190ms; }
     .shooting_star:nth-child(2)::before, .shooting_star:nth-child(2)::after, .shooting_star:nth-child(2)::after {
-      animation-delay: 8597ms; }
+      animation-delay: 9190ms; }
   .shooting_star:nth-child(3) {
-    top: calc(50% - 65px);
-    left: calc(50% - 164px);
-    animation-delay: 9897ms; }
+    top: calc(50% - 187px);
+    left: calc(50% - 76px);
+    animation-delay: 2638ms; }
     .shooting_star:nth-child(3)::before, .shooting_star:nth-child(3)::after, .shooting_star:nth-child(3)::after {
-      animation-delay: 9897ms; }
+      animation-delay: 2638ms; }
   .shooting_star:nth-child(4) {
-    top: calc(50% - -55px);
-    left: calc(50% - 82px);
-    animation-delay: 9664ms; }
+    top: calc(50% - 73px);
+    left: calc(50% - 272px);
+    animation-delay: 8082ms; }
     .shooting_star:nth-child(4)::before, .shooting_star:nth-child(4)::after, .shooting_star:nth-child(4)::after {
-      animation-delay: 9664ms; }
+      animation-delay: 8082ms; }
   .shooting_star:nth-child(5) {
-    top: calc(50% - 87px);
-    left: calc(50% - 55px);
-    animation-delay: 7509ms; }
+    top: calc(50% - -170px);
+    left: calc(50% - 42px);
+    animation-delay: 2762ms; }
     .shooting_star:nth-child(5)::before, .shooting_star:nth-child(5)::after, .shooting_star:nth-child(5)::after {
-      animation-delay: 7509ms; }
+      animation-delay: 2762ms; }
   .shooting_star:nth-child(6) {
-    top: calc(50% - -33px);
-    left: calc(50% - 252px);
-    animation-delay: 6202ms; }
+    top: calc(50% - -53px);
+    left: calc(50% - 80px);
+    animation-delay: 8473ms; }
     .shooting_star:nth-child(6)::before, .shooting_star:nth-child(6)::after, .shooting_star:nth-child(6)::after {
-      animation-delay: 6202ms; }
+      animation-delay: 8473ms; }
   .shooting_star:nth-child(7) {
-    top: calc(50% - 62px);
-    left: calc(50% - 129px);
-    animation-delay: 3768ms; }
+    top: calc(50% - -77px);
+    left: calc(50% - 25px);
+    animation-delay: 9898ms; }
     .shooting_star:nth-child(7)::before, .shooting_star:nth-child(7)::after, .shooting_star:nth-child(7)::after {
-      animation-delay: 3768ms; }
+      animation-delay: 9898ms; }
   .shooting_star:nth-child(8) {
-    top: calc(50% - -7px);
-    left: calc(50% - 225px);
-    animation-delay: 561ms; }
+    top: calc(50% - 111px);
+    left: calc(50% - 32px);
+    animation-delay: 7769ms; }
     .shooting_star:nth-child(8)::before, .shooting_star:nth-child(8)::after, .shooting_star:nth-child(8)::after {
-      animation-delay: 561ms; }
+      animation-delay: 7769ms; }
   .shooting_star:nth-child(9) {
-    top: calc(50% - 178px);
-    left: calc(50% - 135px);
-    animation-delay: 7679ms; }
+    top: calc(50% - 41px);
+    left: calc(50% - 243px);
+    animation-delay: 1291ms; }
     .shooting_star:nth-child(9)::before, .shooting_star:nth-child(9)::after, .shooting_star:nth-child(9)::after {
-      animation-delay: 7679ms; }
+      animation-delay: 1291ms; }
   .shooting_star:nth-child(10) {
-    top: calc(50% - -59px);
-    left: calc(50% - 30px);
-    animation-delay: 9695ms; }
+    top: calc(50% - -43px);
+    left: calc(50% - 207px);
+    animation-delay: 7334ms; }
     .shooting_star:nth-child(10)::before, .shooting_star:nth-child(10)::after, .shooting_star:nth-child(10)::after {
-      animation-delay: 9695ms; }
+      animation-delay: 7334ms; }
 
 @keyframes tail {
   0% {
