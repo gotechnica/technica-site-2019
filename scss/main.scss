@@ -269,14 +269,14 @@ section.travel-schedule{
     margin: 0px;
     padding: 0px;
 
-    
+
     div.dono-heading {
       padding-bottom: 1em;
       font-size: 4em;
       color:$pink;
       text-align: center;
     }
-    
+
     .bus-schedule .school{
         color:$pink;
         font-weight: 600;
@@ -293,24 +293,24 @@ section.travel-schedule{
       background: linear-gradient(to right, $cyan, $lavender, $pink);
       padding: .1rem;
     }
-        
+
     .module-border-wrap:last-child{
         padding-bottom:0;
     }
-    
+
      .module-border-wrap:first-child{
         padding-top:0;
     }
-    
-    
+
+
 
     .module {
       background:  #112230;
       padding-top: 2rem;
 
     }
-    
-    
+
+
     @media (max-width: 320px) {
         .brand{
             transform:scale(0.75);
@@ -341,14 +341,14 @@ section.travel-schedule{
       width: 300px;
     }
   }
-    
+
 }
 .bus-link{
     margin-top:13.4rem;
     margin-left:1rem;
     font-size:1.7rem;
 
-    
+
 }
 
 .bus-link a{
@@ -838,7 +838,7 @@ article.body {
       overflow: hidden;
       transition: max-height 0.1s ease-out;
     }
-      
+
 
   }
 
@@ -855,30 +855,30 @@ article.body {
       color: $pink;
       border-color: $white;
     }
-      
+
       .text-center{
           position:relative;
           z-index:3;
       }
-    img.blueplanet {  
+    img.blueplanet {
       position:absolute;
-      width: 20%;   
-      left: 1%;   
-    }   
-    img.purpleplanet { 
-      position:absolute;
-      width: 15%;   
-      right: 1%; 
+      width: 20%;
+      left: 1%;
     }
-      
-    img.site-stars {  
-      opacity: .5;  
-      position: absolute;   
-      overflow: hidden;   
-      justify-content: left;    
-      margin-left: -5%;   
-    }   
-      
+    img.purpleplanet {
+      position:absolute;
+      width: 15%;
+      right: 1%;
+    }
+
+    img.site-stars {
+      opacity: .5;
+      position: absolute;
+      overflow: hidden;
+      justify-content: left;
+      margin-left: -5%;
+    }
+
   }
 
   section.sponsors {
@@ -897,7 +897,7 @@ article.body {
       margin-bottom: 4rem;
     }
     img.site-stars {
-      opacity: .5;  
+      opacity: .5;
       position:absolute;
       overflow: hidden;
       justify-content: left;
@@ -1087,18 +1087,18 @@ section.sched {
     background: linear-gradient(to bottom, #192e3a, #192e3a);
     color: $white;
     overflow:auto;
-    
+
     .button-container{
         margin-top:-5%;
         margin-bottom:3%;
     }
-    
-    
+
+
     .separator{
         font-size: 2.2rem;
         color:$cyan;
     }
-    
+
     .daybtn {
         margin-bottom:1rem;
         width:30rem;
@@ -1113,37 +1113,37 @@ section.sched {
         text-transform: uppercase;
         position: relative;
         transition: all ease 0.15s;
-        
-        
+
+
   }
 
-    
+
     .star_pos{
         position:absolute;
     }
-    
+
     #satbtn{
         background-color:$pink;
         border-color:$pink;
         color:white;
-        
-         
+
+
     }
-    
+
     .daybtn:hover {
              background-color:$pink;
              border-color:$pink;
              color: white;
     }
-    
+
     #sunbtn{
         background-color:transparent;
         border-color:white;
         color:white;
-          
+
     }
- 
-    
+
+
     #sunday{
         transition: all ease 0.15s;
     }
@@ -1221,7 +1221,7 @@ section.sched {
         width: 1%;
     }
 
-  
+
 
     .divTableRow .divTableCell:nth-child(2) {
         tex-align: left;
@@ -1236,13 +1236,13 @@ section.sched {
     .divTableBody {
         display: table-row-group;
     }
-    
+
     .divTableBody .divTableRow:last-child div{
-        
+
         border:none;
-        
+
     }
-    
+
     .divTable .divTableRow div{
         padding-left:10rem;
         padding-right:5rem;
@@ -1251,76 +1251,76 @@ section.sched {
         padding-left:10rem;
         padding-right:5rem;
     }
-    
+
     .divTable .divTableRow div:first-child{
         padding-left:2.5rem;
         margin-right:10rem;
     }
-    
+
     @media only screen and (max-width: 414px) {
-        
+
         .divTable .divTableRow div:first-child {
             padding-left: 2rem;
             margin-right: 5rem;
         }
-        
+
         .divTableHeader .divTableCell {
             font-size: 1.4rem;
         }
-        
+
          .divTable .divTableRow div {
              padding-left: 3.7rem;
              padding-right: 5rem;
          }
 
     }
-    
+
      @media only screen and (max-width: 375px) {
-        
+
         .divTable .divTableRow div:first-child {
             padding-left: 2rem;
             margin-right: 5rem;
         }
-        
+
         .divTableHeader .divTableCell {
             font-size: 1.4rem;
         }
-        
+
          .divTable .divTableRow div {
              padding-left: 2rem;
              padding-right: 3rem;
          }
 
     }
-    
+
      @media only screen and (max-width: 320px) {
-         
-         
-        
+
+
+
         .divTable .divTableRow div:first-child {
             padding-left: 2rem;
             margin-right: 5rem;
         }
-        
+
         .divTableHeader .divTableCell {
             font-size: 1.4rem;
         }
-        
+
          .divTable .divTableRow div {
              padding-left: 2rem;
              padding-right: 1rem;
          }
-         
+
           .daybtn{
              width:100%;
          }
-         
+
          .heading{
              margin-bottom:9rem;
          }
 
     }
-    
+
 
 
 
@@ -1334,14 +1334,14 @@ article.contact {
       to bottom,
       #1c1f22,
       #000000
-      
+
     ); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #1c1f22,black );
   text-align: center;
   position: relative;
   z-index: 5;
-    
-    
+
+
   .heading {
     text-align: center;
   }
@@ -1352,7 +1352,7 @@ article.contact {
   h2 {
     color: $white;
   }
-  
+
   .list-inline li {
     list-style: inline;
     display: inline;
@@ -1376,12 +1376,12 @@ article.contact {
       }
     }
   }
-    
+
     img{
         width:8rem;
         height: auto;
     }
-    
+
 
 }
 
