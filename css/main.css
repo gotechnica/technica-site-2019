@@ -1050,65 +1050,65 @@ article.footer {
   .shooting_star::after {
     transform: translateX(50%) rotateZ(-45deg); }
   .shooting_star:nth-child(1) {
-    top: calc(50% - -29px);
-    left: calc(50% - 171px);
-    animation-delay: 2453ms; }
+    top: calc(50% - -190px);
+    left: calc(50% - 111px);
+    animation-delay: 3146ms; }
     .shooting_star:nth-child(1)::before, .shooting_star:nth-child(1)::after, .shooting_star:nth-child(1)::after {
-      animation-delay: 2453ms; }
+      animation-delay: 3146ms; }
   .shooting_star:nth-child(2) {
-    top: calc(50% - 131px);
-    left: calc(50% - 165px);
-    animation-delay: 2284ms; }
+    top: calc(50% - -86px);
+    left: calc(50% - 166px);
+    animation-delay: 6343ms; }
     .shooting_star:nth-child(2)::before, .shooting_star:nth-child(2)::after, .shooting_star:nth-child(2)::after {
-      animation-delay: 2284ms; }
+      animation-delay: 6343ms; }
   .shooting_star:nth-child(3) {
-    top: calc(50% - -95px);
-    left: calc(50% - 259px);
-    animation-delay: 7781ms; }
+    top: calc(50% - -187px);
+    left: calc(50% - 163px);
+    animation-delay: 7130ms; }
     .shooting_star:nth-child(3)::before, .shooting_star:nth-child(3)::after, .shooting_star:nth-child(3)::after {
-      animation-delay: 7781ms; }
+      animation-delay: 7130ms; }
   .shooting_star:nth-child(4) {
-    top: calc(50% - 136px);
-    left: calc(50% - 115px);
-    animation-delay: 7903ms; }
+    top: calc(50% - 183px);
+    left: calc(50% - 114px);
+    animation-delay: 4205ms; }
     .shooting_star:nth-child(4)::before, .shooting_star:nth-child(4)::after, .shooting_star:nth-child(4)::after {
-      animation-delay: 7903ms; }
+      animation-delay: 4205ms; }
   .shooting_star:nth-child(5) {
-    top: calc(50% - -82px);
-    left: calc(50% - 130px);
-    animation-delay: 602ms; }
+    top: calc(50% - 63px);
+    left: calc(50% - 98px);
+    animation-delay: 9161ms; }
     .shooting_star:nth-child(5)::before, .shooting_star:nth-child(5)::after, .shooting_star:nth-child(5)::after {
-      animation-delay: 602ms; }
+      animation-delay: 9161ms; }
   .shooting_star:nth-child(6) {
-    top: calc(50% - -6px);
-    left: calc(50% - 155px);
-    animation-delay: 5434ms; }
+    top: calc(50% - -120px);
+    left: calc(50% - 51px);
+    animation-delay: 8305ms; }
     .shooting_star:nth-child(6)::before, .shooting_star:nth-child(6)::after, .shooting_star:nth-child(6)::after {
-      animation-delay: 5434ms; }
+      animation-delay: 8305ms; }
   .shooting_star:nth-child(7) {
-    top: calc(50% - 66px);
-    left: calc(50% - 104px);
-    animation-delay: 7077ms; }
+    top: calc(50% - -169px);
+    left: calc(50% - 8px);
+    animation-delay: 846ms; }
     .shooting_star:nth-child(7)::before, .shooting_star:nth-child(7)::after, .shooting_star:nth-child(7)::after {
-      animation-delay: 7077ms; }
+      animation-delay: 846ms; }
   .shooting_star:nth-child(8) {
-    top: calc(50% - -175px);
-    left: calc(50% - 172px);
-    animation-delay: 3667ms; }
+    top: calc(50% - -193px);
+    left: calc(50% - 29px);
+    animation-delay: 600ms; }
     .shooting_star:nth-child(8)::before, .shooting_star:nth-child(8)::after, .shooting_star:nth-child(8)::after {
-      animation-delay: 3667ms; }
+      animation-delay: 600ms; }
   .shooting_star:nth-child(9) {
-    top: calc(50% - 101px);
-    left: calc(50% - 131px);
-    animation-delay: 195ms; }
+    top: calc(50% - -72px);
+    left: calc(50% - 218px);
+    animation-delay: 9937ms; }
     .shooting_star:nth-child(9)::before, .shooting_star:nth-child(9)::after, .shooting_star:nth-child(9)::after {
-      animation-delay: 195ms; }
+      animation-delay: 9937ms; }
   .shooting_star:nth-child(10) {
-    top: calc(50% - -27px);
-    left: calc(50% - 156px);
-    animation-delay: 9890ms; }
+    top: calc(50% - -177px);
+    left: calc(50% - 125px);
+    animation-delay: 6276ms; }
     .shooting_star:nth-child(10)::before, .shooting_star:nth-child(10)::after, .shooting_star:nth-child(10)::after {
-      animation-delay: 9890ms; }
+      animation-delay: 6276ms; }
 
 @keyframes tail {
   0% {
