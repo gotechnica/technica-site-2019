@@ -130,6 +130,7 @@ img.hero-stars {
   }
 }
 
+
 .section {
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -244,6 +245,130 @@ img.hero-stars {
 }
 
 
+
+
+
+
+section.travel-questions {
+    @extend .section;
+    $section-bg-color: $black;
+    background-color: $section-bg-color;
+    color: $white;
+    padding-top: 1rem;
+    margin-top: -3rem;
+  }
+section.travel-schedule{
+    @extend .section;
+    $section-bg-color: #112230;
+    background-color: $section-bg-color;
+    color: $white;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    margin-top: -3rem;
+    width:100%;
+    margin: 0px;
+    padding: 0px;
+
+    
+    div.dono-heading {
+      padding-bottom: 1em;
+      font-size: 4em;
+      color:$pink;
+      text-align: center;
+    }
+    
+    .bus-schedule .school{
+        color:$pink;
+        font-weight: 600;
+    }
+    .bus-schedule .time{
+        color:$cyan;
+        font-weight: 600;
+    }
+
+
+    .module-border-wrap {
+      padding: 1rem;
+      position: relative;
+      background: linear-gradient(to right, $cyan, $lavender, $pink);
+      padding: .1rem;
+    }
+        
+    .module-border-wrap:last-child{
+        padding-bottom:0;
+    }
+    
+     .module-border-wrap:first-child{
+        padding-top:0;
+    }
+    
+    
+
+    .module {
+      background:  #112230;
+      padding-top: 2rem;
+
+    }
+    
+    
+    @media (max-width: 320px) {
+        .brand{
+            transform:scale(0.75);
+        }
+    }
+
+}
+
+.bus-jumbotron {
+  background: #122230 url(../img/donation_page/donate-background.png) no-repeat center center;
+  //background-color: #2d2d2d;
+  background-size: cover;
+  width: 100%;
+  padding-top: 18rem;
+  padding-bottom: 20rem;
+  div.text-center{
+    margin-top: -10rem;
+  }
+  img.brand {
+    @media (min-width: 767.98px) {
+      height: 80px;
+      width: 400px;
+    }
+  }
+    img.brand {
+    @media (max-width: 320px) {
+      height: 80px;
+      width: 300px;
+    }
+  }
+    
+}
+.bus-link{
+    margin-top:13.4rem;
+    margin-left:1rem;
+    font-size:1.7rem;
+
+    
+}
+
+.bus-link a{
+    text-decoration: none;
+    color:white;
+    font-weight:bold;
+    transition: ease all .2s;
+
+
+}
+.bus-link a:hover{
+    color:$pink;
+
+}
+
+
+
+
+
+
 .dono-jumbotron {
   background: #122230 url(../img/donation_page/donate-background.png) no-repeat center center;
   //background-color: #2d2d2d;
@@ -258,6 +383,11 @@ img.hero-stars {
     @media (min-width: 767.98px) {
       height: 80px;
       width: 400px;
+    }
+  }
+    img.brand {
+    @media (max-width: 320px) {
+      transform:scale(.90);
     }
   }
 }
@@ -946,6 +1076,9 @@ section.dono-impact {
     }
   }
 }
+
+
+
 
 section.sched {
     @extend .section;
