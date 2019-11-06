@@ -171,19 +171,19 @@ img.hero-stars {
   border-bottom: 2px solid #00f5f5;
   margin: 0 1.5rem; }
 
-.section, article.body section.dono-story, article.body section.dono-promise, article.body section.dono-impact, article.body section.dono-questions, article.body section.intro, article.body section.registration, article.body section.faq, article.body section.donate, article.body section.sponsors, section.dono-impact, section.sched, article.contact {
+.section, section.travel-questions, section.travel-schedule, article.body section.dono-story, article.body section.dono-promise, article.body section.dono-impact, article.body section.dono-questions, article.body section.intro, article.body section.registration, article.body section.faq, article.body section.donate, article.body section.sponsors, section.dono-impact, section.sched, article.contact {
   padding-top: 8rem;
   padding-bottom: 8rem; }
   @media (max-width: 767.98px) {
-    .section, article.body section.dono-story, article.body section.dono-promise, article.body section.dono-impact, article.body section.dono-questions, article.body section.intro, article.body section.registration, article.body section.faq, article.body section.donate, article.body section.sponsors, section.dono-impact, section.sched, article.contact {
+    .section, section.travel-questions, section.travel-schedule, article.body section.dono-story, article.body section.dono-promise, article.body section.dono-impact, article.body section.dono-questions, article.body section.intro, article.body section.registration, article.body section.faq, article.body section.donate, article.body section.sponsors, section.dono-impact, section.sched, article.contact {
       padding-top: 4rem;
       padding-bottom: 4rem; } }
-  .section .heading, article.body section.dono-story .heading, article.body section.dono-promise .heading, article.body section.dono-impact .heading, article.body section.dono-questions .heading, article.body section.intro .heading, article.body section.registration .heading, article.body section.faq .heading, article.body section.donate .heading, article.body section.sponsors .heading, section.dono-impact .heading, section.sched .heading, article.contact .heading {
+  .section .heading, section.travel-questions .heading, section.travel-schedule .heading, article.body section.dono-story .heading, article.body section.dono-promise .heading, article.body section.dono-impact .heading, article.body section.dono-questions .heading, article.body section.intro .heading, article.body section.registration .heading, article.body section.faq .heading, article.body section.donate .heading, article.body section.sponsors .heading, section.dono-impact .heading, section.sched .heading, article.contact .heading {
     text-align: left;
     position: relative;
     z-index: 0;
     margin-bottom: 6rem; }
-  .section p, article.body section.dono-story p, article.body section.dono-promise p, article.body section.dono-impact p, article.body section.dono-questions p, article.body section.intro p, article.body section.registration p, article.body section.faq p, article.body section.donate p, article.body section.sponsors p, section.dono-impact p, section.sched p, article.contact p {
+  .section p, section.travel-questions p, section.travel-schedule p, article.body section.dono-story p, article.body section.dono-promise p, article.body section.dono-impact p, article.body section.dono-questions p, article.body section.intro p, article.body section.registration p, article.body section.faq p, article.body section.donate p, article.body section.sponsors p, section.dono-impact p, section.sched p, article.contact p {
     margin-bottom: 2rem;
     opacity: 0.8; }
 
@@ -257,6 +257,79 @@ img.hero-stars {
   border-image-slice: 1;
   padding: 25px; }
 
+section.travel-questions {
+  background-color: #000000;
+  color: #ffffff;
+  padding-top: 1rem;
+  margin-top: -3rem; }
+
+section.travel-schedule {
+  background-color: #112230;
+  color: #ffffff;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  margin-top: -3rem;
+  width: 100%;
+  margin: 0px;
+  padding: 0px; }
+  section.travel-schedule div.dono-heading {
+    padding-bottom: 1em;
+    font-size: 4em;
+    color: #ff7bac;
+    text-align: center; }
+  section.travel-schedule .bus-schedule .school {
+    color: #ff7bac;
+    font-weight: 600; }
+  section.travel-schedule .bus-schedule .time {
+    color: #00f5f5;
+    font-weight: 600; }
+  section.travel-schedule .module-border-wrap {
+    padding: 1rem;
+    position: relative;
+    background: linear-gradient(to right, #00f5f5, #b6a1c4, #ff7bac);
+    padding: .1rem; }
+  section.travel-schedule .module-border-wrap:last-child {
+    padding-bottom: 0; }
+  section.travel-schedule .module-border-wrap:first-child {
+    padding-top: 0; }
+  section.travel-schedule .module {
+    background: #112230;
+    padding-top: 2rem; }
+  @media (max-width: 320px) {
+    section.travel-schedule .brand {
+      transform: scale(0.75); } }
+
+.bus-jumbotron {
+  background: #122230 url(../img/donation_page/donate-background.png) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  padding-top: 18rem;
+  padding-bottom: 20rem; }
+  .bus-jumbotron div.text-center {
+    margin-top: -10rem; }
+  @media (min-width: 767.98px) {
+    .bus-jumbotron img.brand {
+      height: 80px;
+      width: 400px; } }
+  @media (max-width: 320px) {
+    .bus-jumbotron img.brand {
+      height: 80px;
+      width: 300px; } }
+
+.bus-link {
+  margin-top: 13.4rem;
+  margin-left: 1rem;
+  font-size: 1.7rem; }
+
+.bus-link a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: ease all .2s; }
+
+.bus-link a:hover {
+  color: #ff7bac; }
+
 .dono-jumbotron {
   background: #122230 url(../img/donation_page/donate-background.png) no-repeat center center;
   background-size: cover;
@@ -269,6 +342,9 @@ img.hero-stars {
     .dono-jumbotron img.brand {
       height: 80px;
       width: 400px; } }
+  @media (max-width: 320px) {
+    .dono-jumbotron img.brand {
+      transform: scale(0.9); } }
 
 .white {
   color: #ffffff; }
@@ -974,65 +1050,65 @@ article.footer {
   .shooting_star::after {
     transform: translateX(50%) rotateZ(-45deg); }
   .shooting_star:nth-child(1) {
-    top: calc(50% - 93px);
-    left: calc(50% - 28px);
-    animation-delay: 5047ms; }
-    .shooting_star:nth-child(1)::before, .shooting_star:nth-child(1)::after, .shooting_star:nth-child(1)::after {
-      animation-delay: 5047ms; }
-  .shooting_star:nth-child(2) {
-    top: calc(50% - 44px);
-    left: calc(50% - 79px);
-    animation-delay: 5294ms; }
-    .shooting_star:nth-child(2)::before, .shooting_star:nth-child(2)::after, .shooting_star:nth-child(2)::after {
-      animation-delay: 5294ms; }
-  .shooting_star:nth-child(3) {
-    top: calc(50% - -79px);
-    left: calc(50% - 19px);
-    animation-delay: 4880ms; }
-    .shooting_star:nth-child(3)::before, .shooting_star:nth-child(3)::after, .shooting_star:nth-child(3)::after {
-      animation-delay: 4880ms; }
-  .shooting_star:nth-child(4) {
-    top: calc(50% - -9px);
-    left: calc(50% - 160px);
-    animation-delay: 5303ms; }
-    .shooting_star:nth-child(4)::before, .shooting_star:nth-child(4)::after, .shooting_star:nth-child(4)::after {
-      animation-delay: 5303ms; }
-  .shooting_star:nth-child(5) {
-    top: calc(50% - 131px);
-    left: calc(50% - 90px);
-    animation-delay: 8652ms; }
-    .shooting_star:nth-child(5)::before, .shooting_star:nth-child(5)::after, .shooting_star:nth-child(5)::after {
-      animation-delay: 8652ms; }
-  .shooting_star:nth-child(6) {
-    top: calc(50% - 171px);
-    left: calc(50% - 291px);
-    animation-delay: 7860ms; }
-    .shooting_star:nth-child(6)::before, .shooting_star:nth-child(6)::after, .shooting_star:nth-child(6)::after {
-      animation-delay: 7860ms; }
-  .shooting_star:nth-child(7) {
-    top: calc(50% - -156px);
-    left: calc(50% - 198px);
-    animation-delay: 8701ms; }
-    .shooting_star:nth-child(7)::before, .shooting_star:nth-child(7)::after, .shooting_star:nth-child(7)::after {
-      animation-delay: 8701ms; }
-  .shooting_star:nth-child(8) {
-    top: calc(50% - 125px);
+    top: calc(50% - -29px);
     left: calc(50% - 171px);
-    animation-delay: 2235ms; }
+    animation-delay: 2453ms; }
+    .shooting_star:nth-child(1)::before, .shooting_star:nth-child(1)::after, .shooting_star:nth-child(1)::after {
+      animation-delay: 2453ms; }
+  .shooting_star:nth-child(2) {
+    top: calc(50% - 131px);
+    left: calc(50% - 165px);
+    animation-delay: 2284ms; }
+    .shooting_star:nth-child(2)::before, .shooting_star:nth-child(2)::after, .shooting_star:nth-child(2)::after {
+      animation-delay: 2284ms; }
+  .shooting_star:nth-child(3) {
+    top: calc(50% - -95px);
+    left: calc(50% - 259px);
+    animation-delay: 7781ms; }
+    .shooting_star:nth-child(3)::before, .shooting_star:nth-child(3)::after, .shooting_star:nth-child(3)::after {
+      animation-delay: 7781ms; }
+  .shooting_star:nth-child(4) {
+    top: calc(50% - 136px);
+    left: calc(50% - 115px);
+    animation-delay: 7903ms; }
+    .shooting_star:nth-child(4)::before, .shooting_star:nth-child(4)::after, .shooting_star:nth-child(4)::after {
+      animation-delay: 7903ms; }
+  .shooting_star:nth-child(5) {
+    top: calc(50% - -82px);
+    left: calc(50% - 130px);
+    animation-delay: 602ms; }
+    .shooting_star:nth-child(5)::before, .shooting_star:nth-child(5)::after, .shooting_star:nth-child(5)::after {
+      animation-delay: 602ms; }
+  .shooting_star:nth-child(6) {
+    top: calc(50% - -6px);
+    left: calc(50% - 155px);
+    animation-delay: 5434ms; }
+    .shooting_star:nth-child(6)::before, .shooting_star:nth-child(6)::after, .shooting_star:nth-child(6)::after {
+      animation-delay: 5434ms; }
+  .shooting_star:nth-child(7) {
+    top: calc(50% - 66px);
+    left: calc(50% - 104px);
+    animation-delay: 7077ms; }
+    .shooting_star:nth-child(7)::before, .shooting_star:nth-child(7)::after, .shooting_star:nth-child(7)::after {
+      animation-delay: 7077ms; }
+  .shooting_star:nth-child(8) {
+    top: calc(50% - -175px);
+    left: calc(50% - 172px);
+    animation-delay: 3667ms; }
     .shooting_star:nth-child(8)::before, .shooting_star:nth-child(8)::after, .shooting_star:nth-child(8)::after {
-      animation-delay: 2235ms; }
+      animation-delay: 3667ms; }
   .shooting_star:nth-child(9) {
-    top: calc(50% - -107px);
-    left: calc(50% - 30px);
-    animation-delay: 9669ms; }
+    top: calc(50% - 101px);
+    left: calc(50% - 131px);
+    animation-delay: 195ms; }
     .shooting_star:nth-child(9)::before, .shooting_star:nth-child(9)::after, .shooting_star:nth-child(9)::after {
-      animation-delay: 9669ms; }
+      animation-delay: 195ms; }
   .shooting_star:nth-child(10) {
-    top: calc(50% - 92px);
-    left: calc(50% - 108px);
-    animation-delay: 9022ms; }
+    top: calc(50% - -27px);
+    left: calc(50% - 156px);
+    animation-delay: 9890ms; }
     .shooting_star:nth-child(10)::before, .shooting_star:nth-child(10)::after, .shooting_star:nth-child(10)::after {
-      animation-delay: 9022ms; }
+      animation-delay: 9890ms; }
 
 @keyframes tail {
   0% {
