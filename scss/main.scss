@@ -412,7 +412,7 @@ article.hero {
     $deep-sky
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom, $pink, $med-sky, $deep-sky);
-  padding-top: 10rem;
+  //padding-top: 20rem;
   // padding-bottom: 22rem;
   overflow: hidden;
   position: relative;
@@ -549,37 +549,6 @@ article.hero {
   );
   background: linear-gradient(to bottom, #FFFFFF, #66a4b3);
 }
-
-#navbar {
-  background-color: rgba(69,69,69,0);
-  transition: 0.3s all;
-  // background-color: rgba(69,69,69,1);
-  float: none;
-  text-align: center;
-  height: 5rem;
-
-  .nav-link {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: white;
-    padding-left:2rem;
-    padding-right:2rem;
-  }
-  .nav-link:hover {
-    opacity:0.7;
-  }
-}
-
-.changeColor {
-  background-color: rgba(69,69,69,1) !important;
-}
-
-.navbar-nav.navbar-center {
-  position: absolute;
-  left: 50%;
-  transform: translatex(-50%);
-}
-
 
 article.body {
   color: $grey;
