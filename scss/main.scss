@@ -848,38 +848,53 @@ article.body {
     color: white;
     text-align: center;
 
+    div.text-container {
+      @media (min-width: 767.98px) {
+        background-color: $grey-transparent;
+        opacity: 0.99;
+        color: white;
+        margin: -4rem;
+        padding: 4rem;
+        border-radius: 4%;
+      }
+    }
+    div.round-frame {
+      border-radius: 25px;
+    }
+
     .scard {
+      padding-top: 3rem;
       border: 3px solid white;
       border-radius: 2rem;
-      margin: 0.5rem;
+      margin: 1.5rem 0.5rem 1.5rem 0.5rem;
     }
 
-    .cyan-border {
-      border-color: $cyan !important;
+    h2 {
+      font-weight: bold;
     }
 
-    .pink-border {
-      border-color: $pink !important;
+    .cyan-text {
+      color: $cyan;
+    }
+    .pink-text {
+      color: $pink;
     }
 
     .img-holder  {
       width: 200px;
       height: 200px;
       overflow: hidden;
-      margin: 5rem auto 0 auto;
+      margin: 5rem auto 3rem auto;
       border: 3px solid white;
-      border-radius: 7rem;
+      border-radius: 50%;
     }
 
-    .img-1 {
-      width: auto;
+    img {
+      width: 100%;
       height: 100%;
     }
 
-    .img-2 {
-      width: 100%;
-      height: auto;
-    }
+
 
     .accordion {
       cursor: pointer;
@@ -914,16 +929,6 @@ article.body {
     .accordion:active {
       @media (max-width: 767.98px) {
         border-color: $cyan;
-      }
-    }
-
-    .accordion-pink:hover {
-      border-color: $pink !important;
-    }
-
-    .accordion-pink:active {
-      @media (max-width: 767.98px) {
-        border-color: $pink !important;
       }
     }
 
