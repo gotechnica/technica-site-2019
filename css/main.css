@@ -171,19 +171,19 @@ img.hero-stars {
   border-bottom: 2px solid #00f5f5;
   margin: 0 1.5rem; }
 
-.section, section.travel-questions, section.travel-schedule, article.body section.dono-story, article.body section.dono-promise, article.body section.dono-impact, article.body section.dono-questions, article.body section.intro, article.body section.registration, article.body section.faq, article.body section.donate, article.body section.sponsors, section.dono-impact, section.sched, article.contact {
+.section, section.travel-questions, section.travel-schedule, article.body section.dono-story, article.body section.dono-promise, article.body section.dono-impact, article.body section.dono-questions, article.body section.intro, article.body section.registration, article.body section.faq, article.body section.speakers, article.body section.donate, article.body section.sponsors, section.dono-impact, section.sched, article.contact {
   padding-top: 8rem;
   padding-bottom: 8rem; }
   @media (max-width: 767.98px) {
-    .section, section.travel-questions, section.travel-schedule, article.body section.dono-story, article.body section.dono-promise, article.body section.dono-impact, article.body section.dono-questions, article.body section.intro, article.body section.registration, article.body section.faq, article.body section.donate, article.body section.sponsors, section.dono-impact, section.sched, article.contact {
+    .section, section.travel-questions, section.travel-schedule, article.body section.dono-story, article.body section.dono-promise, article.body section.dono-impact, article.body section.dono-questions, article.body section.intro, article.body section.registration, article.body section.faq, article.body section.speakers, article.body section.donate, article.body section.sponsors, section.dono-impact, section.sched, article.contact {
       padding-top: 4rem;
       padding-bottom: 4rem; } }
-  .section .heading, section.travel-questions .heading, section.travel-schedule .heading, article.body section.dono-story .heading, article.body section.dono-promise .heading, article.body section.dono-impact .heading, article.body section.dono-questions .heading, article.body section.intro .heading, article.body section.registration .heading, article.body section.faq .heading, article.body section.donate .heading, article.body section.sponsors .heading, section.dono-impact .heading, section.sched .heading, article.contact .heading {
+  .section .heading, section.travel-questions .heading, section.travel-schedule .heading, article.body section.dono-story .heading, article.body section.dono-promise .heading, article.body section.dono-impact .heading, article.body section.dono-questions .heading, article.body section.intro .heading, article.body section.registration .heading, article.body section.faq .heading, article.body section.speakers .heading, article.body section.donate .heading, article.body section.sponsors .heading, section.dono-impact .heading, section.sched .heading, article.contact .heading {
     text-align: left;
     position: relative;
     z-index: 0;
     margin-bottom: 6rem; }
-  .section p, section.travel-questions p, section.travel-schedule p, article.body section.dono-story p, article.body section.dono-promise p, article.body section.dono-impact p, article.body section.dono-questions p, article.body section.intro p, article.body section.registration p, article.body section.faq p, article.body section.donate p, article.body section.sponsors p, section.dono-impact p, section.sched p, article.contact p {
+  .section p, section.travel-questions p, section.travel-schedule p, article.body section.dono-story p, article.body section.dono-promise p, article.body section.dono-impact p, article.body section.dono-questions p, article.body section.intro p, article.body section.registration p, article.body section.faq p, article.body section.speakers p, article.body section.donate p, article.body section.sponsors p, section.dono-impact p, section.sched p, article.contact p {
     margin-bottom: 2rem;
     opacity: 0.8; }
 
@@ -641,6 +641,73 @@ article.body {
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.1s ease-out; }
+  article.body section.speakers {
+    background-color: #070d13;
+    background: linear-gradient(to bottom, #192e3a, #192e3a);
+    color: white;
+    text-align: center; }
+    @media (min-width: 767.98px) {
+      article.body section.speakers div.text-container {
+        background-color: rgba(70, 67, 67, 0.7);
+        opacity: 0.99;
+        color: white;
+        margin: -4rem;
+        padding: 4rem;
+        border-radius: 4%; } }
+    article.body section.speakers div.round-frame {
+      border-radius: 25px; }
+    article.body section.speakers .scard {
+      padding-top: 3rem;
+      border: 3px solid white;
+      border-radius: 2rem;
+      margin: 1.5rem 0.5rem 1.5rem 0.5rem; }
+    article.body section.speakers h2 {
+      font-weight: bold; }
+    article.body section.speakers .lavender-text {
+      color: #b6a1c4; }
+    article.body section.speakers .img-holder {
+      width: 200px;
+      height: 200px;
+      overflow: hidden;
+      margin: 5rem auto 3rem auto;
+      background: linear-gradient(to right, cyan, #ff99ff) !important;
+      padding: 3px;
+      border-radius: 50%; }
+    article.body section.speakers img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      padding: 3px; }
+    article.body section.speakers .accordion {
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      border: none;
+      padding-bottom: 1rem;
+      padding-top: 4rem;
+      margin-bottom: 2rem;
+      border-bottom: 3px solid rgba(255, 255, 255, 0.1);
+      background-color: transparent;
+      text-align: left;
+      outline: none;
+      transition: ease all 0.3s; }
+    article.body section.speakers .accordion-holder {
+      margin: 3rem; }
+    article.body section.speakers .active,
+    article.body section.speakers .accordion:hover {
+      border-color: #00f5f5; }
+      @media (max-width: 767.98px) {
+        article.body section.speakers .active,
+        article.body section.speakers .accordion:hover {
+          border-color: #464343; } }
+    @media (max-width: 767.98px) {
+      article.body section.speakers .accordion:active {
+        border-color: #00f5f5; } }
+    article.body section.speakers .panel {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.1s ease-out; }
   article.body section.donate {
     background-color: #101f2b;
     color: white; }
@@ -1050,65 +1117,65 @@ article.footer {
   .shooting_star::after {
     transform: translateX(50%) rotateZ(-45deg); }
   .shooting_star:nth-child(1) {
-    top: calc(50% - -190px);
+    top: calc(50% - 162px);
     left: calc(50% - 111px);
-    animation-delay: 3146ms; }
+    animation-delay: 1279ms; }
     .shooting_star:nth-child(1)::before, .shooting_star:nth-child(1)::after, .shooting_star:nth-child(1)::after {
-      animation-delay: 3146ms; }
+      animation-delay: 1279ms; }
   .shooting_star:nth-child(2) {
-    top: calc(50% - -86px);
-    left: calc(50% - 166px);
-    animation-delay: 6343ms; }
+    top: calc(50% - -16px);
+    left: calc(50% - 248px);
+    animation-delay: 8997ms; }
     .shooting_star:nth-child(2)::before, .shooting_star:nth-child(2)::after, .shooting_star:nth-child(2)::after {
-      animation-delay: 6343ms; }
+      animation-delay: 8997ms; }
   .shooting_star:nth-child(3) {
-    top: calc(50% - -187px);
-    left: calc(50% - 163px);
-    animation-delay: 7130ms; }
+    top: calc(50% - -153px);
+    left: calc(50% - 66px);
+    animation-delay: 8266ms; }
     .shooting_star:nth-child(3)::before, .shooting_star:nth-child(3)::after, .shooting_star:nth-child(3)::after {
-      animation-delay: 7130ms; }
+      animation-delay: 8266ms; }
   .shooting_star:nth-child(4) {
-    top: calc(50% - 183px);
-    left: calc(50% - 114px);
-    animation-delay: 4205ms; }
+    top: calc(50% - -145px);
+    left: calc(50% - 71px);
+    animation-delay: 2724ms; }
     .shooting_star:nth-child(4)::before, .shooting_star:nth-child(4)::after, .shooting_star:nth-child(4)::after {
-      animation-delay: 4205ms; }
+      animation-delay: 2724ms; }
   .shooting_star:nth-child(5) {
-    top: calc(50% - 63px);
-    left: calc(50% - 98px);
-    animation-delay: 9161ms; }
+    top: calc(50% - -77px);
+    left: calc(50% - 278px);
+    animation-delay: 3132ms; }
     .shooting_star:nth-child(5)::before, .shooting_star:nth-child(5)::after, .shooting_star:nth-child(5)::after {
-      animation-delay: 9161ms; }
+      animation-delay: 3132ms; }
   .shooting_star:nth-child(6) {
-    top: calc(50% - -120px);
-    left: calc(50% - 51px);
-    animation-delay: 8305ms; }
+    top: calc(50% - 94px);
+    left: calc(50% - 159px);
+    animation-delay: 1635ms; }
     .shooting_star:nth-child(6)::before, .shooting_star:nth-child(6)::after, .shooting_star:nth-child(6)::after {
-      animation-delay: 8305ms; }
+      animation-delay: 1635ms; }
   .shooting_star:nth-child(7) {
-    top: calc(50% - -169px);
-    left: calc(50% - 8px);
-    animation-delay: 846ms; }
+    top: calc(50% - 96px);
+    left: calc(50% - 149px);
+    animation-delay: 627ms; }
     .shooting_star:nth-child(7)::before, .shooting_star:nth-child(7)::after, .shooting_star:nth-child(7)::after {
-      animation-delay: 846ms; }
+      animation-delay: 627ms; }
   .shooting_star:nth-child(8) {
-    top: calc(50% - -193px);
-    left: calc(50% - 29px);
-    animation-delay: 600ms; }
+    top: calc(50% - -112px);
+    left: calc(50% - 121px);
+    animation-delay: 1441ms; }
     .shooting_star:nth-child(8)::before, .shooting_star:nth-child(8)::after, .shooting_star:nth-child(8)::after {
-      animation-delay: 600ms; }
+      animation-delay: 1441ms; }
   .shooting_star:nth-child(9) {
-    top: calc(50% - -72px);
-    left: calc(50% - 218px);
-    animation-delay: 9937ms; }
+    top: calc(50% - 141px);
+    left: calc(50% - 139px);
+    animation-delay: 7133ms; }
     .shooting_star:nth-child(9)::before, .shooting_star:nth-child(9)::after, .shooting_star:nth-child(9)::after {
-      animation-delay: 9937ms; }
+      animation-delay: 7133ms; }
   .shooting_star:nth-child(10) {
-    top: calc(50% - -177px);
-    left: calc(50% - 125px);
-    animation-delay: 6276ms; }
+    top: calc(50% - 111px);
+    left: calc(50% - 214px);
+    animation-delay: 4495ms; }
     .shooting_star:nth-child(10)::before, .shooting_star:nth-child(10)::after, .shooting_star:nth-child(10)::after {
-      animation-delay: 6276ms; }
+      animation-delay: 4495ms; }
 
 @keyframes tail {
   0% {
