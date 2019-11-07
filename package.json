@@ -20,7 +20,7 @@
   "homepage": "https://github.com/gotechnica/technica-site-2018#readme",
   "dependencies": {
     "hoek": "^5.0.4",
-    "node-sass": "^4.9.2",
+    "node-sass": "^4.13.0",
     "nodemon": "^1.17.5"
   }
 }

@@ -550,6 +550,21 @@ article.hero {
   background: linear-gradient(to bottom, #FFFFFF, #66a4b3);
 }
 
+#navbar {
+  background-color: rgba(69,69,69,0.5);
+  float: none;
+  text-align: center;
+  height: 5rem;
+}
+
+.navbar-nav.navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+  color: white;
+}
+
+
 article.body {
   color: $grey;
   background-color: $white;
