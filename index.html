@@ -98,6 +98,28 @@
     <!-- End Facebook Pixel Code -->
   </head>
   <body>
+  <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav navbar-center mr-auto">
+        <li class="nav-item">
+          <a id="register-nav" class="nav-link" href="#">Register</a>
+        </li>
+        <li class="nav-item">
+          <a id="travel-nav" class="nav-link" href="https://gotechnica.org/travel.html" target="_blank">Travel</a>
+        </li>
+        <li class="nav-item">
+          <a id="speakers-nav" class="nav-link" href="#">Speakers</a>
+        </li>
+        <li class="nav-item">
+          <a id="schedule-nav" class="nav-link" href="#">Schedule</a>
+        </li>
+        <li class="nav-item">
+          <a id="devpost-nav" class="nav-link" href="https://technica2019.devpost.com/?ref_content=default&ref_feature=challenge&ref_medium=discover" target="_blank">DevPost</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
     <!-- Hero -->
     <article class="hero title-gradient">
       <div class="star-layer">
@@ -127,7 +149,7 @@
               </a>
             </div>
           </div>
-             <div class="row bus-link"><div class="col-md-12"><strong><a href="travel.html">Bus Schedule</a></strong></div></div>
+             <!-- <div class="row bus-link"><div class="col-md-12"><strong><a href="travel.html">Bus Schedule</a></strong></div></div> -->
         </div>
         <img class="rocket" src="./img/cloud_and_rocket_cropped.svg">
       </div>
@@ -239,7 +261,7 @@
           </div>
       </section>
 
-      <section class="speakers">
+      <section id="speakers" class="speakers">
         <div class="container ">
             <div class="text-container round-frame">
           <div class="heading text-center">
@@ -329,7 +351,7 @@
       </section>
 
 
-         <section class="sched">
+         <section id="schedule" class="sched">
 <!--                  <img class="site-stars star_pos" src="./img/site_stars_short.svg">-->
              <div class="container text-center">
                  <div class="heading">
@@ -1142,6 +1164,23 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
+      
+      // function to change navbar color when scrolling
+      $(function() {
+          
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 200) {
+              $("#navbar").addClass('changeColor')
+              // console.log($('#navbar').css('background-color'))
+            }
+            if ($(this).scrollTop() < 200) {
+              $('#navbar').removeClass('changeColor')
+              // console.log($('#navbar').css('background-color'))
+            }
+        });
+      });
+    </script>
+    <script>
 
 
       // document.getElementById('bg-video').play();
@@ -1203,14 +1242,40 @@
 
 
     </script>
-    <script>
-          $("#registration-btn").click(function() {
-          $([document.documentElement, document.body]).animate({
-          scrollTop: $("#registration").offset().top
-          }, 1300);
-          return false;
-          });
+  <script>
+    $("#registration-btn").click(function () {
+      $([document.documentElement, document.body]).animate({
+        scrollTop: $("#registration").offset().top
+      }, 1300);
+      return false;
+    });
+  </script>
 
-    </script>
+<script>
+    $("#speakers-nav").click(function() {
+      $([document.documentElement, document.body]).animate({
+        scrollTop: $("#speakers").offset().top
+      }, 1300);
+      return false;
+    });
+  </script>
+
+  <script>
+    $("#register-nav").click(function() {
+      $([document.documentElement, document.body]).animate({
+        scrollTop: $("#registration").offset().top
+      }, 1300);
+      return false;
+    });
+  </script>
+  
+  <script>
+    $("#schedule-nav").click(function() {
+      $([document.documentElement, document.body]).animate({
+        scrollTop: $("#schedule").offset().top
+      }, 1300);
+      return false;
+    });
+  </script>
   </body>
 </html>
