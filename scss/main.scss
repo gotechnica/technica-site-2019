@@ -555,13 +555,16 @@ article.hero {
   float: none;
   text-align: center;
   height: 5rem;
+
+  .nav-link {
+    color: white;
+  }
 }
 
 .navbar-nav.navbar-center {
   position: absolute;
   left: 50%;
   transform: translatex(-50%);
-  color: white;
 }
 
 
