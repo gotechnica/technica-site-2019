@@ -555,15 +555,16 @@ article.hero {
   transition: 0.3s all;
   // background-color: rgba(69,69,69,1);
   float: none;
-  text-align: center;
+  // text-align: center;
   height: 5rem;
 
   .nav-link {
     font-size: 1.8rem;
     font-weight: bold;
     color: white;
-    padding-left:2rem;
-    padding-right:2rem;
+    // padding-left:2rem;
+    // padding-right:2rem;
+    
   }
   .nav-link:hover {
     opacity:0.7;
