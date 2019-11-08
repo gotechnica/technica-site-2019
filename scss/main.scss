@@ -81,6 +81,8 @@ html {
   }
 }
 
+
+
 .dono-button {
   @extend .button;
   font-size: 1.5em;
@@ -120,6 +122,17 @@ img.hero-stars {
     .register-button {
       display: block;
       margin-bottom: 1rem;
+    }
+  }
+
+  .app{
+    max-width: 200rem;
+    margin: 10px 10px;
+    opacity: .9;
+    transition: ease all .1s;
+    &:hover {
+      opacity: 1;
+      transform: scale(1.05);
     }
   }
 }
