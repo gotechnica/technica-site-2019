@@ -71,6 +71,14 @@ html {
     background-color: $white;
     color: $pink;
   }
+  &.app-button {
+    text-align: center;
+    background-color: $white;
+    color: $pink;
+    &:hover {
+      color: $cyan;
+    }
+  }
 }
 
 .dono-button {
@@ -109,7 +117,7 @@ img.hero-stars {
   z-index: 101;
   @media (max-width: 780px) {
     z-index: 101;
-    .hero-button {
+    .register-button {
       display: block;
       margin-bottom: 1rem;
     }
@@ -450,7 +458,7 @@ article.hero {
     width: 100%;
     margin-top: -16rem;
     @media (max-width: 992px) {
-      margin-top: 0rem;
+      margin-top: 10rem;
     }
   }
   img.dono-1 {
