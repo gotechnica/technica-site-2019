@@ -114,14 +114,22 @@ img.hero-stars {
   padding-top: 10rem;
 }
 
+.hero-btn-holder {
+  height: 200px;
+  position: relative;
+}
+
 .hero-btn-row {
   position:absolute;
   z-index: 101;
   @media (max-width: 780px) {
     z-index: 101;
-    .register-button {
+    a {
       display: block;
       margin-bottom: 1rem;
+    }
+    .app {
+      margin: 0 !important;
     }
   }
 
