@@ -7,7 +7,7 @@
   const formattedPath = "/" + path;
   $.get(redirectsGETUrl, redirects => {
     redirects.forEach(redirect => {
-      if(path === redirect.host) {
+      if(formattedPath === redirect.host) {
         window.location = redirect.target;
       }
     })
