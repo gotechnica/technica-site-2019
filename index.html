@@ -101,6 +101,8 @@
     <script>
       const path = window.location.pathname;
       const redirectsGETUrl = "https://hugoburbelo-technica-url-shortener.builtwithdark.com/redirects"
+
+      const formattedPath = "/" + path;
       $.get(redirectsGETUrl, redirects => {
         redirects.forEach(redirect => {
           if(path === redirect.host) {
