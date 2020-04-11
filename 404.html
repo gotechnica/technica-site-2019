@@ -11,8 +11,7 @@
   $.get(redirectsGETUrl, redirects => {
     console.log(redirects)
     redirects.forEach(redirect => {
-      if(path === redirect.host) {
-        console.log('match')
+      if(path === ("/" + redirect.host)) {
         window.location = redirect.target;
       }
     })
