@@ -4,11 +4,12 @@
 <script>
   const path = window.location.pathname;
   const redirectsGETUrl = "https://hugoburbelo-technica-url-shortener.builtwithdark.com/redirects"
-
+  console.log('script loaded')
   const formattedPath = "/" + path;
   $.get(redirectsGETUrl, redirects => {
     redirects.forEach(redirect => {
       if(formattedPath === redirect.host) {
+        console.log('match')
         window.location = redirect.target;
       }
     })
