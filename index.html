@@ -78,6 +78,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
     <!-- Facebook Pixel Code -->
     <script>
@@ -96,6 +97,18 @@
       src="https://www.facebook.com/tr?id=2430237730636491&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Facebook Pixel Code -->
+
+    <script>
+      const path = window.location.pathname;
+      const redirectsGETUrl = "https://hugoburbelo-technica-url-shortener.builtwithdark.com/redirects"
+      $.get(redirectsGETUrl, redirects => {
+        redirects.forEach(redirect => {
+          if(path === redirect.host) {
+            window.location = redirect.target;
+          }
+        })
+      });
+    </script>
   </head>
   <body>
 
